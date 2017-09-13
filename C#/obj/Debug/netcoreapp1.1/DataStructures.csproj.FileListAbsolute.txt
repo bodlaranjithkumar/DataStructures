@@ -1,0 +1,9 @@
+C:\Users\bodla\Documents\GITHUB\DataStructures\DataStructures\bin\Debug\netcoreapp1.1\DataStructures.deps.json
+C:\Users\bodla\Documents\GITHUB\DataStructures\DataStructures\bin\Debug\netcoreapp1.1\DataStructures.runtimeconfig.json
+C:\Users\bodla\Documents\GITHUB\DataStructures\DataStructures\bin\Debug\netcoreapp1.1\DataStructures.runtimeconfig.dev.json
+C:\Users\bodla\Documents\GITHUB\DataStructures\DataStructures\bin\Debug\netcoreapp1.1\DataStructures.dll
+C:\Users\bodla\Documents\GITHUB\DataStructures\DataStructures\bin\Debug\netcoreapp1.1\DataStructures.pdb
+C:\Users\bodla\Documents\GITHUB\DataStructures\DataStructures\obj\Debug\netcoreapp1.1\DataStructures.csprojResolveAssemblyReference.cache
+C:\Users\bodla\Documents\GITHUB\DataStructures\DataStructures\obj\Debug\netcoreapp1.1\DataStructures.AssemblyInfo.cs
+C:\Users\bodla\Documents\GITHUB\DataStructures\DataStructures\obj\Debug\netcoreapp1.1\DataStructures.dll
+C:\Users\bodla\Documents\GITHUB\DataStructures\DataStructures\obj\Debug\netcoreapp1.1\DataStructures.pdb

@@ -1,0 +1,5 @@
+C:\Users\bodla\Documents\GITHUB\DataStructures\DataStructures\RandomProblemSolutions\bin\Debug\netcoreapp1.1\RandomProblemSolutions.deps.json
+C:\Users\bodla\Documents\GITHUB\DataStructures\DataStructures\RandomProblemSolutions\bin\Debug\netcoreapp1.1\RandomProblemSolutions.runtimeconfig.json
+C:\Users\bodla\Documents\GITHUB\DataStructures\DataStructures\RandomProblemSolutions\bin\Debug\netcoreapp1.1\RandomProblemSolutions.runtimeconfig.dev.json
+C:\Users\bodla\Documents\GITHUB\DataStructures\DataStructures\RandomProblemSolutions\obj\Debug\netcoreapp1.1\RandomProblemSolutions.csprojResolveAssemblyReference.cache
+C:\Users\bodla\Documents\GITHUB\DataStructures\DataStructures\RandomProblemSolutions\obj\Debug\netcoreapp1.1\RandomProblemSolutions.AssemblyInfo.cs
