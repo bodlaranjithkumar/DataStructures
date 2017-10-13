@@ -3,6 +3,12 @@ names = ['Chandler','Ross','Joey','Phoebe','Rachel','Monica']
 print('First Name = ', names[0])
 print('First 3 names', names[0:3])
 
+a = [1, 2, 3, 4, 5, 6]
+print(a[-1])  # Prints the last element in the array
+print(a[1:])  # Slices the array excluding the value in the first index.
+print(len(a)) # Length of the array
+
+
 more_names = ['Gunther','Mark']
 
 combined_names = [names, more_names]

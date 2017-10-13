@@ -17,6 +17,20 @@ print('All characters are numbers? ', '123'.isalnum())
 print('Remove white space at the end: ', long_string.strip())
 print('Split into list: ', long_string.split(" "))
 
+s = 'python,is,powerful,programming,language'.split(',')
+print(s)
+
+name = ','.join(('ranjith','kumar', 'bodla'))   # join using the list of values using the , delimiter.
+print(name)
+
+
+nameformat = 'Name name, Lname lname'.format(name='Ranjith', lname='Bodla')
+print(nameformat)
+
+# strings in python are immutable i.e., appending a character to existing string creates a new string
+# so, mutable version of string is list
+s = s[1:]
+s += '123'
 
 # read input from command line
 print('What is your name?')

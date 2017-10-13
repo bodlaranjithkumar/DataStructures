@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GainloSolutions", "GainloSo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterviewCakeSolutions", "InterviewCakeSolutions\InterviewCakeSolutions.csproj", "{400CDC34-A7B5-4191-A95E-B694E3A9F4F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetcodeSolutions", "Leetcode\LeetcodeSolutions.csproj", "{F715F284-DAEB-4753-9EF2-A58C050B43F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{400CDC34-A7B5-4191-A95E-B694E3A9F4F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{400CDC34-A7B5-4191-A95E-B694E3A9F4F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{400CDC34-A7B5-4191-A95E-B694E3A9F4F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F715F284-DAEB-4753-9EF2-A58C050B43F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F715F284-DAEB-4753-9EF2-A58C050B43F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F715F284-DAEB-4753-9EF2-A58C050B43F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F715F284-DAEB-4753-9EF2-A58C050B43F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
