@@ -21,6 +21,7 @@ namespace LeetcodeSolutions.Array
         //    Console.ReadLine();
         //}
 
+        // Runtime : 519 ms
         // Tx = O(n) {n: Length of nums array}
         // Sx = O(n)
         public int[] SumOfTwo(int[] nums, int target)
