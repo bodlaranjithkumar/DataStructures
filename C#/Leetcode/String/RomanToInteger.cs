@@ -6,17 +6,17 @@ namespace LeetcodeSolutions.String
     // Leetcode 13
     class RomanToInteger
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine($"Input: {"MMCDXLII"}, Output: {RomanToInt("MMCDXLII")}\tExpected:2442");
-            Console.WriteLine($"Input: {"MMDCCLXXIII"}, Output: {RomanToInt("MMDCCLXXIII")}\tExpected:2773");
-            Console.WriteLine($"Input: {"DCCCLXXVI"}, Output: {RomanToInt("DCCCLXXVI")}\tExpected:876");
-            Console.WriteLine($"Input: {"CMLVII"}, Output: {RomanToInt("CMLVII")}\tExpected:957");
-            Console.WriteLine($"Input: {"MMCCCXXVIII"},\tOutput: {RomanToInt("MMCCCXXVIII")},\tExpected:2328");
-            Console.WriteLine($"Input: {"MMDCXCIX"}, Output: {RomanToInt("MMDCXCIX")}\tExpected:2699");
+        //static void Main(string[] args)
+        //{
+        //    Console.WriteLine($"Input: {"MMCDXLII"}, Output: {RomanToInt("MMCDXLII")}\tExpected:2442");
+        //    Console.WriteLine($"Input: {"MMDCCLXXIII"}, Output: {RomanToInt("MMDCCLXXIII")}\tExpected:2773");
+        //    Console.WriteLine($"Input: {"DCCCLXXVI"}, Output: {RomanToInt("DCCCLXXVI")}\tExpected:876");
+        //    Console.WriteLine($"Input: {"CMLVII"}, Output: {RomanToInt("CMLVII")}\tExpected:957");
+        //    Console.WriteLine($"Input: {"MMCCCXXVIII"},\tOutput: {RomanToInt("MMCCCXXVIII")},\tExpected:2328");
+        //    Console.WriteLine($"Input: {"MMDCXCIX"}, Output: {RomanToInt("MMDCXCIX")}\tExpected:2699");
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
 
         // V    -   5
         // X    -   10
@@ -28,6 +28,10 @@ namespace LeetcodeSolutions.String
 
         private static Dictionary<char, int> GeneralNumerals { get; set; }
 
+        // Runtime : 156 ms
+        // Tx = O(n) {n: n is the length of the input string}
+        // Sx = O(1)
+        // TODO: Add validation for allowed roman numerals combination
         public static int RomanToInt(string s)
         {
             // Edge Cases

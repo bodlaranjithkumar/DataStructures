@@ -1,5 +1,6 @@
 ﻿using LeetcodeSolutions.DataStructures;
 using System;
+using System.Collections.Generic;
 
 namespace LeetcodeSolutions
 {
@@ -18,20 +19,6 @@ namespace LeetcodeSolutions
             Console.WriteLine($"{val}");
         }
 
-        public static ListNode CreateListNode(int[] values)
-        {
-            ListNode head = new ListNode(0);
-            ListNode node = head;
-
-            foreach(var val in values)
-            {
-                node.Next = new ListNode(val);
-                node = node.Next;                
-            }
-
-            return head.Next;
-        }
-
         public static void PrintListNodes(ListNode head)
         {
             while (head != null)
@@ -39,6 +26,30 @@ namespace LeetcodeSolutions
                 Console.WriteLine($"{head.Val} \t");
                 head = head.Next;
             }
+        }
+
+        public static void PrintListElements<T>(List<T> list)
+        {
+            Console.Write("[");
+            foreach(var t in list)
+            {
+                Console.Write($"{t},");
+            }
+            Console.Write("]\n");
+        }
+
+        public static ListNode CreateListNode(int[] values)
+        {
+            ListNode head = new ListNode(0);
+            ListNode node = head;
+
+            foreach (var val in values)
+            {
+                node.Next = new ListNode(val);
+                node = node.Next;
+            }
+
+            return head.Next;
         }
     }
 }
