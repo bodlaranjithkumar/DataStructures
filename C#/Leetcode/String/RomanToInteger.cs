@@ -26,7 +26,7 @@ namespace LeetcodeSolutions.String
         // M    -   1000
         // 1-5000 Numerals - http://romannumerals.babuo.com/roman-numerals-1-5000
 
-        private static Dictionary<char, int> GeneralNumerals { get; set; }
+        private static Dictionary<char, int> Numerals { get; set; }
 
         // Runtime : 156 ms
         // Tx = O(n) {n: n is the length of the input string}
@@ -34,25 +34,26 @@ namespace LeetcodeSolutions.String
         // TODO: Add validation for allowed roman numerals combination
         public static int RomanToInt(string s)
         {
-            // Edge Cases
+            //TODO: Edge Cases
 
-            GetNumerals();
+            SetNumerals();
 
             int computedValue = 0;
 
             for (int currentIndex = 0; currentIndex < s.Length; currentIndex++)
             {
                 char currentChar = s[currentIndex];
-                if (!GeneralNumerals.TryGetValue(currentChar, out int currentIndexValue))
+
+                if (!Numerals.TryGetValue(currentChar, out int currentIndexValue))
                     throw new ArgumentNullException("Invalid character found.");
 
-                if (currentIndex == s.Length - 1 || GeneralNumerals[s[currentIndex + 1]] <= currentIndexValue)
+                if (currentIndex == s.Length - 1 || Numerals[s[currentIndex + 1]] <= currentIndexValue)
                 {
                     computedValue += currentIndexValue;
                 }
-                else if (GeneralNumerals[s[currentIndex + 1]] > currentIndexValue)
+                else if (Numerals[s[currentIndex + 1]] > currentIndexValue)
                 {
-                    computedValue += GeneralNumerals[s[currentIndex + 1]] - currentIndexValue;
+                    computedValue += Numerals[s[currentIndex + 1]] - currentIndexValue;
                     currentIndex++;
                 }
             }
@@ -60,16 +61,18 @@ namespace LeetcodeSolutions.String
             return computedValue;
         }
 
-        public static void GetNumerals()
+        public static void SetNumerals()
         {
-            GeneralNumerals = new Dictionary<char, int>();
-            GeneralNumerals.Add('I', 1);
-            GeneralNumerals.Add('V', 5);
-            GeneralNumerals.Add('X', 10);
-            GeneralNumerals.Add('L', 50);
-            GeneralNumerals.Add('C', 100);
-            GeneralNumerals.Add('D', 500);
-            GeneralNumerals.Add('M', 1000);
+            Numerals = new Dictionary<char, int>
+            {
+                { 'I', 1 },
+                { 'V', 5 },
+                { 'X', 10 },
+                { 'L', 50 },
+                { 'C', 100 },
+                { 'D', 500 },
+                { 'M', 1000 }
+            };
         }
     }
 }

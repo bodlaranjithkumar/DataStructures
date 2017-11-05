@@ -25,6 +25,7 @@ namespace LeetcodeSolutions.Array
         // Runtime : 519 ms
         // Tx = O(n) {n: Length of nums array}
         // Sx = O(n)
+        // Note: If the array is sorted, we can used modified version of binarysearch with O(1) Sx
         public int[] SumOfTwo(int[] nums, int target)
         {
             // edge cases
@@ -35,13 +36,12 @@ namespace LeetcodeSolutions.Array
 
             // declarations
             int[] indices = new int[2];
-            int difference = 0;
             Dictionary<int, int> differences = new Dictionary<int, int>();
 
             for (int index = 0; index < nums.Length; index++)
             {
                 int current_num = nums[index];
-                difference = target - current_num;
+                int difference = target - current_num;
 
                 if (differences.TryGetValue(difference, out int firstIndex))
                 {

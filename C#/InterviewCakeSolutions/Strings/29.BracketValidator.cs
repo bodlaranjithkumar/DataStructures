@@ -5,6 +5,12 @@ namespace InterviewCakeSolutions.Strings
 {
     class BracketValidator
     {
+        static Dictionary<char, char> bracketsPair = new Dictionary<char, char>{
+            {'{', '}'},
+            {'[', ']'},
+            {'(', ')'}
+        };
+
         //public static void Main(string[] args)
         //{
         //    //{[]()} - TRUE
@@ -13,17 +19,30 @@ namespace InterviewCakeSolutions.Strings
         //    //[({})[]] - TRUE
         //    string str = "{[}";
         //    BracketValidator bracketValidator = new BracketValidator();
-        //    Console.WriteLine(bracketValidator.validateBrackets(str));
+        //    Console.WriteLine(bracketValidator.ValidateBrackets(str));
         //    Console.Read();
         //}
 
-        private bool validateBrackets(string str)
+        private bool ValidateBracketsOptimized(string str)
         {
-            Dictionary<char, char> bracketsPair = new Dictionary<char, char>();
-            bracketsPair.Add('{', '}');
-            bracketsPair.Add('[', ']');
-            bracketsPair.Add('(', ')');
+            Stack<char> brackets = new Stack<char>();
+            foreach(var c in str)
+            {
+                if (c == '(')
+                    brackets.Push(')');
+                else if (c == '{')
+                    brackets.Push('}');
+                else if (c == '[')
+                    brackets.Push(']');
+                else if (brackets.Count == 0 || brackets.Pop() != c)
+                    return false;
+            }
 
+            return brackets.Count == 0;
+        }
+    
+        private bool ValidateBrackets(string str)
+        {
             Stack<char> openBrackets = new Stack<char>();
             //openBrackets.Push(str[0]);
 
@@ -44,7 +63,7 @@ namespace InterviewCakeSolutions.Strings
                 }
             }
 
-            return true;
+            return openBrackets.Count == 0;
         }
 
         // Understood question incorrectly.
