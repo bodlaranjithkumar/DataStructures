@@ -5,19 +5,19 @@ namespace LeetcodeSolutions.String
     // Leetcode 387
     class FirstUniqueCharInString
     {
-        static void Main(string[] args)
-        {
-            FirstUniqueCharInString uniqChar = new FirstUniqueCharInString();
-            Console.WriteLine($"expected:0\tactual:{uniqChar.FirstUniqChar("leetcode")}");
-            Console.WriteLine($"expected:2\tactual:{uniqChar.FirstUniqChar("eetcode")}");
-            Console.WriteLine($"expected:2\tactual:{uniqChar.FirstUniqChar("loveleetcode")}");
-            Console.WriteLine($"expected:-1\tactual:{uniqChar.FirstUniqChar("baba")}");
-            Console.WriteLine($"expected:-1\tactual:{uniqChar.FirstUniqChar("")}");
-            Console.WriteLine($"expected:0\tactual:{uniqChar.FirstUniqChar("c")}");
-            Console.WriteLine($"expected:8\tactual:{uniqChar.FirstUniqChar("dddccdbba")}");
+        //static void Main(string[] args)
+        //{
+        //    FirstUniqueCharInString uniqChar = new FirstUniqueCharInString();
+        //    Console.WriteLine($"expected:0\tactual:{uniqChar.FirstUniqChar("leetcode")}");
+        //    Console.WriteLine($"expected:2\tactual:{uniqChar.FirstUniqChar("eetcode")}");
+        //    Console.WriteLine($"expected:2\tactual:{uniqChar.FirstUniqChar("loveleetcode")}");
+        //    Console.WriteLine($"expected:-1\tactual:{uniqChar.FirstUniqChar("baba")}");
+        //    Console.WriteLine($"expected:-1\tactual:{uniqChar.FirstUniqChar("")}");
+        //    Console.WriteLine($"expected:0\tactual:{uniqChar.FirstUniqChar("c")}");
+        //    Console.WriteLine($"expected:8\tactual:{uniqChar.FirstUniqChar("dddccdbba")}");
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
 
         // Runtime : 135 ms
         // Tx = O(n) { n : length of the string }
