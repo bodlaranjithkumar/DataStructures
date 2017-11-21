@@ -1,5 +1,5 @@
 ﻿using LeetcodeSolutions.DataStructures;
-using System;
+using sys = System;
 using System.Collections.Generic;
 
 namespace LeetcodeSolutions.BinaryTree
@@ -12,7 +12,7 @@ namespace LeetcodeSolutions.BinaryTree
         // Sx = O(n) for call stack
         public int MaxDepthRecursiveOptimized(BinaryTreeNode root)
         {
-            return root == null ? 0 : 1 + Math.Max(MaxDepth(root.Left), MaxDepth(root.Right));
+            return root == null ? 0 : 1 + sys.Math.Max(MaxDepth(root.Left), MaxDepth(root.Right));
         }
 
         // Solution 2: Recursive with depth computed from root to leaf.
@@ -33,7 +33,7 @@ namespace LeetcodeSolutions.BinaryTree
             }
 
             // Recursive Case
-            return Math.Max(MaxDepth(node.Left, depth + 1), MaxDepth(node.Right, depth + 1));
+            return sys.Math.Max(MaxDepth(node.Left, depth + 1), MaxDepth(node.Right, depth + 1));
         }
 
         // Solution 3: Depth First Traversal using Iterative approach
@@ -73,7 +73,7 @@ namespace LeetcodeSolutions.BinaryTree
             {
                 var depthNode = depthNodes.Pop();
 
-                maxDepth = Math.Max(depthNode.depth, maxDepth);
+                maxDepth = sys.Math.Max(depthNode.depth, maxDepth);
 
                 if (depthNode.node.Left != null)
                 {

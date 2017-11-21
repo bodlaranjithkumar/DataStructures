@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using sys = System;
 
 namespace LeetcodeSolutions.Array
 {
@@ -18,8 +16,8 @@ namespace LeetcodeSolutions.Array
 
             for (int index = 1; index < nums.Length; index++)
             {
-                maxSoFar = Math.Max(maxSoFar + nums[index], nums[index]);
-                maxSum = Math.Max(maxSum, maxSoFar);
+                maxSoFar = sys.Math.Max(maxSoFar + nums[index], nums[index]);
+                maxSum = sys.Math.Max(maxSum, maxSoFar);
             }
 
             return maxSum;

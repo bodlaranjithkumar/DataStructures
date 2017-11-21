@@ -1,4 +1,4 @@
-﻿using System;
+﻿using sys = System;
 
 namespace LeetcodeSolutions.Array
 {
@@ -21,9 +21,9 @@ namespace LeetcodeSolutions.Array
 
             for (int index = 1; index < prices.Length; index++)
             {
-                maxProfit = Math.Max(maxProfit, prices[index] - min);
+                maxProfit = sys.Math.Max(maxProfit, prices[index] - min);
 
-                min = Math.Min(min, prices[index]);
+                min = sys.Math.Min(min, prices[index]);
             }
 
             // Given : Return 0 when the stock price is decreasing constantly.

@@ -3,7 +3,7 @@
 namespace LeetcodeSolutions.BinaryTree
 {
     // Leetcode 235
-    class LowestCommonAncestorOfBinarySearcthTree
+    class LowestCommonAncestorOfBinarySearchTree
     {
         // Runtime = 209 ms
         // Tx = O(h) {h: height of the BST}

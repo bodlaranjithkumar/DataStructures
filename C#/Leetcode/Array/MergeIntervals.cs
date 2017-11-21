@@ -1,4 +1,4 @@
-﻿using System;
+﻿using sys = System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -46,7 +46,7 @@ namespace LeetcodeSolutions.Array
 
                 if (lastMergedInterval.end >= currentInterval.start)
                 {
-                    lastMergedInterval.end = Math.Max(currentInterval.end, lastMergedInterval.end);
+                    lastMergedInterval.end = sys.Math.Max(currentInterval.end, lastMergedInterval.end);
                 }
                 else
                 {

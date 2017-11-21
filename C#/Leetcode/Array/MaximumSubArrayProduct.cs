@@ -1,4 +1,4 @@
-﻿using System;
+﻿using sys = System;
 
 namespace LeetcodeSolutions.Array
 {
@@ -28,10 +28,10 @@ namespace LeetcodeSolutions.Array
                     minSoFar = temp;
                 }
 
-                maxSoFar = Math.Max(nums[index], maxSoFar * nums[index]);
-                minSoFar = Math.Min(nums[index], minSoFar * nums[index]);
+                maxSoFar = sys.Math.Max(nums[index], maxSoFar * nums[index]);
+                minSoFar = sys.Math.Min(nums[index], minSoFar * nums[index]);
 
-                maxProduct = Math.Max(maxProduct, maxSoFar);
+                maxProduct = sys.Math.Max(maxProduct, maxSoFar);
             }
 
             return maxProduct;

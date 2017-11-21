@@ -1,6 +1,5 @@
-﻿using System;
+﻿using sys = System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace LeetcodeSolutions.String
 {
@@ -28,7 +27,7 @@ namespace LeetcodeSolutions.String
                 {
                     currentStrLength++;
                     charsSeenBefore.Add(s[endIndex]);
-                    maxLength = Math.Max(maxLength, currentStrLength);
+                    maxLength = sys.Math.Max(maxLength, currentStrLength);
                 }
                 else
                 {
