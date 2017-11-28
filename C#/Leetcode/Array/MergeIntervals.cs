@@ -37,8 +37,8 @@ namespace LeetcodeSolutions.Array
                             .ToList();
 
             IList<Interval> mergedIntervals = new List<Interval>{
-            intervals[0]
-        };
+                intervals[0]
+            };
 
             foreach (var currentInterval in intervals)
             {

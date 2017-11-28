@@ -3,6 +3,8 @@
 namespace LeetcodeSolutions.Array
 {
     // Leetcode 238
+    // Input:  [1,2,3,4]
+    // Output: [24,12,8,6]
     class ProductofArrayExceptSelf
     {
         // Runtime : 472 ms
@@ -10,11 +12,14 @@ namespace LeetcodeSolutions.Array
         // Sx = O(1)
         public int[] ProductExceptSelf(int[] nums)
         {
-            int[] output = new int[nums.Length];
+            if (nums == null || nums.Length == 0)
+                return nums;
+
+            int length = nums.Length;
+            int[] output = new int[length];
+            output[0] = 1;
 
             int productSoFar = nums[0];
-            output[0] = 1;
-            int length = nums.Length;
 
             for (int index = 1; index < length; index++)
             {

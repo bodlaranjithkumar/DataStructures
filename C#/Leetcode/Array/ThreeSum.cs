@@ -5,15 +5,10 @@ using System.Text;
 namespace LeetcodeSolutions.Array
 {
     // Leetcode 15
+    // Input:  [-1, 0, 1, 2, -1, -4]
+    // Output: [[-1, 0, 1],[-1, -1, 2]]
     public class ThreeSum
     {
-
-        //static void Main(string[] args)
-        //{
-        //    // Input : [-1,0,1,2,-1,-4]
-        //    // Output : [[-1,0,1],[-1,-1,2]]
-        //}
-
         // Runtime : 576 ms
         // Tx = O(n^2) {n : size of integer array}
         // Sx = O(n) {for the resultant list}
@@ -45,7 +40,7 @@ namespace LeetcodeSolutions.Array
                             low++;
                             //high--;
                         }
-                        else if (nums[low] + nums[high] < -nums[currentIndex]) low++;
+                        else if (nums[currentIndex] + nums[low] + nums[high] < 0) low++;
                         else high--;
                     }
                 }

@@ -3,6 +3,9 @@
 namespace LeetcodeSolutions.Array
 {
     // Leetcode 53
+    // Input: [-2,1,-3,4,-1,2,1,-5,4],
+    // Output: 6
+    // Contiguous subarray with max sum = [4, -1, 2, 1] 
     class MaximumSubArraySum
     {
         // Runtime = 149ms

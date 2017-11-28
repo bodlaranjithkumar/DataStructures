@@ -3,6 +3,9 @@
 namespace LeetcodeSolutions.Array
 {
     // Leetcode 152
+    // Input: [2,3,-2,4],
+    // Product: 6
+    // Contiguous subarray with maximum product = [2, 3]
     class MaximumSubArrayProduct
     {
         // Runtime = 155ms

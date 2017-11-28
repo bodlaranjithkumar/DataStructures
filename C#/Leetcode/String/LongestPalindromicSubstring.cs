@@ -3,6 +3,11 @@
 namespace LeetcodeSolutions.String
 {
     // Leetcode 5
+    // Input: "babad"
+    // Output: "bab"
+
+    // Input: "cbbd"
+    // Output: "bb"
     class LongestPalindromicSubstring
     {
         // Runtime = 159ms
@@ -20,7 +25,7 @@ namespace LeetcodeSolutions.String
             for (int index = 0; index < length - 1; index++)
             {
                 ValidatePalindrome(s, index, index, ref start, ref maxLen); // assume length of palindrome is odd
-                ValidatePalindrome(s, index, index + 1, ref start, ref maxLen); // assume lenth of palindromei cs even
+                ValidatePalindrome(s, index, index + 1, ref start, ref maxLen); // assume length of palindrome is even
             }
 
             return s.Substring(start, maxLen);

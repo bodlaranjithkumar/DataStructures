@@ -3,6 +3,8 @@
 namespace LeetcodeSolutions.Array
 {
     // LeetCode 283
+    // Input: [0, 1, 0, 3, 12]
+    // Output: [1, 3, 12, 0, 0]
     class MoveZeros
     {
         // Solution 1 : Clean code
