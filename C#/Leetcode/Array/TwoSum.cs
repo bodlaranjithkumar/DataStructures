@@ -25,7 +25,7 @@ namespace LeetcodeSolutions.Array
         // Runtime : 519 ms
         // Tx = O(n) {n: Length of nums array}
         // Sx = O(n)
-        // Note: If the array is sorted, we can used modified version of binarysearch with O(1) Sx
+        // Note: If the array is sorted, we can two pointers approach to solve in O(1) Sx
         public int[] SumOfTwo(int[] nums, int target)
         {
             // edge cases

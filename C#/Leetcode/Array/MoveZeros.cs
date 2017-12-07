@@ -4,10 +4,11 @@ namespace LeetcodeSolutions.Array
 {
     // LeetCode 283
     // Input: [0, 1, 0, 3, 12]
-    // Output: [1, 3, 12, 0, 0]
+    // Output: [1, 3, 12, 0, 0]    
     class MoveZeros
     {
         // Solution 1 : Clean code
+        // Two pointers
         public void MoveZeroes(int[] nums)
         {
             for (int lastZeroFoundAt = 0, current = 0; current < nums.Length; current++)

@@ -12,7 +12,7 @@ namespace LeetcodeSolutions.BinaryTree
         // Sx = O(n) for call stack
         public int MaxDepthRecursiveOptimized(BinaryTreeNode root)
         {
-            return root == null ? 0 : 1 + sys.Math.Max(MaxDepth(root.Left), MaxDepth(root.Right));
+            return root == null ? 0 : 1 + sys.Math.Max(MaxDepthRecursiveOptimized(root.Left), MaxDepthRecursiveOptimized(root.Right));
         }
 
         // Solution 2: Recursive with depth computed from root to leaf.
