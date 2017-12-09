@@ -3,31 +3,31 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.Interview
 {
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            WordFrequency frequency = new WordFrequency(new List<string>
-            {
-                "java",
-                "python",
-                "C#",
-                "java",
-                "python",
-                "go",
-                "java",
-            });
+    //public class Program
+    //{
+    //    public static void Main(string[] args)
+    //    {
+    //        WordFrequency frequency = new WordFrequency(new List<string>
+    //        {
+    //            "java",
+    //            "python",
+    //            "C#",
+    //            "java",
+    //            "python",
+    //            "go",
+    //            "java",
+    //        });
 
-            frequency.FindnthFrequentWord(0).ForEach(w => Console.Write($"{w}\t"));
-            Console.WriteLine();
-            frequency.FindnthFrequentWord(1).ForEach(w => Console.Write($"{w}\t"));
-            Console.WriteLine();
-            frequency.FindnthFrequentWord(2).ForEach(w => Console.Write($"{w}\t"));
-            Console.WriteLine();
-            frequency.FindnthFrequentWord(3).ForEach(w => Console.Write($"{w}\t"));
-            Console.ReadKey();
-        }
-    }
+    //        frequency.FindnthFrequentWord(0).ForEach(w => Console.Write($"{w}\t"));
+    //        Console.WriteLine();
+    //        frequency.FindnthFrequentWord(1).ForEach(w => Console.Write($"{w}\t"));
+    //        Console.WriteLine();
+    //        frequency.FindnthFrequentWord(2).ForEach(w => Console.Write($"{w}\t"));
+    //        Console.WriteLine();
+    //        frequency.FindnthFrequentWord(3).ForEach(w => Console.Write($"{w}\t"));
+    //        Console.ReadKey();
+    //    }
+    //}
 
     public class WordFrequency
     {
