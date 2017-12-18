@@ -7080,10 +7080,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bodla\\Documents\\GITHUB\\DataStructures\\C#\\RandomProblemSolutions\\RandomProblemSolutions.csproj",
+      "projectUniqueName": "C:\\Users\\bodla\\Documents\\GITHUB\\DataStructures\\DataStructures\\RandomProblemSolutions\\RandomProblemSolutions.csproj",
       "projectName": "RandomProblemSolutions",
-      "projectPath": "C:\\Users\\bodla\\Documents\\GITHUB\\DataStructures\\C#\\RandomProblemSolutions\\RandomProblemSolutions.csproj",
-      "outputPath": "C:\\Users\\bodla\\Documents\\GITHUB\\DataStructures\\C#\\RandomProblemSolutions\\obj\\",
+      "projectPath": "C:\\Users\\bodla\\Documents\\GITHUB\\DataStructures\\DataStructures\\RandomProblemSolutions\\RandomProblemSolutions.csproj",
+      "outputPath": "C:\\Users\\bodla\\Documents\\GITHUB\\DataStructures\\DataStructures\\RandomProblemSolutions\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

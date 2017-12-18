@@ -1,25 +1,27 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace LeetcodeSolutions.String
 {
     public class ReverseStringPreservingSpecialCharacterPosition
     {
-        //public static void Main(string[] args)
-        //{
-        //    string str1 = "b$";
-        //    Console.WriteLine($"input:{str1}, expected:{str1}, actual:{ReverseString(str1)}");
+        public static void Main(string[] args)
+        {
+            string str1 = "b$";
+            Console.WriteLine($"input:{str1}, expected:{str1}, actual:{ReverseString(str1)}");
 
-        //    string str2 = "ab";
-        //    Console.WriteLine($"input:{str2}, expected:ba, actual:{ReverseString(str2)}");
+            string str2 = "ab";
+            Console.WriteLine($"input:{str2}, expected:ba, actual:{ReverseString(str2)}");
 
-        //    string str3 = "abc$de%f";
-        //    Console.WriteLine($"input:{str3}, expected:fed$cb%a, actual:{ReverseString(str3)}");
+            string str3 = "abc$de%f";
+            Console.WriteLine($"input:{str3}, expected:fed$cb%a, actual:{ReverseString(str3)}");
 
-        //    string str4 = "a(&fdgh*fdf";
-        //    Console.WriteLine($"input:{str4}, expected:f(&dfhg*dfa, actual:{ReverseString(str4)}");
+            string str4 = "a(&fdgh*fdf";
+            Console.WriteLine($"input:{str4}, expected:f(&dfhg*dfa, actual:{ReverseString(str4)}");
 
-        //    Console.ReadKey();
-        //}
+            Console.ReadKey();
+        }
 
         //Tx = O(n)
         //Sx = O(n)
