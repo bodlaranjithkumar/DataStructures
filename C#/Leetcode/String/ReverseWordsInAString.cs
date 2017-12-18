@@ -6,15 +6,41 @@ namespace LeetcodeSolutions.String
     // Leetcode 151
     class ReverseWordsInAString
     {
-        //public static void Main(string[] args)
-        //{
-        //    sys.Console.WriteLine($"Input:{"a"},Output:{ReverseWords("a")}, Expected:a");
-        //    sys.Console.WriteLine($"Input:{""}, Output:{ReverseWords("")}, Expected:{""}");
-        //    sys.Console.WriteLine($"Input:{"  Coding is   Fun    "}, Output:{ReverseWords("  Coding is   Fun    ")}, Expected:Fun is Coding");
-        //    sys.Console.WriteLine($"Input:{"Coding is Fun"}, Output:{ReverseWords("Coding is Fun")}, Expected:Fun is Coding");
+        public static void Main(string[] args)
+        {
+            sys.Console.WriteLine($"Input:{"a"},Output:{ReverseWords("a")}, Expected:a");
+            sys.Console.WriteLine($"Input:{""}, Output:{ReverseWords("")}, Expected:{""}");
+            sys.Console.WriteLine($"Input:{"  Coding is   Fun    "}, Output:{ReverseWords("  Coding is   Fun    ")}, Expected:Fun is Coding");
+            sys.Console.WriteLine($"Input:{"Coding is Fun"}, Output:{ReverseWords("Coding is Fun")}, Expected:Fun is Coding");
 
-        //    sys.Console.ReadKey();
-        //}
+            sys.Console.ReadKey();
+        }
+
+        // Tx = O(n)
+        // Sx = O(1) not considering the output string
+        public static string ReverseWordsOptimized(string str)
+        {
+            if (string.IsNullOrEmpty(str))
+                return str;
+
+            StringBuilder reversedWord = new StringBuilder();
+            int endOfWord = str.Length;
+
+            for (int index = str.Length - 1; index >= 0; index--)
+            {
+                if (str[index] == ' ')
+                    endOfWord = index;
+                else if (index == 0 || str[index - 1] == ' ')
+                {
+                    if (reversedWord.Length != 0)
+                        reversedWord.Append(' ');
+
+                    reversedWord.Append(str.Substring(index, endOfWord - index));
+                }
+            }
+
+            return reversedWord.ToString();
+        }
 
         // Runtime = 145 ms
         // Tx = O(n) 
