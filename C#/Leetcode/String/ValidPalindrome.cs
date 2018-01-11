@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace LeetcodeSolutions.String
 {
@@ -24,19 +22,13 @@ namespace LeetcodeSolutions.String
             while (start < end)
             {
                 while (start < end && !Char.IsLetterOrDigit(s[start]))
-                {
                     start++;
-                }
 
                 while (start < end && !Char.IsLetterOrDigit(s[end]))
-                {
                     end--;
-                }
 
                 if (Char.ToLower(s[start]) != Char.ToLower(s[end]))
-                {
                     return false;
-                }
 
                 start++;
                 end--;
