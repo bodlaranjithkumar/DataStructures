@@ -5,24 +5,24 @@ namespace LeetcodeSolutions.Array
     // Leetcode 215
     public class FindKthLargestElement
     {
-        public static void Main(string[] args)
-        {
-            FindKthLargestElement ele = new FindKthLargestElement();
+        //public static void Main(string[] args)
+        //{
+        //    FindKthLargestElement ele = new FindKthLargestElement();
 
-            int[] A = { 3, 2, 1, 5, 6, 6, 4 };
-            int value = ele.FindKthLargestOptimized(A, 2);   //5
-            Console.WriteLine(value);
+        //    int[] A = { 3, 2, 1, 5, 6, 6, 4 };
+        //    int value = ele.FindKthLargestOptimized(A, 2);   //5
+        //    Console.WriteLine(value);
 
-            int[] B = { -1, 0, 2 };
-            value = ele.FindKthLargestOptimized(B, 3);   //-1
-            Console.WriteLine(value);
+        //    int[] B = { -1, 0, 2 };
+        //    value = ele.FindKthLargestOptimized(B, 3);   //-1
+        //    Console.WriteLine(value);
 
-            int[] C = { 1 };
-            value = ele.FindKthLargestOptimized(C, 1);   //1
-            Console.WriteLine(value);
+        //    int[] C = { 1 };
+        //    value = ele.FindKthLargestOptimized(C, 1);   //1
+        //    Console.WriteLine(value);
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
 
         // Modification of Quick Sort Algorithm
         // Tx = O(n) best case
