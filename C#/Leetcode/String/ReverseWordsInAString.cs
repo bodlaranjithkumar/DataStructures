@@ -6,15 +6,15 @@ namespace LeetcodeSolutions.String
     // Leetcode 151
     class ReverseWordsInAString
     {
-        public static void Main(string[] args)
-        {
-            sys.Console.WriteLine($"Input:{"a"},Output:{ReverseWords("a")}, Expected:a");
-            sys.Console.WriteLine($"Input:{""}, Output:{ReverseWords("")}, Expected:{""}");
-            sys.Console.WriteLine($"Input:{"  Coding is   Fun    "}, Output:{ReverseWords("  Coding is   Fun    ")}, Expected:Fun is Coding");
-            sys.Console.WriteLine($"Input:{"Coding is Fun"}, Output:{ReverseWords("Coding is Fun")}, Expected:Fun is Coding");
+        //public static void Main(string[] args)
+        //{
+        //    sys.Console.WriteLine($"Input:{"a"},Output:{ReverseWords("a")}, Expected:a");
+        //    sys.Console.WriteLine($"Input:{""}, Output:{ReverseWords("")}, Expected:{""}");
+        //    sys.Console.WriteLine($"Input:{"  Coding is   Fun    "}, Output:{ReverseWords("  Coding is   Fun    ")}, Expected:Fun is Coding");
+        //    sys.Console.WriteLine($"Input:{"Coding is Fun"}, Output:{ReverseWords("Coding is Fun")}, Expected:Fun is Coding");
 
-            sys.Console.ReadKey();
-        }
+        //    sys.Console.ReadKey();
+        //}
 
         // Tx = O(n)
         // Sx = O(1) not considering the output string

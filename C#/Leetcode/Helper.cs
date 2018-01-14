@@ -51,5 +51,12 @@ namespace LeetcodeSolutions
 
             return head.Next;
         }
+
+        public static void Swap(int[] A, int index1, int index2)
+        {
+            int temp = A[index1];
+            A[index1] = A[index2];
+            A[index2] = temp;
+        }
     }
 }

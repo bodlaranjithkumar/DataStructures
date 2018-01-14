@@ -6,7 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Heap\FindKthLargestElement.cs" />
     <Compile Remove="Stack\ReplaceParanthesis.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Heap\" />
   </ItemGroup>
 
 </Project>
