@@ -26,7 +26,7 @@ namespace LeetcodeSolutions.Array
 
         // Modification of Quick Sort Algorithm
         // Tx = O(n) best case
-        // Tx = O(nlogn) worst case
+        // Tx = O(n) worst case
         // Sx = O(1)
         public int FindKthLargestOptimized(int[] nums, int k)
         {

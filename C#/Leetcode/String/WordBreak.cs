@@ -2,8 +2,31 @@
 
 namespace LeetcodeSolutions.String
 {
+    // Leetcode 139
     public class WordBreak
     {
+        // Tx = O(n^2)
+        // Sx = O(1)
+        public bool BreakWordsDp(string s, IList<string> wordDict)
+        {
+            bool[] f = new bool[s.Length + 1];
+            f[0] = true;
+
+            for (int i = 1; i <= s.Length; i++)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    if (f[j] && wordDict.Contains(s.Substring(j, i-j)))
+                    {
+                        f[i] = true;
+                        break;
+                    }
+                }
+            }
+
+            return f[s.Length];
+        }
+
         // Not optimal solution because of duplicate work.
         // Time limit exceed for the following input 
         //"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab"
