@@ -6,6 +6,30 @@ namespace LeetcodeSolutions.String
     // Leetcode 3
     class LongestSubStringWithoutRepeatingChars
     {
+        // Runtime: 154ms
+        // Tx = O(n)
+        // Sx = O(1)
+        public int LengthOfLongestSubstringReadable(string s)
+        {
+            int i = 0, j = 0, maxLength = 0;
+            HashSet<char> charsSeenBefore = new HashSet<char>();
+
+            while(j < s.Length)
+            {
+                if (!charsSeenBefore.Contains(s[j]))
+                {
+                    charsSeenBefore.Add(s[j++]);
+                    maxLength = System.Math.Max(charsSeenBefore.Count, maxLength);
+                }
+                else
+                {
+                    charsSeenBefore.Remove(s[i++]);
+                }
+            }
+
+            return maxLength;
+        }
+
         // Sliding window technique
         // Runtime: 336ms (This is changing on resubmission of the same code)
         // Tx = O(n)
