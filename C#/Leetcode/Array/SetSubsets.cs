@@ -11,7 +11,35 @@ namespace LeetcodeSolutions.Array
         //    SetSubsets sets = new SetSubsets();
         //    var result1 = sets.FindSubsets(new int[] { 1, 2, 3 });
         //    var result2 = sets.FindSubsets(new int[] { });
+
+
+        //    var result3 = sets.FindSubsetsBackTrack(new int[] { 1,3, 2 });
+        //    var result4 = sets.FindSubsetsBackTrack(new int[] { });
+        //    Console.ReadKey();
         //}
+
+        // Runtime: 518ms
+        // Tx = O(2^n) //?
+        // Sx = O(2^n)
+        // Using Backtracking
+        public List<List<int>> FindSubsetsBackTrack(int[] nums)
+        {
+            List<List<int>> result = new List<List<int>>();
+            System.Array.Sort(nums);
+            FindSubsetsBackTrack(result, new List<int>(), nums, 0);
+            return result;
+        }
+
+        private void FindSubsetsBackTrack(List<List<int>> result, List<int> list, int[] nums, int start)
+        {
+            result.Add(new List<int>(list));
+            for (int i = start; i < nums.Length; i++)
+            {
+                list.Add(nums[i]);
+                FindSubsetsBackTrack(result, list, nums, i + 1);
+                list.RemoveAt(list.Count - 1);
+            }
+        }
 
         // using bit manipulation
         // Runtime: 500ms
