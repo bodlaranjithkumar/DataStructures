@@ -14,4 +14,8 @@
     <Folder Include="Heap\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="DataStructures\TrieNode.cs" />
+  </ItemGroup>
+
 </Project>
