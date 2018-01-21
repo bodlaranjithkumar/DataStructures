@@ -52,7 +52,7 @@ namespace LeetcodeSolutions.Array
             {
                 path[x, y] = 1;
 
-                // go left
+                // go right
                 if (PathExists(maze, x + 1, y, path))
                     return true;
 

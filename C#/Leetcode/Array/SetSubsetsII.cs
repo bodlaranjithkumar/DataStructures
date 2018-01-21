@@ -16,6 +16,7 @@ namespace LeetcodeSolutions.Array
         // Runtime= 643ms
         // Tx= O(2^n)
         // Sx= O(2^n)
+        // Using backtracking
         public IList<IList<int>> SubsetsWithDup(int[] nums)
         {
             IList<IList<int>> result = new List<IList<int>>();
