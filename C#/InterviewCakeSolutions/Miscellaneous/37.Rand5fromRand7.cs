@@ -8,16 +8,16 @@ namespace InterviewCakeSolutions.Miscellaneous
     {
         Rand7 rand7 = new Rand7();
 
-        public static void Main(string[] args)
-        {
-            Random5Generator random5 = new Random5Generator();
-            for (int i = 0; i < 10; i++)
-            {
-                Console.WriteLine($"Generated Random Number: {random5.GenerateRandom5()}");
-            }
+        //public static void Main(string[] args)
+        //{
+        //    Random5Generator random5 = new Random5Generator();
+        //    for (int i = 0; i < 10; i++)
+        //    {
+        //        Console.WriteLine($"Generated Random Number: {random5.GenerateRandom5()}");
+        //    }
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
 
         public int GenerateRandom5()
         {
