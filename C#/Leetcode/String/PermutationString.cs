@@ -5,11 +5,11 @@ namespace LeetcodeSolutions.String
 {
     public class PermutationString
     {
-        public static void Main(string[] args)
-        {
-            PermutationString p = new PermutationString();
-            var permutations = p.PermutationsOfAString("abc");
-        }
+        //public static void Main(string[] args)
+        //{
+        //    PermutationString p = new PermutationString();
+        //    var permutations = p.PermutationsOfAString("abc");
+        //}
 
         private IList<string> Permutations;
 
