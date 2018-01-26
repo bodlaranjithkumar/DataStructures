@@ -6,6 +6,8 @@ namespace LeetcodeSolutions.BinaryTree
     // Leetcode 226
     public class InvertBinaryTree
     {
+        // Tx = O(n)
+        // Sx = O(logn) or O(d) for the call stack
         public BinaryTreeNode InvertTreeRecursive(BinaryTreeNode root)
         {
             if (root == null || (root.Left == null && root.Right == null))
