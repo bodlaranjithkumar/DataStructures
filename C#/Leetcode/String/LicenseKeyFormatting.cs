@@ -7,15 +7,15 @@ namespace LeetcodeSolutions.String
     // Submission Detail
     public class LicenseKeyFormatting
     {
-        public static void Main(string[] args)
-        {
-            LicenseKeyFormatting lk = new LicenseKeyFormatting();
-            string output1 = lk.FormatLicenseKey("5F3Z-2e-9-w", 4);
-            string output2 = lk.FormatLicenseKey("2-5g-3-J", 2);
-            string output3 = lk.FormatLicenseKey("5", 2);
+        //public static void Main(string[] args)
+        //{
+        //    LicenseKeyFormatting lk = new LicenseKeyFormatting();
+        //    string output1 = lk.FormatLicenseKey("5F3Z-2e-9-w", 4);
+        //    string output2 = lk.FormatLicenseKey("2-5g-3-J", 2);
+        //    string output3 = lk.FormatLicenseKey("5", 2);
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
 
         // Tx = O(n) 
         // Sx = O(n) // Actually 2n.
