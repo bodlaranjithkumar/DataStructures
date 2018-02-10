@@ -5,23 +5,23 @@ namespace LeetcodeSolutions.String
     // Leetcode : 273
     public class IntegerToEnglishWords
     {
-        public static void Main(string[] args)
-        {
-            IntegerToEnglishWords ie = new IntegerToEnglishWords();
-            Console.WriteLine($"123 \t {ie.NumberToWords(123)}");
-            Console.WriteLine($"12345 \t {ie.NumberToWords(12345)}");
-            Console.WriteLine($"1234567 \t {ie.NumberToWords(1234567)}");
-            Console.WriteLine($"0 \t {ie.NumberToWords(0)}");
-            Console.WriteLine($"100 \t {ie.NumberToWords(100)}");
-            Console.WriteLine($"101 \t {ie.NumberToWords(101)}");
-            Console.WriteLine($"21 \t {ie.NumberToWords(21)}");
-            Console.WriteLine($"500 \t {ie.NumberToWords(500)}");
-            Console.WriteLine($"13500 \t {ie.NumberToWords(13500)}");
-            Console.WriteLine($"900000000 \t {ie.NumberToWords(900000000)}");
-            Console.WriteLine($"1000000000 \t {ie.NumberToWords(1000000000)}");
-            Console.WriteLine($"1987654938 \t {ie.NumberToWords(1987654938)}");
-            Console.ReadKey();
-        }
+        //public static void Main(string[] args)
+        //{
+        //    IntegerToEnglishWords ie = new IntegerToEnglishWords();
+        //    Console.WriteLine($"123 \t {ie.NumberToWords(123)}");
+        //    Console.WriteLine($"12345 \t {ie.NumberToWords(12345)}");
+        //    Console.WriteLine($"1234567 \t {ie.NumberToWords(1234567)}");
+        //    Console.WriteLine($"0 \t {ie.NumberToWords(0)}");
+        //    Console.WriteLine($"100 \t {ie.NumberToWords(100)}");
+        //    Console.WriteLine($"101 \t {ie.NumberToWords(101)}");
+        //    Console.WriteLine($"21 \t {ie.NumberToWords(21)}");
+        //    Console.WriteLine($"500 \t {ie.NumberToWords(500)}");
+        //    Console.WriteLine($"13500 \t {ie.NumberToWords(13500)}");
+        //    Console.WriteLine($"900000000 \t {ie.NumberToWords(900000000)}");
+        //    Console.WriteLine($"1000000000 \t {ie.NumberToWords(1000000000)}");
+        //    Console.WriteLine($"1987654938 \t {ie.NumberToWords(1987654938)}");
+        //    Console.ReadKey();
+        //}
 
         #region clean code solution 
         private static string[] belowTen = { "", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine" };
