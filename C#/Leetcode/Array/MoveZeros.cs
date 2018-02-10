@@ -4,9 +4,39 @@ namespace LeetcodeSolutions.Array
 {
     // LeetCode 283
     // Input: [0, 1, 0, 3, 12]
-    // Output: [1, 3, 12, 0, 0]    
+    // Output: [1, 3, 12, 0, 0]     
     class MoveZeros
     {
+        // Optimized operations.
+        public void MoveZereos(int[] nums)
+        {
+            if (nums == null || nums.Length == 0)
+                return;
+
+            int i = 0, j = 0;
+            while (j < nums.Length)
+            {
+                while (i < nums.Length && nums[i] != 0)
+                {
+                    i++;
+                }
+
+                while (j < nums.Length && j <= i)
+                {
+                    j++;
+                }
+
+                if (j < nums.Length && nums[j] != 0)
+                {
+                    int temp = nums[i];
+                    nums[i] = nums[j];
+                    nums[j] = temp;
+                }
+
+                j++;
+            }
+        }
+
         // Solution 1 : Clean code
         // Two pointers
         public void MoveZeroes(int[] nums)
