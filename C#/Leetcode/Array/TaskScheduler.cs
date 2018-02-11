@@ -8,21 +8,21 @@ namespace LeetcodeSolutions.Array
     // Submission: https://leetcode.com/submissions/detail/140296542/
     public class TaskScheduler
     {
-        public static void Main(string[] args)
-        {
-            TaskScheduler s = new TaskScheduler();
+        //public static void Main(string[] args)
+        //{
+        //    TaskScheduler s = new TaskScheduler();
 
-            char[] c1 = { 'A', 'A', 'A', 'A', 'B', 'B', 'B', 'E', 'E', 'F', 'F', 'G', 'G' };
-            Console.WriteLine(s.LeastInterval(c1, 3));  //13
+        //    char[] c1 = { 'A', 'A', 'A', 'A', 'B', 'B', 'B', 'E', 'E', 'F', 'F', 'G', 'G' };
+        //    Console.WriteLine(s.LeastInterval(c1, 3));  //13
 
-            char[] c2 = { 'A', 'C', 'C', 'C', 'E', 'E', 'E' };
-            Console.WriteLine(s.LeastInterval(c2, 2));  //8
+        //    char[] c2 = { 'A', 'C', 'C', 'C', 'E', 'E', 'E' };
+        //    Console.WriteLine(s.LeastInterval(c2, 2));  //8
 
-            char[] c3 = {};
-            Console.WriteLine(s.LeastInterval(c3, 2));  //23
+        //    char[] c3 = {};
+        //    Console.WriteLine(s.LeastInterval(c3, 2));  //23
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
 
         // Tx = O(1) although it is Math.Max(O(26log26),O(10000)) as input array length is in the range [1...10000]
         // Sx = O(1)
