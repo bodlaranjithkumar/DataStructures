@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="BinaryTree\LongestUnivaluePath.cs" />
     <Compile Remove="Heap\FindKthLargestElement.cs" />
     <Compile Remove="Stack\ReplaceParanthesis.cs" />
   </ItemGroup>
