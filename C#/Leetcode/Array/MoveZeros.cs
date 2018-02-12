@@ -5,8 +5,22 @@ namespace LeetcodeSolutions.Array
     // LeetCode 283
     // Input: [0, 1, 0, 3, 12]
     // Output: [1, 3, 12, 0, 0]     
-    class MoveZeros
+    public class MoveZeros
     {
+        // worst case Tx = O(2n) although it is clean code
+        public void MoveZeroesCleanCode(int[] nums)
+        {
+            if (nums == null)
+                return;
+
+            int pos = 0;
+            foreach (var num in nums)
+                if (num != 0) nums[pos++] = num;
+
+            while (pos < nums.Length)
+                nums[pos++] = 0;
+        }
+
         // Optimized operations.
         public void MoveZereos(int[] nums)
         {
