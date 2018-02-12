@@ -4,6 +4,7 @@ using System.Collections.Generic;
 namespace LeetcodeSolutions.String
 {
     // Leetcode 246
+    // 2 Pointers
     public class StrobogrammaticNumber
     {
         public static void Main(string[] args)

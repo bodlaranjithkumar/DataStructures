@@ -5,6 +5,7 @@ using System.Linq;
 namespace LeetcodeSolutions.String
 {
     // Leetcode 49
+    // Sort & Dictionary
     class GroupAnagrams
     {
         // Input = ["eat", "tea", "tan", "ate", "nat", "bat"]

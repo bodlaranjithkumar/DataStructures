@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LeetcodeSolutions.String
+namespace LeetcodeSolutions.Stack
 {
     // Leetcode 394
     public class DecodeString
@@ -37,6 +37,7 @@ namespace LeetcodeSolutions.String
 
                 if (char.IsDigit(c))
                 {
+                    // Calculate the number with > 1 digit
                     int count = 0;
                     while (s[j] >= '0' && s[j] <= '9')
                     {
@@ -58,15 +59,17 @@ namespace LeetcodeSolutions.String
                 {
                     int frequency = frequencies.Pop();
 
+                    // Append the characters to the stringbuilder.
                     StringBuilder str = new StringBuilder();
                     while (Char.IsLetter(chars.Peek()))
                     {
                         char charToAppend = chars.Pop();
-                        str.Insert(0, charToAppend);    // append chars in the beginning.
+                        str.Insert(0, charToAppend);    // append char in the beginning.
                     }
 
                     chars.Pop();    // Remove [
 
+                    // Push the appended characters into the stack 
                     for (int i = 0; i < frequency; i++)
                     {
                         foreach (char charToInsert in str.ToString())

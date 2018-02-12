@@ -5,6 +5,7 @@ namespace LeetcodeSolutions.String
 {
     // Leetcode 345
     // Submission: https://leetcode.com/submissions/detail/140495752/
+    // 2 pointers
     public class ReverseVowelsOfAString
     {
         //"hello", return "holle"

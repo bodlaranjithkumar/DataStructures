@@ -4,6 +4,7 @@ using System.Text;
 namespace LeetcodeSolutions.String
 {
     // Leetcode 151
+    // 2 pointers
     class ReverseWordsInAString
     {
         //public static void Main(string[] args)
@@ -17,7 +18,7 @@ namespace LeetcodeSolutions.String
         //}
 
         // Tx = O(n)
-        // Sx = O(1) not considering the output string
+        // Sx = O(1) disregarding the space for the output string
         public static string ReverseWordsOptimized(string str)
         {
             if (string.IsNullOrEmpty(str))

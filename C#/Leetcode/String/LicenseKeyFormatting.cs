@@ -4,15 +4,15 @@ using System.Text;
 namespace LeetcodeSolutions.String
 {
     // Leetcode 482
-    // Submission Detail
+    // Similar to sliding window technique.
     public class LicenseKeyFormatting
     {
         //public static void Main(string[] args)
         //{
         //    LicenseKeyFormatting lk = new LicenseKeyFormatting();
-        //    string output1 = lk.FormatLicenseKey("5F3Z-2e-9-w", 4);
-        //    string output2 = lk.FormatLicenseKey("2-5g-3-J", 2);
-        //    string output3 = lk.FormatLicenseKey("5", 2);
+        //    string output1 = lk.FormatLicenseKey("5F3Z-2e-9-w", 4);   // 5F3Z-2e9w
+        //    string output2 = lk.FormatLicenseKey("2-5g-3-J", 2);      // 2-5g-3J
+        //    string output3 = lk.FormatLicenseKey("5", 2);             // 5
 
         //    Console.ReadKey();
         //}

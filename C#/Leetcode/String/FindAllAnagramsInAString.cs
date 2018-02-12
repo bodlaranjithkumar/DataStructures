@@ -4,14 +4,14 @@ using System.Collections.Generic;
 namespace LeetcodeSolutions.String
 {
     // Leetcode 438
-    // Sliding Window Technique
+    // Sliding Window Technique & Counting/Frequency
     public class FindAllAnagramsInAString
     {
         //public static void Main(string[] args)
         //{
         //    FindAllAnagramsInAString f = new FindAllAnagramsInAString();
         //    var output1 = f.FindAnagramsOptimized("cbaebabacd", "abc"); //[0,6]
-        //    var output2 = f.FindAnagramsOptimized("abab", "ab"); //[0,12]
+        //    var output2 = f.FindAnagramsOptimized("abab", "ab"); //[0,1,2]
 
         //    Console.ReadKey();
         //}
@@ -34,9 +34,10 @@ namespace LeetcodeSolutions.String
             if (n < m)
                 return indices;
 
-                int[] sFreq = new int[26];
+            int[] sFreq = new int[26];
             int[] pFreq = new int[26];
 
+            // calculate the character frequenices for both s,p.
             CharFrequencies(p, pFreq, 0, m);
             CharFrequencies(s, sFreq, 0, m);
 
@@ -45,7 +46,7 @@ namespace LeetcodeSolutions.String
                 if (Compare(pFreq, sFreq))
                     indices.Add(i-m);
 
-                sFreq[s[i]-'a']++;
+                sFreq[s[i]-'a']++;  
 
                 sFreq[s[i - m] - 'a']--;
             }

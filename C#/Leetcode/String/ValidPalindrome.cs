@@ -8,7 +8,9 @@ namespace LeetcodeSolutions.String
     // a. - true
     // "A man, a plan, a canal: Panama" - true
     // "race a car" - false
-    class ValidPalindrome
+
+    //2 pointers
+    public class ValidPalindrome
     {
         // Runtime = 132 ms
         // Tx = O(n) {n : length of string}

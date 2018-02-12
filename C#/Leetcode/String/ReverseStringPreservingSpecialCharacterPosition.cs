@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace LeetcodeSolutions.String
 {
+    //https://www.geeksforgeeks.org/reverse-an-array-without-affecting-special-characters/
+    // 2 pointers
     public class ReverseStringPreservingSpecialCharacterPosition
     {
         //public static void Main(string[] args)

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 namespace LeetcodeSolutions.String
 {
     // Leetcode 13
+    // 2 pointers
     class RomanToInteger
     {
         //static void Main(string[] args)
@@ -26,7 +27,16 @@ namespace LeetcodeSolutions.String
         // M    -   1000
         // 1-5000 Numerals - http://romannumerals.babuo.com/roman-numerals-1-5000
 
-        private static Dictionary<char, int> Numerals { get; set; }
+        private static Dictionary<char, int> Numerals = new Dictionary<char, int>
+            {
+                { 'I', 1 },
+                { 'V', 5 },
+                { 'X', 10 },
+                { 'L', 50 },
+                { 'C', 100 },
+                { 'D', 500 },
+                { 'M', 1000 }
+            };
 
         // Runtime : 156 ms
         // Tx = O(n) {n: n is the length of the input string}
@@ -35,8 +45,6 @@ namespace LeetcodeSolutions.String
         public static int RomanToInt(string s)
         {
             //TODO: Edge Cases
-
-            SetNumerals();
 
             int computedValue = 0;
 
@@ -59,20 +67,6 @@ namespace LeetcodeSolutions.String
             }
 
             return computedValue;
-        }
-
-        public static void SetNumerals()
-        {
-            Numerals = new Dictionary<char, int>
-            {
-                { 'I', 1 },
-                { 'V', 5 },
-                { 'X', 10 },
-                { 'L', 50 },
-                { 'C', 100 },
-                { 'D', 500 },
-                { 'M', 1000 }
-            };
         }
     }
 }

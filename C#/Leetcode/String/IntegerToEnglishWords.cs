@@ -3,6 +3,7 @@
 namespace LeetcodeSolutions.String
 {
     // Leetcode : 273
+    // Use ranges - 0-10,10-20,20-100 and call recursively for bigger numbers.
     public class IntegerToEnglishWords
     {
         //public static void Main(string[] args)

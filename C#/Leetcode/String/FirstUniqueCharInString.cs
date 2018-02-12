@@ -3,6 +3,7 @@
 namespace LeetcodeSolutions.String
 {
     // Leetcode 387
+    // Frequencies Technique
     class FirstUniqueCharInString
     {
         //static void Main(string[] args)
@@ -26,9 +27,11 @@ namespace LeetcodeSolutions.String
         {
             int[] freq = new int[26];
 
+            // Calculate the frequencies of the all the characters.
             for (int i = 0; i < s.Length; i++)
                 freq[s[i] - 'a']++;
 
+            // Check if the current charcter has frequency 1. Then return the index.
             for (int i = 0; i < s.Length; i++)
                 if (freq[s[i] - 'a'] == 1)
                     return i;

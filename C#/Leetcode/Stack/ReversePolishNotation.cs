@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LeetcodeSolutions.String
+namespace LeetcodeSolutions.Stack
 {
     // Leetcode - 150
     // RPN Wiki - https://en.wikipedia.org/wiki/Polish_notation
