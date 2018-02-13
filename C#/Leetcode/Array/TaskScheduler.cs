@@ -6,6 +6,7 @@ namespace LeetcodeSolutions.Array
     // Explanation : http://www.cnblogs.com/grandyang/p/7098764.html
     // Solution: https://leetcode.com/problems/task-scheduler/discuss/104496/concise-Java-Solution-O(N)-time-O(26)-space
     // Submission: https://leetcode.com/submissions/detail/140296542/
+    // Frequencies
     public class TaskScheduler
     {
         //public static void Main(string[] args)

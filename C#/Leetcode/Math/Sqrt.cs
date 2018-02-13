@@ -1,6 +1,7 @@
 ﻿namespace LeetcodeSolutions.Math
 {
     //Leetcode 69
+    //Modified Binary Search
     public class Sqrt
     {
         // Tx = O(lgn)

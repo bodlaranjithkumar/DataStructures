@@ -1,6 +1,7 @@
 ﻿namespace LeetcodeSolutions.Array
 {
     // Leetcode 167
+    // 2 pointers
     public class TwoSum_InputArrayIsSorted
     {
         // Runtime:498 ms
