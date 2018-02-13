@@ -8,7 +8,7 @@ namespace LeetcodeSolutions.String
     {
         // Runtime: 154ms
         // Tx = O(n)
-        // Sx = O(1)
+        // Sx = O(n)
         public int LengthOfLongestSubstringReadable(string s)
         {
             int i = 0, j = 0, maxLength = 0;

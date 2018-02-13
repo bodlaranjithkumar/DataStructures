@@ -6,11 +6,11 @@ using System.Text;
 namespace LeetcodeSolutions.LinkedList
 {
     // Leetcode 23
+    // Divide and conquer method
     public class MergekSortedLinkedLists
     {
         // Tx = O(Nlogk)
         // Sx = O(1)
-        // Divide and conquer method
         public ListNode MergeKListsOptimized(ListNode[] lists)
         {
             if (lists == null || lists.Length == 0)

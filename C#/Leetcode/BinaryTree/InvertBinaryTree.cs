@@ -21,7 +21,7 @@ namespace LeetcodeSolutions.BinaryTree
         }
 
         // Tx = O(n)
-        // Sx = O(1)
+        // Sx = O(d)
         public BinaryTreeNode InvertTreeInPlace(BinaryTreeNode root)
         {
             if (root == null)

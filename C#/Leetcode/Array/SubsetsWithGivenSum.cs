@@ -12,7 +12,7 @@ namespace LeetcodeSolutions.Array
         //    var result1 = sub.SubsetsEqualToSum(new int[] { 2, 3, 6, 5, 1 }, 8);
         //}
 
-        // Distinct numbers and the doesn't need to be consecutive numbers.
+        // Distinct numbers and doesn't need to be consecutive numbers.
         // Tx = O(2^n)
         // Sx = O(2^n)
         public IList<IList<int>> SubsetsEqualToSum(int[] input, int sum)
