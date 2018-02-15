@@ -7,17 +7,17 @@ namespace LeetcodeSolutions.String
     // 2 Pointers
     public class StrobogrammaticNumber
     {
-        public static void Main(string[] args)
-        {
-            StrobogrammaticNumber s = new StrobogrammaticNumber();
-            Console.WriteLine($"{s.IsStrobogrammatic("88")}");  // true
-            Console.WriteLine($"{s.IsStrobogrammatic("69")}");  // true
-            Console.WriteLine($"{s.IsStrobogrammatic("818")}");  // true
-            Console.WriteLine($"{s.IsStrobogrammatic("878")}");  // false
-            Console.WriteLine($"{s.IsStrobogrammatic("797")}");  // false
+        //public static void Main(string[] args)
+        //{
+        //    StrobogrammaticNumber s = new StrobogrammaticNumber();
+        //    Console.WriteLine($"{s.IsStrobogrammatic("88")}");  // true
+        //    Console.WriteLine($"{s.IsStrobogrammatic("69")}");  // true
+        //    Console.WriteLine($"{s.IsStrobogrammatic("818")}");  // true
+        //    Console.WriteLine($"{s.IsStrobogrammatic("878")}");  // false
+        //    Console.WriteLine($"{s.IsStrobogrammatic("797")}");  // false
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
 
         private static Dictionary<int, int> StrobogrammaticNumbers =
             new Dictionary<int, int>()
