@@ -31,6 +31,7 @@ namespace LeetcodeSolutions.Array
         //    Console.ReadKey();
         //}
 
+        // TODO: There is a O(nlogn) solution.
         // Tx = O(n^2)
         // Sx = O(n)
         public int LengthOfLIS(int[] nums)

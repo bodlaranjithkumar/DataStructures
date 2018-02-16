@@ -28,15 +28,19 @@ namespace LeetcodeSolutions.String
                 { 8,8 },
                 { 9,9 }
             };
-
-
+        
         // Tx = O(n)
         // Sx = O(1)
         public bool IsStrobogrammatic(string s)
         {
             int low = 0, high = s.Length - 1;
 
-            while(low <= high)
+            // Run till low == high to check if the middle number is a strobogrammatic.
+            // Conditions to check
+            //      1. If the value at low, high index is a number.
+            //      2. If the value at low, high index is a valid key.
+            //      3. If the value at low, high index are equal.
+            while (low <= high)
             {
                 if (!char.IsNumber(s[low]) 
                         || !char.IsNumber(s[high]) 

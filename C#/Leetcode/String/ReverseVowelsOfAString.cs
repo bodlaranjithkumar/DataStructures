@@ -15,6 +15,8 @@ namespace LeetcodeSolutions.String
         private static HashSet<char> vowels = new HashSet<char>() {
             'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
 
+        // Tx = O(n)
+        // Sx = O(n)    // for the new reversed string
         public string ReverseVowels(string s)
         {
             if (s == null || s.Length == 0)
@@ -25,13 +27,16 @@ namespace LeetcodeSolutions.String
 
             while (low < high)
             {
+                // Keep going right until low < high and char at index low is a valid vowel.
                 while (low < high && !vowels.Contains(sb[low]))
                     low++;
 
+                // Keep going left until low < high and char at index high is a valid vowel.
                 while (low < high && !vowels.Contains(sb[high]))
                     high--;
 
-                if (!sb[low].Equals(sb[high]))   // Case sensitive
+                // case sensitive character comparision
+                if (!sb[low].Equals(sb[high]))
                 {
                     char temp = sb[low];
                     sb[low] = sb[high];
