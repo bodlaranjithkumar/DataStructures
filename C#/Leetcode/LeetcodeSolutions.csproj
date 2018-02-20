@@ -10,6 +10,7 @@
     <Compile Remove="Heap\FindKthLargestElement.cs" />
     <Compile Remove="Stack\ReplaceParanthesis.cs" />
     <Compile Remove="String\ReversePolishNotation.cs" />
+    <Compile Remove="String\ValidWordSquare.cs" />
   </ItemGroup>
 
   <ItemGroup>
