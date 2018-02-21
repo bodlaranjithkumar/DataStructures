@@ -4,7 +4,8 @@ using System;
 namespace LeetcodeSolutions.BinaryTree
 {
     // Leetcode 617
-    class MergeTwoBinaryTrees
+    // Submission Detail: https://leetcode.com/submissions/detail/129120557/
+    public class MergeTwoBinaryTrees
     {
         // Runtime = 212 ms
         // Tx = O(n)

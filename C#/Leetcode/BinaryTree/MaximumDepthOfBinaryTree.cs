@@ -4,12 +4,14 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.BinaryTree
 {
+    // Leetcode 104
+    // Submission Detail: https://leetcode.com/submissions/detail/124144791/
     public class MaximumDepthOfBinaryTree
     {
         // Solution 1: Recursive with depth returned from leaf node with increment of 1 while traversing to root.
         // Runtime: 156 ms
         // Tx = O(n) {n: n is the number of nodes in the binary tree}
-        // Sx = O(n) for call stack
+        // Sx = O(d) for call stack
         public int MaxDepthRecursiveOptimized(BinaryTreeNode root)
         {
             return root == null ? 0 : 1 + sys.Math.Max(MaxDepthRecursiveOptimized(root.Left), MaxDepthRecursiveOptimized(root.Right));
@@ -23,7 +25,7 @@ namespace LeetcodeSolutions.BinaryTree
 
         // Runtime : 172ms
         // Tx = O(n) {n: n is the number of nodes in the binary tree}
-        // Sx = O(n) for call stack
+        // Sx = O(d) for call stack
         public int MaxDepth(BinaryTreeNode node, int depth)
         {
             // Base Case

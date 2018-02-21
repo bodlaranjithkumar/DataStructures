@@ -6,21 +6,17 @@ namespace LeetcodeSolutions.BinaryTree
     public class SumOfLeaves
     {
         // Tx = O(n)
-        // Sx = O(d)
+        // Sx = O(d)    // for call stack
         public int LeavesSum(BinaryTreeNode root)
         {
             if (root == null) return 0;
 
+            // Leaf node
+            if (root.Left == null && root.Right == null) return root.Val;
+
             int sum = 0;
-            if (root.Left == null && root.Right == null)
-            {
-                sum += root.Val;
-            }
-            else
-            {
-                sum += LeavesSum(root.Left);
-                sum += LeavesSum(root.Right);
-            }
+            sum += LeavesSum(root.Left);
+            sum += LeavesSum(root.Right);
 
             return sum;
         }

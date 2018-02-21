@@ -4,7 +4,9 @@ using System;
 namespace LeetcodeSolutions.BinaryTree
 {
     // Leetcode 108
-    class ConvertSortedArrayToBinarySearchTree
+    // Submission Detail: https://leetcode.com/submissions/detail/129110833/
+    // Modified Binary Search
+    public class ConvertSortedArrayToBinarySearchTree
     {
         //public static void Main(string[] args)
         //{

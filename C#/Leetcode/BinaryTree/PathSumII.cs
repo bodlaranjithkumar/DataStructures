@@ -20,6 +20,7 @@ namespace LeetcodeSolutions.BinaryTree
         {
             list.Add(node.Val);
 
+            // Leaf node and node's value is equal to the remaining sum.
             if (node.Left == null && node.Right == null && node.Val == sum)
             {
                 result.Add(new List<int>(list));

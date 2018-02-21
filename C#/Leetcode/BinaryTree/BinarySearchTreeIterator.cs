@@ -4,6 +4,8 @@ using System.Collections.Generic;
 namespace LeetcodeSolutions.BinaryTree
 {
     // Leetcode 173
+    // Submission Detail: https://leetcode.com/submissions/detail/137909876/
+    // Inorder traversal, stack
     public class BinarySearchTreeIterator
     {
         Stack<BinaryTreeNode> nodes;
@@ -26,6 +28,8 @@ namespace LeetcodeSolutions.BinaryTree
         public int Next()
         {
             BinaryTreeNode node = nodes.Pop();
+
+            // Push all the left nodes of the right subtree to the stack.
             PushNodes(node.Right);
 
             return node.Val;

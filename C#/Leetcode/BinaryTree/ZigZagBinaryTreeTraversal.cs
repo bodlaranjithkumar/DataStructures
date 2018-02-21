@@ -4,19 +4,15 @@ using System.Collections.Generic;
 namespace LeetcodeSolutions.BinaryTree
 {
     // Leetcode 103
-    class ZigZagBinaryTreeTraversal
+    // Use 2 Stacks
+    public class ZigZagBinaryTreeTraversal
     {
-        //static void Main(string[] args)
-        //{
-
-        //}
-
         // Runtime : 558 ms
         // Tx: O(n) { n: n is the number of nodes in the binary tree}
         // Sx: O(n) { n: n is the number of nodes in the binary tree}
-        public static List<List<int>> ZigzagLevelOrder(BinaryTreeNode root)
+        public static IList<IList<int>> ZigzagLevelOrder(BinaryTreeNode root)
         {
-            List<List<int>> outerList = new List<List<int>>();
+            IList<IList<int>> outerList = new List<IList<int>>();
 
             Stack<BinaryTreeNode> stack1 = new Stack<BinaryTreeNode>();
             Stack<BinaryTreeNode> stack2 = new Stack<BinaryTreeNode>();
@@ -26,7 +22,7 @@ namespace LeetcodeSolutions.BinaryTree
 
             while (stack1.Count != 0 || stack2.Count != 0)
             {
-                List<int> innerList1 = new List<int>();
+                IList<int> innerList1 = new List<int>();
                 while (stack1.Count != 0)
                 {
                     BinaryTreeNode node = stack1.Pop();
@@ -40,7 +36,7 @@ namespace LeetcodeSolutions.BinaryTree
                         stack2.Push(node.Right);
                 }
 
-                List<int> innerList2 = new List<int>();
+                IList<int> innerList2 = new List<int>();
                 while (stack2.Count != 0)
                 {
                     BinaryTreeNode node = stack2.Pop();

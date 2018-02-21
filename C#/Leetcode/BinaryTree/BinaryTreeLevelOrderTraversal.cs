@@ -1,20 +1,16 @@
 ﻿using LeetcodeSolutions.DataStructures;
-using System;
 using System.Collections.Generic;
 
 namespace LeetcodeSolutions.BinaryTree
 {
     // Leetcode 102
-    class BinaryTreeLevelOrderTraversal
+    // Submission Detail: https://leetcode.com/submissions/detail/123797239/
+    // Depth first traversal, Queue
+    public class BinaryTreeLevelOrderTraversal
     {
-        //static void Main(string[] args)
-        //{
-
-        //}
-
         // Runtime : 535 ms
         // Tx = O(n) {n: number of nodes in the binary tree}
-        // Sx = O(n) or O(2n) [n for queue and n for the resultant list}
+        // Sx = O(n) {O(2n) - n for queue and n for the resultant list}
         // Breadth First Traversal
         public List<List<int>> LevelOrder(BinaryTreeNode root)
         {

@@ -58,11 +58,11 @@ namespace LeetcodeSolutions.BinaryTree
                 return;
 
             if (node.Val == nodeValue)
-                length++;
+                length++;   // increment length by 1.
             else
-                length = 1;
+                length = 1; // reset length to 1.
 
-            max = System.Math.Max(max, length);
+            max = System.Math.Max(max, length); // update the global maximum.
 
             FindLongestConsecutiveSequence(node.Left, length, node.Val + 1);
             FindLongestConsecutiveSequence(node.Right, length, node.Val + 1);
