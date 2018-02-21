@@ -3,10 +3,13 @@
 namespace LeetcodeSolutions.String
 {
     // Leetcode 139
+    // Submission Detail : https://leetcode.com/submissions/detail/136149063/
+    // Dynamic Programming
     public class WordBreak
     {
+        // Bottom-up dynamic programming
         // Tx = O(n^2)
-        // Sx = O(1)
+        // Sx = O(n)
         public bool BreakWordsDp(string s, IList<string> wordDict)
         {
             bool[] f = new bool[s.Length + 1];
