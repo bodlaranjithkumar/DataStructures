@@ -4,6 +4,7 @@ using System;
 namespace LeetcodeSolutions.BinaryTree
 {
     // Leetcode 298
+    // Explanation: https://www.geeksforgeeks.org/longest-consecutive-sequence-binary-tree/
     public class LongestConsecutiveSequence
     {
         private int max;
