@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace InterviewCakeSolutions.Strings
+namespace LeetcodeSolutions.Strings
 {
     // Leetcode 72
     // Dynamic Programming
@@ -17,7 +17,8 @@ namespace InterviewCakeSolutions.Strings
         }
 
         // Tx = O(m*n)
-        // Sx = O(m*n)
+        // Sx = O(m*n) 
+        // TODO: Space can be further optimized as per the post - https://leetcode.com/problems/edit-distance/discuss/25846/20ms-Detailed-Explained-C++-Solutions-(O(n)-Space)
         public int MinDistanceDP(string word1, string word2, int m, int n)
         {
             int[,] dp = new int[m + 1, n + 1];
@@ -32,12 +33,13 @@ namespace InterviewCakeSolutions.Strings
                     // Resultant string is empty
                     else if (j == 0) dp[i, j] = i;
 
-                    // 
+                    // characters are same, so copy the value previous comparision as no operations are needed.
                     else if (word1[i - 1] == word2[j - 1])
                         dp[i, j] = dp[i - 1, j - 1];
+
                     else
-                        dp[i, j] = 1 + Math.Min(dp[i, j - 1],       //insert
-                                            Math.Min(dp[i - 1, j],  //delete
+                        dp[i, j] = 1 + System.Math.Min(dp[i, j - 1],       //insert
+                                            System.Math.Min(dp[i - 1, j],  //delete
                                                     dp[i - 1, j - 1]));//replace
                 }
             }
@@ -60,8 +62,8 @@ namespace InterviewCakeSolutions.Strings
                 return MinDistance(word1, word2, m - 1, n - 1);
 
             else
-                return 1 + Math.Min(MinDistance(word1, word2, m, n - 1),    // Insert
-                                        Math.Min(MinDistance(word1, word2, m - 1, n),    // Delete
+                return 1 + System.Math.Min(MinDistance(word1, word2, m, n - 1),    // Insert
+                                        System.Math.Min(MinDistance(word1, word2, m - 1, n),    // Delete
                                         MinDistance(word1, word2, m - 1, n - 1)));  // Replace
         }
     }
