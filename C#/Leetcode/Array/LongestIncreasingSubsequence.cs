@@ -44,7 +44,7 @@ namespace LeetcodeSolutions.Array
             for (int i = 0; i < length; i++)
                 LIS[i] = 1;
 
-            // Initialie to 0 to cover the case of array length to 0 else 1
+            // Initialize to 0 to cover the case of array is empty
             int maxLIS = length == 0 ? 0 : 1;
 
             for (int i = 1; i < length; i++)

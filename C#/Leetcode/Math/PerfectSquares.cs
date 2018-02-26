@@ -13,9 +13,9 @@
             for (int i = 1; i <= n; i++)
             {
                 if (i * i == n)
-                    return 1;
+                    return 1;   
                 else
-                    numSquares[i] = int.MaxValue;   // Initialize to max value to find the min required.
+                    numSquares[i] = n + 1;   // Initialize to n+1 as n cannot have more than n perfect squares.
             }
 
             for (int i = 1; i <= n; i++)
