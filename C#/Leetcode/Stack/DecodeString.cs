@@ -5,6 +5,7 @@ using System.Text;
 namespace LeetcodeSolutions.Stack
 {
     // Leetcode 394
+    // Submission Detail: https://leetcode.com/submissions/detail/137445054/
     public class DecodeString
     {
         //public static void Main(string[] args)

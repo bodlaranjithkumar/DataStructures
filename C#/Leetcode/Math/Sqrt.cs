@@ -1,10 +1,13 @@
 ﻿namespace LeetcodeSolutions.Math
 {
-    //Leetcode 69
-    //Modified Binary Search
+    // Leetcode 69
+    // Submission Detail: https://leetcode.com/submissions/detail/140386303/
+    // Modified Binary Search
     public class Sqrt
     {
         // Tx = O(lgn)
+        // Sx = O(1)
+        // Caveat: x might not be a perfect square.
         public int MySqrt(int x)
         {
             if (x == 0 || x == 1)

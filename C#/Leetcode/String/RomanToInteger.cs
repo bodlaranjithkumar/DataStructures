@@ -4,8 +4,9 @@ using System.Collections.Generic;
 namespace LeetcodeSolutions.String
 {
     // Leetcode 13
+    // Submission Detail: https://leetcode.com/submissions/detail/123691683/
     // 2 pointers
-    class RomanToInteger
+    public class RomanToInteger
     {
         //static void Main(string[] args)
         //{
@@ -19,15 +20,8 @@ namespace LeetcodeSolutions.String
         //    Console.ReadLine();
         //}
 
-        // V    -   5
-        // X    -   10
-        // L    -   50
-        // C    -   100
-        // D    -   500
-        // M    -   1000
         // 1-5000 Numerals - http://romannumerals.babuo.com/roman-numerals-1-5000
-
-        private static Dictionary<char, int> Numerals = new Dictionary<char, int>
+        private static Dictionary<char, int> values = new Dictionary<char, int>
             {
                 { 'I', 1 },
                 { 'V', 5 },
@@ -44,25 +38,21 @@ namespace LeetcodeSolutions.String
         // TODO: Add validation for allowed roman numerals combination
         public static int RomanToInt(string s)
         {
-            //TODO: Edge Cases
-
             int computedValue = 0;
 
-            for (int currentIndex = 0; currentIndex < s.Length; currentIndex++)
+            for (int i = 0; i < s.Length; i++)
             {
-                char currentChar = s[currentIndex];
-
-                if (!Numerals.TryGetValue(currentChar, out int currentIndexValue))
+                if (!values.TryGetValue(s[i], out int val))
                     throw new ArgumentNullException("Invalid character found.");
 
-                if (currentIndex == s.Length - 1 || Numerals[s[currentIndex + 1]] <= currentIndexValue)
+                if (i == s.Length - 1 || values[s[i + 1]] <= val)
                 {
-                    computedValue += currentIndexValue;
+                    computedValue += val;
                 }
-                else if (Numerals[s[currentIndex + 1]] > currentIndexValue)
+                else if (values[s[i + 1]] > val)
                 {
-                    computedValue += Numerals[s[currentIndex + 1]] - currentIndexValue;
-                    currentIndex++;
+                    computedValue += values[s[i + 1]] - val;
+                    i++;
                 }
             }
 

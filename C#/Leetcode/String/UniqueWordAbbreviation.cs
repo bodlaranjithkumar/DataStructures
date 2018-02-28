@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode 289
+    // Leetcode 288
     // Explanation : http://www.cnblogs.com/grandyang/p/5220589.html
     // Hashset
     public class UniqueWordAbbreviation
@@ -51,7 +51,7 @@ namespace LeetcodeSolutions.String
         private string AbbreviationHelper(string word)
         {
             int? length = word?.Length;
-            string abbreviation = (length == null || length == 0 || length == 1 || length == 2)
+            string abbreviation = (length == null || length <= 2)
                     ? word
                     : word[0] + Convert.ToString(length - 2) + word[length.GetValueOrDefault() - 1];
 

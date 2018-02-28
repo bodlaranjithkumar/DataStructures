@@ -13,7 +13,7 @@
         {
             int result = 0;
 
-            // XOR. 0,1->1 && 1,0->1
+            // XOR - 0,1->1 and 1,0->1
             foreach (int num in nums)
                 result ^= num;
 

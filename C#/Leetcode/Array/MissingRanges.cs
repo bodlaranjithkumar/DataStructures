@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LeetcodeSolutions.String
+namespace LeetcodeSolutions.Array
 {
     // Leetcode 163
     // Input: [0, 1, 3, 50, 75] -> [“2”, “4->49”, “51->74”, “76->99”]
@@ -39,7 +39,7 @@ namespace LeetcodeSolutions.String
 
         private string GetRange(int from, int to)
         {
-            return (from == to) ? from.ToString() : from.ToString() + "->" + to.ToString();
+            return from.ToString() + ((from == to) ?  "" : "->" + to.ToString());
         }
     }
 }

@@ -1,7 +1,9 @@
 ﻿namespace LeetcodeSolutions.Math
 {
     // Leetcode 70
-    class ClimbingStairs
+    // Submission Detail: https://leetcode.com/submissions/detail/128782293/
+    // Bottom Up
+    public class ClimbingStairs
     {
         // 1 - 1
         // 2 - 2

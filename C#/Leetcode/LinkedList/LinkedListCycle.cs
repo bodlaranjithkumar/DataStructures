@@ -14,7 +14,7 @@ namespace LeetcodeSolutions.LinkedList
             ListNode slow = head;
             ListNode fast = head;
 
-            while (slow != null && fast != null && fast.Next != null)
+            while (fast != null && fast.Next != null)
             {
                 slow = slow.Next;
                 fast = fast.Next.Next;

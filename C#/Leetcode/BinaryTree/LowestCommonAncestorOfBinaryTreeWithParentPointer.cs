@@ -20,7 +20,7 @@ namespace LeetcodeSolutions.BinaryTree
     // Tx = O(h)
     // Sx = O(h) for visited ancestor nodes of p.
     // Assumption: Nodes p, q exists in the tree.
-    class LowestCommontAncestorOfBinaryTreeWithParentPointer
+    class LowestCommonAncestorOfBinaryTreeWithParentPointer
     {
         // Method1: Using hashset
         public BinaryTreeNodeWithParent LowestCommonAncestor(BinaryTreeNodeWithParent root,
