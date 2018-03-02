@@ -4,6 +4,9 @@ using System;
 namespace LeetcodeSolutions.LinkedList
 {
     // Leetcode 2
+    // Submission Detail: https://leetcode.com/submissions/detail/142764134/
+    // Carryover
+    // Similar to Add Strings and Add Binary.
     class ListNodesSum
     {
         //static void Main(string[] args)
@@ -42,30 +45,23 @@ namespace LeetcodeSolutions.LinkedList
         // Sx = O(max(m,n))
         public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
         {
-            ListNode sumNode = new ListNode(0);
-            ListNode currentNode = sumNode;
-            int carryOver = 0, sum = 0;
+            ListNode dummyNode = new ListNode(0), currentNode = dummyNode;
+            int carryOver = 0;
 
-            while (l1 != null || l2 != null)
+            while (l1 != null || l2 != null || carryOver == 1)
             {
-                int val1 = l1 != null ? l1.Val : 0;
-                int val2 = l2 != null ? l2.Val : 0;
+                carryOver += l1 != null ? l1.Val : 0;
+                carryOver += l2 != null ? l2.Val : 0;
 
-                sum = carryOver + val1 + val2;
-                carryOver = sum / 10;
-                currentNode.Next = new ListNode(sum % 10);
+                currentNode.Next = new ListNode(carryOver % 10);
+                carryOver /= 10;
                 currentNode = currentNode.Next;
                 
                 l1 = l1 != null ? l1.Next : l1;
                 l2 = l2 != null ? l2.Next : l2;
             }
-
-            if (carryOver > 0)
-            {
-                currentNode.Next = new ListNode(carryOver);
-            }
-
-            return sumNode.Next;
+            
+            return dummyNode.Next;
         }
     }
 }

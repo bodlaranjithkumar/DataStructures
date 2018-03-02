@@ -1,4 +1,4 @@
-﻿namespace LeetcodeSolutions.Math
+﻿namespace LeetcodeSolutions.BitWise
 {
     // Leetcode 136
     // Submission Detail: https://leetcode.com/submissions/detail/142272930/
