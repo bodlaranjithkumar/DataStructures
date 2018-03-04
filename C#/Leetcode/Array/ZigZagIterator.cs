@@ -3,13 +3,13 @@
 namespace LeetcodeSolutions.Array
 {
     // Leetcode 281
-    // Explanation: 
+    // Explanation: http://www.cnblogs.com/grandyang/p/5212785.html
     // v1 = [1, 2], v2 = [3, 4, 5, 6] -> [1, 3, 2, 4, 5, 6]
     public class ZigZagIterator
     {
         int[] nums;
         int index;
-
+            
         //public static void Main(string[] args)
         //{
         //    int[] nums1 = { 1, 2 }, nums2 = { 3, 4, 5, 6 };
