@@ -28,7 +28,7 @@ namespace LeetcodeSolutions
             }
         }
 
-        public static void PrintListElements<T>(List<T> list)
+        public static void PrintListElements<T>(IList<T> list)
         {
             Console.Write("[");
             foreach(var t in list)
