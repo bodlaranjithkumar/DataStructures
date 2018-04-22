@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace LeetcodeSolutions.Array
+namespace LeetcodeSolutions.Intervals
 {
     // Leetcode 253
     // Explanation: http://www.cnblogs.com/grandyang/p/5244720.html

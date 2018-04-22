@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using LeetcodeSolutions.DataStructures;
 
-namespace LeetcodeSolutions.Array
+namespace LeetcodeSolutions.Intervals
 {
     //Leetcode 56
-    class MergeIntervals
+    public class MergeIntervals
     {
         //[[4,5],[2,4],[4,6],[3,4],[0,0],[1,1],[3,5],[2,2]]
         //[[1,4],[2,3]]

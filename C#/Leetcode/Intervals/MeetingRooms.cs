@@ -1,7 +1,7 @@
 ﻿using LeetcodeSolutions.DataStructures;
 using System;
 
-namespace LeetcodeSolutions.Array
+namespace LeetcodeSolutions.Intervals
 {
     // Leetcode 252
     // Problem Explanation : http://www.cnblogs.com/grandyang/p/5240774.html
