@@ -4,14 +4,14 @@ namespace LeetcodeSolutions.Algorithms
 {
     public class MergeSort
     {
-        public static void Main(string[] args)
-        {
-            int[] A = { 5, 2, 4, 7, 1, 3, 2 };
+        //public static void Main(string[] args)
+        //{
+        //    int[] A = { 5, 2, 4, 7, 1, 3, 2 };
 
-            Sort(A, 0, A.Length - 1);
+        //    Sort(A, 0, A.Length - 1);
 
-            PrintArray(A);
-        }
+        //    PrintArray(A);
+        //}
 
         static void PrintArray(int[] A)
         {
