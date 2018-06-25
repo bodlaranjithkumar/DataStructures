@@ -5,17 +5,17 @@ namespace LeetcodeSolutions.Array
     public class MaximumSubArraySumIndices
     {
         // Potential Follow-Up question to leetcode 53
-        public static void Main(string[] args)
-        {
-            int[] nums1 = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-            Helper.PrintArray(MaxSubArraySumIndices(nums1));
+        //public static void Main(string[] args)
+        //{
+        //    int[] nums1 = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+        //    Helper.PrintArray(MaxSubArraySumIndices(nums1));
 
-            Console.WriteLine();
-            int[] nums2 = { -2, 1, -3, 4, -1, 2, 1, -5, 6 };
-            Helper.PrintArray(MaxSubArraySumIndices(nums2));
+        //    Console.WriteLine();
+        //    int[] nums2 = { -2, 1, -3, 4, -1, 2, 1, -5, 6 };
+        //    Helper.PrintArray(MaxSubArraySumIndices(nums2));
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
 
         public static int[] MaxSubArraySumIndices(int[] nums)
         {

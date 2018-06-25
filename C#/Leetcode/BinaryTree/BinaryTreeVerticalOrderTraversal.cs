@@ -1,4 +1,5 @@
 ﻿using LeetcodeSolutions.DataStructures;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -41,7 +42,8 @@ namespace LeetcodeSolutions.BinaryTree
 
         //    BinaryTreeVerticalOrderTraversal t = new BinaryTreeVerticalOrderTraversal();
 
-        //    var list = t.VerticalTraversal(root);
+        //    //var list = t.VerticalTraversal(root);
+        //    var list = t.BTVerticalOrderTraversal(root);
 
         //    foreach (var l in list)
         //        Helper.PrintListElements(l);
@@ -49,6 +51,45 @@ namespace LeetcodeSolutions.BinaryTree
         //    Console.ReadKey();
         //}
 
+        int min = 0, max = 0;
+        List<List<int>> outerList;
+        public List<List<int>> BTVerticalOrderTraversal(BinaryTreeNode root)
+        {
+            CalculateMinMax(root, 0);
+
+            outerList = new List<List<int>>(max - min + 1);
+
+            for (int i = 0; i < outerList.Capacity; i++)
+                outerList.Add(new List<int>());
+
+            BTVerticalOrderTraversal(root, 0 - min);
+
+            return outerList;
+        }
+
+        private void CalculateMinMax(BinaryTreeNode node, int level)
+        {
+            if (node == null) return;
+
+            min = System.Math.Min(min, level);
+            max = System.Math.Max(max, level);
+
+            CalculateMinMax(node.Left, level - 1);
+            CalculateMinMax(node.Right, level + 1);
+        }
+
+        public void BTVerticalOrderTraversal(BinaryTreeNode root, int level)
+        {
+            if (root == null) return;
+
+            outerList[level].Add(root.Val);
+
+            BTVerticalOrderTraversal(root.Left, level - 1);
+            BTVerticalOrderTraversal(root.Right, level + 1);
+        }
+
+
+        #region using Dictionary
         Dictionary<int, IList<int>> nodes;
         public BinaryTreeVerticalOrderTraversal()
         {
@@ -81,5 +122,7 @@ namespace LeetcodeSolutions.BinaryTree
             //if (node.Right != null)
             VerticalTraversal(node.Right, col + 1);
         }
+
+        #endregion 
     }
 }
