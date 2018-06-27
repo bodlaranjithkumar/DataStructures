@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Text;
 
 namespace LeetcodeSolutions.String
 {
     // Leetcode : 273
+    // Submission Detail: https://leetcode.com/submissions/detail/161037769/
+    // Reference: https://leetcode.com/problems/integer-to-english-words/discuss/70627/Short-clean-Java-solution
     // Use ranges - 0-10,10-20,20-100 and call recursively for bigger numbers.
     public class IntegerToEnglishWords
     {
@@ -39,15 +42,15 @@ namespace LeetcodeSolutions.String
 
         private string Helper(int num)
         {
-            string s = "";
-            if (num < 10) s = belowTen[num];
-            else if (num < 20) s = belowTwenty[num - 10];
-            else if (num < 100) s = belowHundred[num / 10] + " " + Helper(num % 10);
-            else if (num < 1000) s = Helper(num / 100) + " Hundred " + Helper(num % 100);
-            else if (num < 1000000) s = Helper(num / 1000) + " Thousand " + Helper(num % 1000);
-            else if (num < 1000000000) s = Helper(num / 1000000) + " Million " + Helper(num % 1000000);
-            else s = Helper(num / 1000000000) + " Billion " + Helper(num % 1000000000);
-            return s.Trim();
+            StringBuilder sb = new StringBuilder();
+            if (num < 10) sb.Append(belowTen[num]);
+            else if (num < 20) sb.Append(belowTwenty[num - 10]);
+            else if (num < 100) sb.Append(belowHundred[num / 10]).Append(" ").Append(Helper(num % 10));
+            else if (num < 1000) sb.Append(Helper(num / 100)).Append(" Hundred ").Append(Helper(num % 100));
+            else if (num < 1000000) sb.Append(Helper(num / 1000)).Append(" Thousand ").Append(Helper(num % 1000));
+            else if (num < 1000000000) sb.Append(Helper(num / 1000000)).Append(" Million ").Append(Helper(num % 1000000));
+            else sb.Append(Helper(num / 1000000000)).Append(" Billion ").Append(Helper(num % 1000000000));
+            return sb.ToString().Trim();
         }
         #endregion
 
