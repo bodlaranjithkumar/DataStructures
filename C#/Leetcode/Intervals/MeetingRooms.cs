@@ -6,7 +6,7 @@ namespace LeetcodeSolutions.Intervals
     // Leetcode 252
     // Problem Explanation : http://www.cnblogs.com/grandyang/p/5240774.html
     public class MeetingRooms
-    {        
+    {
         //public static void Main(string[] args)
         //{
         //    MeetingRooms meetings = new MeetingRooms();
@@ -23,19 +23,19 @@ namespace LeetcodeSolutions.Intervals
         //}
 
         // Clean code
-        // Tx = O(nlogn)
+        // Tx = O(nlogn) for sorting
         // Sx = O(1)
         public bool CanAttendMeetings(Interval[] intervals)
         {
-            if (intervals == null || intervals.Length == 0)
-                return false;
-
-            System.Array.Sort(intervals);
-
-            for (int i = 0; i < intervals.Length - 1; i++)
+            if (intervals != null)
             {
-                if (intervals[i].end > intervals[i + 1].start)
-                    return false;
+                System.Array.Sort(intervals);
+
+                for (int i = 1; i < intervals.Length; i++)
+                {
+                    if (intervals[i - 1].end > intervals[i].start)
+                        return false;
+                }
             }
 
             return true;
