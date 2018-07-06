@@ -25,3 +25,5 @@ C:\Users\bodla\Documents\GITHUB\DataStructures\C#\InterviewCakeSolutions\obj\Deb
 C:\Users\bodla\Documents\GITHUB\DataStructures\C#\InterviewCakeSolutions\obj\Debug\netcoreapp1.1\InterviewCakeSolutions.AssemblyInfo.cs
 C:\Users\bodla\Documents\GITHUB\DataStructures\C#\InterviewCakeSolutions\obj\Debug\netcoreapp1.1\InterviewCakeSolutions.dll
 C:\Users\bodla\Documents\GITHUB\DataStructures\C#\InterviewCakeSolutions\obj\Debug\netcoreapp1.1\InterviewCakeSolutions.pdb
+C:\Users\bodla\Documents\GITHUB\DataStructures\C#\InterviewCakeSolutions\obj\Debug\netcoreapp1.1\InterviewCakeSolutions.csproj.CoreCompileInputs.cache
+C:\Users\bodla\Documents\GITHUB\DataStructures\C#\InterviewCakeSolutions\obj\Debug\netcoreapp1.1\InterviewCakeSolutions.AssemblyInfoInputs.cache
