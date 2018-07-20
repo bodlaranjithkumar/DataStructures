@@ -3,11 +3,19 @@
 namespace LeetcodeSolutions.Array
 {
     // Leetcode 152
-    // Input: [2,3,-2,4],
-    // Product: 6
+    // [2,3,-2,4] -> 6
+    // [-3,2,3,-1,4] -> 72
     // Contiguous subarray with maximum product = [2, 3]
     class MaximumSubArrayProduct
     {
+        //public static void Main(string[] args)
+        //{
+        //    MaximumSubArrayProduct max = new MaximumSubArrayProduct();
+
+        //    int[] arr1 = { -3, 3, -1, 4 };
+        //    max.MaxProduct(arr1);
+        //}
+
         // Runtime = 155ms
         // Tx = O(n)
         // Sx = O(1)
