@@ -9,18 +9,18 @@ namespace LeetcodeSolutions.Array
     // Similar to Leetcode 200 - NumberOfIslands problem.
     public class WordSearch
     {
-        public static void Main(string[] args)
-        {
-            WordSearch ws = new WordSearch();
+        //public static void Main(string[] args)
+        //{
+        //    WordSearch ws = new WordSearch();
                 
-            char[,] board1 = { { 'A', 'B', 'C', 'E' }, 
-                              { 'S', 'F', 'C', 'S' }, 
-                              { 'A', 'D', 'E', 'E' } };
+        //    char[,] board1 = { { 'A', 'B', 'C', 'E' }, 
+        //                      { 'S', 'F', 'C', 'S' }, 
+        //                      { 'A', 'D', 'E', 'E' } };
 
-            ws.Exist(board1, "ABCCED"); // True
-            ws.Exist(board1, "ECS"); // True
-            ws.Exist(board1, "ABCB"); // False
-        }
+        //    ws.Exist(board1, "ABCCED"); // True
+        //    ws.Exist(board1, "ECS"); // True
+        //    ws.Exist(board1, "ABCB"); // False
+        //}
 
         int rows = 0, cols = 0;
         int[,] visited;
