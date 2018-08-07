@@ -20,7 +20,7 @@ namespace LeetcodeSolutions.String
             StringBuilder str = new StringBuilder(s);
             str.Replace(" ", "").Replace("-", "");
 
-            for (int i = 0; i < str.Length;)
+            for (int i = 0; i < str.Length;i++)
             {
                 int remainingLength = str.Length - i;
 

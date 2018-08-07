@@ -1,6 +1,6 @@
 ﻿namespace LeetcodeSolutions.Array
 {
-    // Leetcode 171
+    // Leetcode 179
     // Submission Detail: https://leetcode.com/submissions/detail/151099674/
     public class LargestNumber
     {

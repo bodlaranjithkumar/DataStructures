@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.String
 {
+    // Reference: http://javabypatel.blogspot.com/2015/08/program-to-print-permutations-of-string-without-repetition.html
     public class PermutationString
     {
         //public static void Main(string[] args)
