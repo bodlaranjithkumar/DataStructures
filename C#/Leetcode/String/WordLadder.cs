@@ -9,18 +9,18 @@ namespace LeetcodeSolutions.String
     {
         // Time Limit Exceeded for input = "qa","sq",["si","go","se","cm","so","ph","mt","db","mb","sb","kr","ln","tm","le","av","sm","ar","ci","ca","br","ti","ba","to","ra","fa","yo","ow","sn","ya","cr","po","fe","ho","ma","re","or","rn","au","ur","rh","sr","tc","lt","lo","as","fr","nb","yb","if","pb","ge","th","pm","rb","sh","co","ga","li","ha","hz","no","bi","di","hi","qa","pi","os","uh","wm","an","me","mo","na","la","st","er","sc","ne","mn","mi","am","ex","pt","io","be","fm","ta","tb","ni","mr","pa","he","lr","sq","ye"]
         //"leet", "code", ["lest","leet","lose","code","lode","robe","lost"]
-        public static void Main(string[] args)
-        {
-            WordLadder ladder = new WordLadder();
+        //public static void Main(string[] args)
+        //{
+        //    WordLadder ladder = new WordLadder();
 
-            IList<string> dictionary1 = new List<string> { "hot", "dot", "dog", "lot", "log", "cog" };
-            //Console.WriteLine(ladder.LadderLength("hit", "cog", dictionary1));  //5
+        //    IList<string> dictionary1 = new List<string> { "hot", "dot", "dog", "lot", "log", "cog" };
+        //    //Console.WriteLine(ladder.LadderLength("hit", "cog", dictionary1));  //5
 
-            IList<string> dictionary2 = new List<string> { "lest", "leet", "lose", "code", "lode", "robe", "lost" };
-            Console.WriteLine(ladder.LadderLength("leet", "code", dictionary2));  //6
+        //    IList<string> dictionary2 = new List<string> { "lest", "leet", "lose", "code", "lode", "robe", "lost" };
+        //    Console.WriteLine(ladder.LadderLength("leet", "code", dictionary2));  //6
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
 
         int minTransformationLength;
         HashSet<string> visited;
