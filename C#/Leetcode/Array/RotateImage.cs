@@ -1,6 +1,7 @@
 ﻿namespace LeetcodeSolutions.Array
 {
-    // Leetcode 48
+    // Leetcode 48 - https://leetcode.com/problems/rotate-image/
+    // Submission Detail - https://leetcode.com/submissions/detail/135610878/
     // Clockwise
     public class RotateImage
     {

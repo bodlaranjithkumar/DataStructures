@@ -2,8 +2,10 @@
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 88
-    class MergeSortedArray
+    // Leetcode 88 - https://leetcode.com/problems/merge-sorted-array/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/140383438/
+
+    public class MergeSortedArray
     {
         // Runtime : 448 ms
         // Tx = O(m+n)

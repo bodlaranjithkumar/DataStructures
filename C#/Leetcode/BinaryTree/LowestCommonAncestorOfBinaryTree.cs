@@ -2,7 +2,10 @@
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 236
+    // Leetcode 236 - https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/
+    // submission detail: https://leetcode.com/submissions/detail/168752862/
+    // ref: https://www.youtube.com/watch?v=13m9ZCB8gjw
+
     public class LowestCommonAncestorOfBinaryTree
     {
         //      _______3______
@@ -13,8 +16,6 @@ namespace LeetcodeSolutions.BinaryTree
         //       /  \
         //       7   4
 
-        // submission detail: https://leetcode.com/submissions/detail/168752862/
-        // ref: https://www.youtube.com/watch?v=13m9ZCB8gjw
         // Tx: O(n)
         // Sx: O(d)
         public BinaryTreeNode LowestCommonAncestor(BinaryTreeNode root, BinaryTreeNode p, BinaryTreeNode q)

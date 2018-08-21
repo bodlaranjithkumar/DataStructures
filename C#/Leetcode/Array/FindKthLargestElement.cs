@@ -2,7 +2,9 @@
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 215
+    // Leetcode 215 - https://leetcode.com/problems/kth-largest-element-in-an-array/
+    // Submission Detail - https://leetcode.com/submissions/detail/136029036/
+
     public class FindKthLargestElement
     {
         //public static void Main(string[] args)

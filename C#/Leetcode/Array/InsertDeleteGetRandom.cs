@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 380
+    // Leetcode 380 - https://leetcode.com/problems/insert-delete-getrandom-o1/
     // Submission Detail: https://leetcode.com/submissions/detail/169974164/
 
     public class InsertDeleteGetRandom

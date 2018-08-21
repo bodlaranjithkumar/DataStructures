@@ -2,11 +2,14 @@
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 152
+    // Leetcode 152 - https://leetcode.com/problems/maximum-product-subarray
+    // Submission Detail - https://leetcode.com/submissions/detail/128118146/
+
     // [2,3,-2,4] -> 6
     // [-3,2,3,-1,4] -> 72
     // Contiguous subarray with maximum product = [2, 3]
-    class MaximumSubArrayProduct
+
+    public class MaximumSubArrayProduct
     {
         //public static void Main(string[] args)
         //{

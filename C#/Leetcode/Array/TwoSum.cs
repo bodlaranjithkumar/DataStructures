@@ -3,8 +3,10 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 1
-    class TwoSum
+    // Leetcode 1 - https://leetcode.com/problems/two-sum/
+    // Submission Detail - https://leetcode.com/submissions/detail/123323535/
+
+    public class TwoSum
     {
         //static void Main(string[] args)
         //{

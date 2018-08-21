@@ -99,15 +99,11 @@ namespace LeetcodeSolutions.BinaryTree
             if (node == null) return;
 
             if (node.Right != null)
-            {
                 RightBoundary(node.Right);
-                boundaryNodes.Add(node.Val);
-            }
             else if (node.Left != null)
-            {
                 RightBoundary(node.Left);
-                boundaryNodes.Add(node.Val);
-            }
+
+            boundaryNodes.Add(node.Val);
         }
     }
 }

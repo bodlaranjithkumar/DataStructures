@@ -1,8 +1,9 @@
 ﻿namespace LeetcodeSolutions.Array
 {
-    // Leetcode 200
-    // Submission Detail: https://leetcode.com/submissions/detail/142275958/
+    // Leetcode 200 - https://leetcode.com/problems/number-of-islands/
+    // Submission Detail - https://leetcode.com/submissions/detail/142275958/
     // Depth-First Traversal (DFS)
+
     public class NumberOfIslands
     {
         private int m, n;
@@ -36,10 +37,10 @@
         {
             if (i < 0 || j < 0 || i >= m || j >= n || grid[i, j] != '1') return;    // grid value is 0.
             grid[i, j] = '0';                   // mark as visited.
-            NumIslands(grid, i + 1, j);   // go right
-            NumIslands(grid, i - 1, j);   // go left
-            NumIslands(grid, i, j + 1);   // go down
-            NumIslands(grid, i, j - 1);   // go up
+            NumIslands(grid, i + 1, j);   // go down
+            NumIslands(grid, i - 1, j);   // go up
+            NumIslands(grid, i, j + 1);   // go right
+            NumIslands(grid, i, j - 1);   // go left
         }
     }
 }

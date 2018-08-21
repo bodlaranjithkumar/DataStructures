@@ -2,7 +2,9 @@
 
 namespace LeetcodeSolutions.Array
 {
-    // LeetCode 283
+    // LeetCode 283 - https://leetcode.com/problems/move-zeroes/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/140502304/
+
     // Input: [0, 1, 0, 3, 12]
     // Output: [1, 3, 12, 0, 0]     
     public class MoveZeros

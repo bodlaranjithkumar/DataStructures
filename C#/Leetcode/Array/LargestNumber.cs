@@ -1,7 +1,7 @@
 ﻿namespace LeetcodeSolutions.Array
 {
-    // Leetcode 179
-    // Submission Detail: https://leetcode.com/submissions/detail/151099674/
+    // Leetcode 179 - https://leetcode.com/problems/largest-number/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/151099674/
     public class LargestNumber
     {
         // Tx = O(nlogn)

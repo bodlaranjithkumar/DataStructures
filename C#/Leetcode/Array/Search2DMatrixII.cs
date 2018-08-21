@@ -4,8 +4,9 @@ using System.Text;
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 240
-    // Submission Detail: https://leetcode.com/submissions/detail/169370932/
+    // Leetcode 240 - https://leetcode.com/problems/search-a-2d-matrix-ii/
+    // Submission Detail - https://leetcode.com/submissions/detail/169370932/
+
     public class Search2DMatrixII
     {
         // Tx = O(m + n) {m: #of rows, n: #of cols}

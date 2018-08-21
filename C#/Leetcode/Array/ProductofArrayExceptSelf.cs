@@ -2,7 +2,9 @@
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 238
+    // Leetcode 238 - https://leetcode.com/problems/product-of-array-except-self/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/129892687/
+
     // Input:  [1,2,3,4]
     // Output: [24,12,8,6]
     class ProductofArrayExceptSelf

@@ -3,8 +3,24 @@ using System;
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 617
-    // Submission Detail: https://leetcode.com/submissions/detail/129120557/
+    // Leetcode 617 - https://leetcode.com/problems/merge-two-binary-trees/https://leetcode.com/problems/merge-two-binary-trees/
+    // Submission Detail - https://leetcode.com/submissions/detail/129120557/
+
+    //  Input: 
+    //	Tree 1                     Tree 2                  
+    //          1                         2                             
+    //         / \                       / \                            
+    //        3   2                     1   3                        
+    //       /                           \   \                      
+    //      5                             4   7                  
+    //Output: 
+    //Merged tree:
+    //	     3
+    //	    / \
+    //	   4   5
+    //	  / \   \ 
+    //	 5   4   7
+
     public class MergeTwoBinaryTrees
     {
         // Runtime = 212 ms

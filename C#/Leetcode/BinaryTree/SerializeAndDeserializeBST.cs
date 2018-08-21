@@ -5,8 +5,8 @@ using System.Text;
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 449
-    // Submission Detail: https://leetcode.com/submissions/detail/169154647/
+    // Leetcode 449 - https://leetcode.com/problems/serialize-and-deserialize-bst/
+    // Submission Detail: https://leetcode.com/submissions/detail/170396771/
 
     public class SerializeAndDeserializeBST
     {
@@ -71,7 +71,7 @@ namespace LeetcodeSolutions.BinaryTree
                     queue.Enqueue(node.Left);
                 }
 
-                if (i + 1 < values.Length && !values[i + 1].Equals("#"))
+                if (!values[i + 1].Equals("#"))
                 {
                     node.Right = new BinaryTreeNode(int.Parse(values[i + 1]));
                     queue.Enqueue(node.Right);

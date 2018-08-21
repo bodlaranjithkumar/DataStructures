@@ -1,7 +1,7 @@
 ﻿namespace LeetcodeSolutions.Array
 {
-    // Leetcode 322
-    // Submission Detail: https://leetcode.com/submissions/detail/141580435/
+    // Leetcode 322 - https://leetcode.com/problems/coin-change/
+    // Submission Detail - https://leetcode.com/submissions/detail/141580435/
     // Dynamic Programming
     public class CoinChange
     {

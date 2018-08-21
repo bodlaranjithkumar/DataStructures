@@ -4,10 +4,10 @@ using System.Text;
 
 namespace LeetcodeSolutions.Array
 {
+    // Leetcode 694 - https://leetcode.com/problems/number-of-distinct-islands
+    // Depth-First Traversal
     public class NumberOfDistinctIslands
     {
-        // Leetcode 694
-        // Depth-First Traversal
         //public static void Main(string[] args)
         //{
         //    NumberOfDistinctIslands distinctIslands = new NumberOfDistinctIslands();

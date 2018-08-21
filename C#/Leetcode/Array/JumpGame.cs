@@ -1,9 +1,11 @@
 ﻿namespace LeetcodeSolutions.Array
 {
-    // Leetcode 55
+    // Leetcode 55 - https://leetcode.com/problems/jump-game/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/170479761/
+    // Reference -  https://leetcode.com/problems/jump-game/solution/
+
     // Input: A = [2,3,1,1,4] -> true.
     // Input: A = [3,2,1,0,4] -> false.
-    // Reference: https://leetcode.com/problems/jump-game/solution/
     public class JumpGame
     {
         // Greedy

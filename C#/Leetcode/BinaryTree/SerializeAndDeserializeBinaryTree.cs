@@ -5,12 +5,13 @@ using System.Text;
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 297
-    // Same solution as Serialize and Deserialize Binary Search Tree
+    // Leetcode 297 - https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
+    // NOTE: Same solution as Serialize and Deserialize Binary Search Tree
     // Submission Detail: https://leetcode.com/submissions/detail/169155362/
+
     public class SerializeAndDeserializeBinaryTree
     {
-        static char Delimiter = ',';
+        //static char Delimiter = ',';
 
         //static void Main(string[] args)
         //{

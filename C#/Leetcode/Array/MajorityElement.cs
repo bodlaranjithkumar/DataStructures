@@ -2,7 +2,7 @@
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 169
+    // Leetcode 169 - https://leetcode.com/problems/majority-element/description/
     //Input : [1,2,1,1,4,3]
     //Sort:   [1,1,1,2,3,4]
     //Output: 1

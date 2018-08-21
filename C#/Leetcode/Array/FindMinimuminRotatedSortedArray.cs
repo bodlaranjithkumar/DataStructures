@@ -4,9 +4,11 @@ using System.Text;
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 153
-    // Submission Detail: https://leetcode.com/submissions/detail/164427129/
-    public class FindMinimuminRotatedSortedArray
+    // Leetcode 153 - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array
+    // Submission Detail -  https://leetcode.com/submissions/detail/164427129/
+    // Other potential way of asking the question - Find the rotation point in a sorted array.
+
+    public class FindMinimumInRotatedSortedArray
     {
         //[4,5,6,7,0,1,2]
         //[7,0,1,2,4,5,6]
@@ -14,6 +16,7 @@ namespace LeetcodeSolutions.Array
         //[2,1]
         //[1,2] - Array not rotated
 
+        // Modified binary search.
         // Tx = O(logn)
         // Sx = O(1)
         public int FindMin(int[] nums)
@@ -22,6 +25,7 @@ namespace LeetcodeSolutions.Array
 
             while (start < end)
             {
+                // Breaking condition. Also, covers the case when the array is not sorted or is the same after sorting.
                 if (nums[start] < nums[end])
                     break;
 

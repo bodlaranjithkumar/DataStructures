@@ -2,8 +2,10 @@
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 121
-    class BestTimeToBuyandSellStock
+    // Leetcode 121 - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+    // Submission Detail - https://leetcode.com/submissions/detail/128108200/
+
+    public class BestTimeToBuyandSellStock
     {
         // Runtime = 172ms
         // Tx = O(n) {n:length of the array}
@@ -12,9 +14,7 @@ namespace LeetcodeSolutions.Array
         public int MaxProfit(int[] prices)
         {
             if (prices.Length < 2)
-            {
                 return 0;
-            }
 
             int min = prices[0];
             int maxProfit = prices[1] - prices[0];
