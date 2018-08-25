@@ -9,17 +9,17 @@ namespace LeetcodeSolutions.String
 
     public class OneEditDistance
     {
-        public static void Main(string[] args)
-        {
-            OneEditDistance OED = new OneEditDistance();
-            Console.WriteLine(OED.IsOneEditDistance("kit", "kitten"));      //false
-            Console.WriteLine(OED.IsOneEditDistance("kitten", "kiten"));    //true
-            Console.WriteLine(OED.IsOneEditDistance("kitten", "kitte"));    //true
-            Console.WriteLine(OED.IsOneEditDistance("kitten", "kidten"));   //true
-            Console.WriteLine(OED.IsOneEditDistance("kitten", "kidden"));   //false
+        //public static void Main(string[] args)
+        //{
+        //    OneEditDistance OED = new OneEditDistance();
+        //    Console.WriteLine(OED.IsOneEditDistance("kit", "kitten"));      //false
+        //    Console.WriteLine(OED.IsOneEditDistance("kitten", "kiten"));    //true
+        //    Console.WriteLine(OED.IsOneEditDistance("kitten", "kitte"));    //true
+        //    Console.WriteLine(OED.IsOneEditDistance("kitten", "kidten"));   //true
+        //    Console.WriteLine(OED.IsOneEditDistance("kitten", "kidden"));   //false
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
 
         // Tx = O(m) or O(n)
         // Sx = O(1)
