@@ -2,7 +2,9 @@
 
 namespace LeetcodeSolutions.BitWise
 {
-    class SumOfTwoIntegersWithoutOperators
+    // Leetcode 371 - https://leetcode.com/problems/sum-of-two-integers/
+
+    public class SumOfTwoIntegersWithoutOperators
     {
         //static void Main(string[] args)
         //{
@@ -13,6 +15,7 @@ namespace LeetcodeSolutions.BitWise
         //    Console.ReadLine();
         //}
 
+        // To be done
         public int GetSum(int a, int b)
         {
             int f = a & 1;

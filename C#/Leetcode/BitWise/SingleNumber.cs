@@ -1,8 +1,9 @@
 ﻿namespace LeetcodeSolutions.BitWise
 {
-    // Leetcode 136
-    // Submission Detail: https://leetcode.com/submissions/detail/142272930/
+    // Leetcode 136 - https://leetcode.com/problems/single-number/
+    // Submission Detail - https://leetcode.com/submissions/detail/142272930/
     // XOR
+
     public class SingleNumber
     {
         // Input: [-1,5,3,-1,5] -> 3
