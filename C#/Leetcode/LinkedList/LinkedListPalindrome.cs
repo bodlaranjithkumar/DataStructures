@@ -5,16 +5,16 @@ using System.Text;
 
 namespace LeetcodeSolutions.LinkedList
 {
-    // Leetcode 234
-    // Submission Detail: https://leetcode.com/submissions/detail/169952869/
+    // Leetcode 234 - https://leetcode.com/problems/palindrome-linked-list/
+    // Submission Detail - https://leetcode.com/submissions/detail/169952869/
 
     public class LinkedListPalindrome
     {
         // Tx = O(n)
         // Sx = O(1)
 
-        //Two Pointers or runner technique
-        //Idea: Find the mid point using 2 pointers.
+        //Two Pointers or runner technique and then swap the 2nd half. Check for odd and even length
+        //Algorithm: Find the mid point using 2 pointers.
         //      Reverse the right half. Slow now points to the head of the reversed 2nd half. Point the fast node to head of the list.
         //      Now compare both the halves node by node until the 2nd half is null.
 

@@ -12,9 +12,10 @@ namespace LeetcodeSolutions.LinkedList
         }
     };
 
-    // Leetcode 138
-    // Reference: https://leetcode.com/problems/copy-list-with-random-pointer/discuss/43491/A-solution-with-constant-space-complexity-O(1)-and-linear-time-complexity-O(N)/42652
-    // Submission Detail: https://leetcode.com/submissions/detail/143476574/
+    // Leetcode 138 - https://leetcode.com/problems/copy-list-with-random-pointer/
+    // Reference - https://leetcode.com/problems/copy-list-with-random-pointer/discuss/43491/A-solution-with-constant-space-complexity-O(1)-and-linear-time-complexity-O(N)/42652
+    // Submission Detail - https://leetcode.com/submissions/detail/143476574/
+
     public class CopyListWithRandomPointer
     {
         //public static void Main(string[] args)

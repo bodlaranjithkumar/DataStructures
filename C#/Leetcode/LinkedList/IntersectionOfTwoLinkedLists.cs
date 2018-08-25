@@ -3,9 +3,10 @@ using System;
 
 namespace LeetcodeSolutions.LinkedList
 {
-    // Leetcode 160
-    // Submission Detail: https://leetcode.com/submissions/detail/143348438/
-    //          Readable : https://leetcode.com/submissions/detail/143350817/
+    // Leetcode 160 - https://leetcode.com/problems/intersection-of-two-linked-lists/
+    // Submission Detail - https://leetcode.com/submissions/detail/143348438/
+    //          Readable - https://leetcode.com/submissions/detail/143350817/
+
     public class IntersectionOfTwoLinkedLists
     {
         //public static void Main(string[] args)

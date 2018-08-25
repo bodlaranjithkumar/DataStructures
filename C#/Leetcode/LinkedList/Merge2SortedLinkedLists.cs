@@ -3,9 +3,11 @@ using System;
 
 namespace LeetcodeSolutions.LinkedList
 {
+    // Leetcode 21 - https://leetcode.com/problems/merge-two-sorted-lists/
+    // Submission Detail - https://leetcode.com/submissions/detail/171613955/
     // Input : 5->10->15    and    2->3->20
-    // Output: 2->3->5->10->15->20.
-    // Leetcode 21
+    // Output: 2->3->5->10->15->20
+
     public class Merge2SortedLinkedLists
     {
         //public static void Main(string[] args)
@@ -39,12 +41,12 @@ namespace LeetcodeSolutions.LinkedList
 
             while (head1 != null || head2 != null)
             {
-                if (head1 == null || head1?.Val > head2?.Val)
+                if (head1 == null || (head2 != null && head1.Val > head2.Val))
                 {
                     mergedCurrentNode.Next = head2;
                     head2 = head2.Next;
                 }
-                else if (head2 == null || head2?.Val >= head1?.Val)
+                else if (head2 == null || (head1 != null && head2.Val >= head1?.Val))
                 {
                     mergedCurrentNode.Next = head1;
                     head1 = head1.Next;

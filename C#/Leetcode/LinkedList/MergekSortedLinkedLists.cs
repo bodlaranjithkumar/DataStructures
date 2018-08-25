@@ -5,12 +5,15 @@ using System.Text;
 
 namespace LeetcodeSolutions.LinkedList
 {
-    // Leetcode 23
-    // Divide and conquer method
+    // Leetcode 23 - https://leetcode.com/problems/merge-k-sorted-lists/
+    // Submission Detail - Approach 5 in https://leetcode.com/problems/merge-k-sorted-lists/solution/
+    // Divide and conquer method - Tweak of Merge Sort
+    
     public class MergekSortedLinkedLists
     {
         // Tx = O(Nlogk)
-        // Sx = O(1)
+        // Sx = O(k) for the call stack
+
         public ListNode MergeKListsOptimized(ListNode[] lists)
         {
             if (lists == null || lists.Length == 0)
@@ -21,21 +24,22 @@ namespace LeetcodeSolutions.LinkedList
 
         public ListNode Merge(ListNode[] lists, int start, int end)
         {
-            if (start == end)
+            if (start == end)       // Base condition of the recursive method.
             {
-                return lists[start];
+                return lists[start];    // Single node
             }
             else if (start < end)
             {
                 int mid = start + (end - start) / 2;
+
                 ListNode left = Merge(lists, start, mid);
                 ListNode right = Merge(lists, mid + 1, end);
-                return Merge2SortedLinkedLists.Merge(left, right);
+
+                // Reusing the solution for Merge 2 sorted linked lists problem.
+                return Merge2SortedLinkedLists.Merge(left, right);  
             }
-            else
-            {
-                return null;
-            }
+
+            return null;
         }
 
         // TO DO: Fails for lists.Length > 2.

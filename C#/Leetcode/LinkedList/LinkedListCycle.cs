@@ -2,8 +2,10 @@
 
 namespace LeetcodeSolutions.LinkedList
 {
-    // Leetcode 141
+    // Leetcode 141 - https://leetcode.com/problems/linked-list-cycle/
+    // Submission Detail - https://leetcode.com/submissions/detail/142760194/
     // Slow runner and fast runner technique.
+
     public class LinkedListCycle
     {
         // Runtime = 146 ms

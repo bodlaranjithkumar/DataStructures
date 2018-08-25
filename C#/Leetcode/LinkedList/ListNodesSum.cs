@@ -3,11 +3,12 @@ using System;
 
 namespace LeetcodeSolutions.LinkedList
 {
-    // Leetcode 2
-    // Submission Detail: https://leetcode.com/submissions/detail/142764134/
+    // Leetcode 2 - https://leetcode.com/problems/add-two-numbers/
+    // Submission Detail - https://leetcode.com/submissions/detail/142764134/
     // Carryover
     // Similar to Add Strings and Add Binary.
-    class ListNodesSum
+
+    public class ListNodesSum
     {
         //static void Main(string[] args)
         //{
@@ -45,7 +46,7 @@ namespace LeetcodeSolutions.LinkedList
         // Sx = O(max(m,n))
         public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
         {
-            ListNode dummyNode = new ListNode(0), currentNode = dummyNode;
+            ListNode dummyHead = new ListNode(0), currentNode = dummyHead;
             int carryOver = 0;
 
             while (l1 != null || l2 != null || carryOver == 1)
@@ -56,12 +57,12 @@ namespace LeetcodeSolutions.LinkedList
                 currentNode.Next = new ListNode(carryOver % 10);
                 carryOver /= 10;
                 currentNode = currentNode.Next;
-                
+
                 l1 = l1 != null ? l1.Next : l1;
                 l2 = l2 != null ? l2.Next : l2;
             }
-            
-            return dummyNode.Next;
+
+            return dummyHead.Next;
         }
     }
 }

@@ -5,9 +5,10 @@ using System.Text;
 
 namespace LeetcodeSolutions.LinkedList
 {
-    // Leetcode 142
-    // Submission Detail: https://leetcode.com/submissions/detail/142762203/
+    // Leetcode 142 - https://leetcode.com/problems/linked-list-cycle-ii/
+    // Submission Detail - https://leetcode.com/submissions/detail/142762203/
     // Slow runner and fast runner technique
+
     public class LinkedListCycleII
     {
         //public static void Main(string[] args)

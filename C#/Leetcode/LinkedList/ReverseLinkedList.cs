@@ -2,7 +2,9 @@
 
 namespace LeetcodeSolutions.LinkedList
 {
-    // Leetcode 206
+    // Leetcode 206  - https://leetcode.com/problems/reverse-linked-list/
+    // Submission Detail - https://leetcode.com/submissions/detail/140383800/
+
     public class ReverseLinkedList
     {
         // Tx = O(n)
