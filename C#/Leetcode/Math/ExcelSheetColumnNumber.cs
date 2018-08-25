@@ -1,7 +1,8 @@
 ﻿namespace LeetcodeSolutions.Math
 {
-    // Leetcode 171
-    // Submission Detail: https://leetcode.com/submissions/detail/151036845/
+    // Leetcode 171 - https://leetcode.com/problems/excel-sheet-column-number/
+    // Submission Detail - https://leetcode.com/submissions/detail/151036845/
+
     public class ExcelSheetColumnNumber
     {
         // Tx = O(n)

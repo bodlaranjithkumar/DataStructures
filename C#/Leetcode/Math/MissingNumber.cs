@@ -2,7 +2,7 @@
 
 namespace LeetcodeSolutions.Math
 {
-    // Leetcode 268
+    // Leetcode 268 - https://leetcode.com/problems/missing-number/
     // Submission Detail:
     //      Sum : https://leetcode.com/submissions/detail/143644300/
     //      Bit Manipulation: https://leetcode.com/submissions/detail/143645339/
@@ -29,7 +29,7 @@ namespace LeetcodeSolutions.Math
 
         // Tx = O(n)
         // Sx = O(1)
-        // Possibility of integer overflow exception of big n.
+        // Possibility of integer overflow exception for big n.
         public int FindMissingNumber(int[] nums)
         {
             int n = nums.Length + 1;

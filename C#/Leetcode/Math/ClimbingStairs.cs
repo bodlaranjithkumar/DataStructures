@@ -1,8 +1,9 @@
 ﻿namespace LeetcodeSolutions.Math
 {
-    // Leetcode 70
-    // Submission Detail: https://leetcode.com/submissions/detail/128782293/
-    // Bottom Up
+    // Leetcode 70 - https://leetcode.com/problems/climbing-stairs
+    // Submission Detail - https://leetcode.com/submissions/detail/128782293/
+    // Bottom-Up Dynami Programming
+
     public class ClimbingStairs
     {
         // 1 - 1

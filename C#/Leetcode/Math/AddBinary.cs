@@ -3,10 +3,11 @@ using System.Text;
 
 namespace LeetcodeSolutions.Math
 {
-    // Leetcode 67
-    // Submission Detail: https://leetcode.com/submissions/detail/140249865/
+    // Leetcode 67 - https://leetcode.com/problems/add-binary/
+    // Submission Detail - https://leetcode.com/submissions/detail/140249865/
     // Use carry
     // Similar to Leetcode 415: Add Strings
+
     public class AddBinary
     {
         //public static void Main(string[] args)

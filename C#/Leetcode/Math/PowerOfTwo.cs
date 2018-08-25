@@ -2,8 +2,9 @@
 
 namespace LeetcodeSolutions.Math
 {
-    // Leetcode 231
-    // Submission Detail: https://leetcode.com/submissions/detail/143649183/
+    // Leetcode 231 - https://leetcode.com/problems/power-of-two
+    // Submission Detail - https://leetcode.com/submissions/detail/143649183/
+
     public class PowerOfTwo
     {
         // Thought: Logical & between perfect square and 1 less than perfect square is always 0.

@@ -1,8 +1,9 @@
 ﻿namespace LeetcodeSolutions.Math
 {
-    // Leetcode 279
-    // Submission Details : https://leetcode.com/submissions/detail/141588006/
-    // Dynamic Programming. Similar to Coin change problem.
+    // Leetcode 279 - https://leetcode.com/problems/perfect-squares
+    // Submission Detail - https://leetcode.com/submissions/detail/141588006/
+    // Bottom-Up Dynamic Programming. Similar to Coin change problem.
+
     public class PerfectSquares
     {
         // Bottom up dynamic programming

@@ -2,8 +2,9 @@
 
 namespace LeetcodeSolutions.Math
 {
-    // Leetcode 168
-    // Submission Detail: https://leetcode.com/submissions/detail/143480793/
+    // Leetcode 168 - https://leetcode.com/problems/excel-sheet-column-title/
+    // Submission Detail - https://leetcode.com/submissions/detail/143480793/
+
     public class ExcelSheetColumnTitle
     {
         // 28 -> AB
