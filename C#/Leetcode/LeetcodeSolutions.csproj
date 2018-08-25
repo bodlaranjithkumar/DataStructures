@@ -26,6 +26,9 @@
     <Reference Include="System.Drawing">
       <HintPath>System.Drawing</HintPath>
     </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>System.Xml</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
