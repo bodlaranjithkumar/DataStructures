@@ -2,24 +2,24 @@
 
 namespace LeetcodeSolutions.LinkedList
 {
-    // Leetcode 19
+    // Leetcode 19 - https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+    // Submission Detail - https://leetcode.com/submissions/detail/171616939/
+
     public class RemoveNthNodeFromEndofList
     {
         // Tx = O(n) {n : number of nodes in the linked list}
         // Sx = O(1)
         public ListNode RemoveNthFromEnd(ListNode head, int n)
         {
-            ListNode slower = head;
-            ListNode faster = head;
-
-            ListNode prev = new ListNode(0)
+            ListNode dummyNode = new ListNode(0)
             {
                 Next = head
             };
-            ListNode resultNode = prev;
 
+            ListNode slower = dummyNode;
+            ListNode faster = dummyNode;
 
-            while (n > 1 && faster.Next != null)
+            while (n > 0 && faster.Next != null)
             {
                 faster = faster.Next;
                 n--;
@@ -28,13 +28,12 @@ namespace LeetcodeSolutions.LinkedList
             while (faster.Next != null)
             {
                 faster = faster.Next;
-                prev = prev.Next;
                 slower = slower.Next;
             }
 
-            prev.Next = slower.Next;
+            slower.Next = slower.Next.Next;
 
-            return resultNode.Next;
+            return dummyNode.Next;
         }
     }
 }
