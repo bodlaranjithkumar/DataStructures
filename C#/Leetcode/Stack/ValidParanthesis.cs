@@ -2,7 +2,9 @@
 
 namespace LeetcodeSolutions.Stack
 {
-    // Leetcode 20
+    // Leetcode 20 - https://leetcode.com/problems/valid-parentheses/
+    // Submission Detail - https://leetcode.com/submissions/detail/136153280/
+
     public class ValidParanthesis
     {        
         // Runtime = 147ms

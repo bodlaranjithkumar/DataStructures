@@ -3,10 +3,12 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.Stack
 {
-    // Leetcode - 150
+    // Leetcode 150 - https://leetcode.com/problems/evaluate-reverse-polish-notation/
+    // Submission Detail - https://leetcode.com/submissions/detail/171624900/
     // RPN Wiki - https://en.wikipedia.org/wiki/Polish_notation
     // aka Postfix notation
     // Use Stack
+
     public class ReversePolishNotation
     {
         //static void Main(string[] args)
@@ -24,13 +26,13 @@ namespace LeetcodeSolutions.Stack
         //}
 
         static Stack<int> operands = new Stack<int>();
-        static HashSet<string> ValidOperators = new HashSet<string>
-            {
-                "+",
-                "-",
-                "*",
-                "/"
-            };
+        static HashSet<string> validOperators = new HashSet<string>
+                                                {
+                                                    "+",
+                                                    "-",
+                                                    "*",
+                                                    "/"
+                                                };
 
         // Runtime : 188 ms
         // Tx = O(n) { n : Lenth of the string}
@@ -40,24 +42,9 @@ namespace LeetcodeSolutions.Stack
             foreach (string token in tokens)
             {
                 if (int.TryParse(token, out int operand))
-                {
                     operands.Push(operand);
-                }
-                else if (ValidOperators.Contains(token))
-                {
-                    if (operands.Count > 1)
-                    {
-                        Compute(token);
-                    }
-                    else
-                    {
-                        throw new InvalidOperationException("Invalid RPN.");
-                    }
-                }
-                else
-                {
-                    throw new InvalidOperationException("Invalid operator found.");
-                }
+                else if (validOperators.Contains(token))
+                    Compute(token);
             }
 
             return operands.Pop();
@@ -80,9 +67,6 @@ namespace LeetcodeSolutions.Stack
                     operands.Push(operand1 * operand2);
                     break;
                 case "/":
-                    if (operand2 == 0)
-                        throw new DivideByZeroException("Cannot perform / operation with denominator as 0.");
-
                     operands.Push(operand1 / operand2);
                     break;
             }

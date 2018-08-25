@@ -3,7 +3,9 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.Stack
 {
-    // Leetcode 155
+    // Leetcode 155 - https://leetcode.com/problems/min-stack/
+    // Submission Detail - https://leetcode.com/submissions/detail/141066933/
+
     //      MinStack minStack = new MinStack();
     //      minStack.push(-2);
     //      minStack.push(0);
@@ -13,8 +15,7 @@ namespace LeetcodeSolutions.Stack
     //      minStack.top();      --> Returns 0.
     //      minStack.getMin();   --> Returns -2.
 
-    // Submission: https://leetcode.com/submissions/detail/141066933/
-    // Use custom MinStackElement class with the number, min so far properties.
+    // Algorithm: Use custom MinStackElement class with the number, min so far properties.
     // Sx = O(2n)
     public class MinStack
     {

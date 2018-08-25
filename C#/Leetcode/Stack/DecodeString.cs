@@ -4,8 +4,15 @@ using System.Text;
 
 namespace LeetcodeSolutions.Stack
 {
-    // Leetcode 394
-    // Submission Detail: https://leetcode.com/submissions/detail/137445054/
+    // Leetcode 394 - https://leetcode.com/problems/decode-string/
+    // Submission Detail - https://leetcode.com/submissions/detail/137445054/
+
+    //3[a2[c]]      => accaccacc
+    //2[abc]3[cd]ef => abcabccdcdef
+    //3[a]2[bc]     => aaabcbc
+    //3[a2[c]]2[b]  => accaccaccbb
+    //100[a]        => aaaaa.......a 
+
     public class DecodeString
     {
         //public static void Main(string[] args)
@@ -17,12 +24,6 @@ namespace LeetcodeSolutions.Stack
         //    var result4 = d.DecodeEncodedString("3[a2[c]]2[b]");
         //    var result5 = d.DecodeEncodedString("100[a]");
         //}
-
-        //3[a2[c]]
-        //2[abc]3[cd]ef
-        //3[a]2[bc]
-        //3[a2[c]]2[b]
-        //100[a]
         // Runtime: 158ms
 
         public string DecodeEncodedString(string s)
@@ -80,7 +81,7 @@ namespace LeetcodeSolutions.Stack
                     // Append to the decoded string.
                     if (frequencies.Count == 0)
                     {
-                        if (decodedString.Length == 0 && j != s.Length-1)
+                        if (decodedString.Length == 0 && j != s.Length - 1)
                         {
                             while (chars.Count > 0)
                                 decodedString.Insert(0, chars.Pop());
@@ -92,7 +93,7 @@ namespace LeetcodeSolutions.Stack
                                 decodedString.Insert(length, chars.Pop());
                         }
                     }
-                } 
+                }
             }
 
             return decodedString.ToString();
