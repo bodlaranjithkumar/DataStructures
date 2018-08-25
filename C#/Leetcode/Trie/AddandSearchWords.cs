@@ -5,8 +5,9 @@ using System.Text;
 
 namespace LeetcodeSolutions.Trie
 {
-    // Leetcode 211
-    // Submission Detail: https://leetcode.com/submissions/detail/165119811/
+    // Leetcode 211 - https://leetcode.com/problems/add-and-search-word-data-structure-design/
+    // Submission Detail - https://leetcode.com/submissions/detail/165119811/
+    
     public class AddandSearchWords
     {
         //      Input:["WordDictionary","addWord","addWord","addWord","search","search","search","search","search"]

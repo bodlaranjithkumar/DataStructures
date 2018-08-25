@@ -36,12 +36,12 @@ namespace LeetcodeSolutions.Trie
                 maxFrequency = System.Math.Max(wordsFrequency[word], maxFrequency);
             }
 
+            frequencyWords = new List<string>[maxFrequency + 1];
+
             foreach (var word in wordsFrequency.Keys)
             {
                 CreateTrie(word, wordsFrequency[word]);
             }
-
-            frequencyWords = new List<string>[maxFrequency + 1];
 
             GroupWordsWithSameFrequency(root);
 

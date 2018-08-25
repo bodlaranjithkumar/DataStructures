@@ -3,7 +3,9 @@ using System;
 
 namespace LeetcodeSolutions.Trie
 {
-    // Leetcode 208
+    // Leetcode 208 - https://leetcode.com/problems/implement-trie-prefix-tree/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/137204060/
+
     public class Trie
     {
         //public static void Main(string[] args)
