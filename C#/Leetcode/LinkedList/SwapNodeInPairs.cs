@@ -3,8 +3,9 @@ using System;
 
 namespace LeetcodeSolutions.LinkedList
 {
-    // Leetcode 24
-    // Submission Detail: https://leetcode.com/submissions/detail/143435106/
+    // Leetcode 24 - https://leetcode.com/problems/swap-nodes-in-pairs/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/171618975/
+
     public class SwapNodeInPairs
     {
         //public static void Main(string[] args)
@@ -28,28 +29,30 @@ namespace LeetcodeSolutions.LinkedList
         // Sx = O(1)
         public static ListNode SwapPairs(ListNode head)
         {
-            ListNode Prev = new ListNode(0)
+            ListNode dummyHead = new ListNode(0)
             {
                 Next = head
             };
-            ListNode ResultNode = Prev;
-            ListNode Current = head;
 
-            while (Current != null && Current.Next != null)
+            // 2 iterating pointers
+            ListNode prev = dummyHead;
+            ListNode current = head;
+
+            while (current != null && current.Next != null)
             {
-                ListNode NextNode = Current.Next;
-                Prev.Next = NextNode;
+                ListNode nextNode = current.Next;
+                prev.Next = nextNode;
 
-                ListNode temp = NextNode.Next;
-                NextNode.Next = Current;
-                Current.Next = temp;
+                ListNode temp = nextNode.Next;
+                nextNode.Next = current;
+                current.Next = temp;
 
-                //For next iteration
-                Prev = Current;
-                Current = Current.Next;
+                // update prev and current for Next iteration
+                prev = current;
+                current = current.Next;
             }
 
-            return ResultNode.Next;
+            return dummyHead.Next;
         }
     }
 }
