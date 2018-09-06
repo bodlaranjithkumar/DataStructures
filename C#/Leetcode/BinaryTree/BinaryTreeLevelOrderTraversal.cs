@@ -3,9 +3,10 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 102
-    // Submission Detail: https://leetcode.com/submissions/detail/123797239/
-    // Depth first traversal, Queue
+    // Leetcode 102 - https://leetcode.com/problems/binary-tree-level-order-traversal/
+    // Submission Detail - https://leetcode.com/submissions/detail/123797239/
+    // Breadth first traversal, Queue
+
     public class BinaryTreeLevelOrderTraversal
     {
         // Runtime : 535 ms

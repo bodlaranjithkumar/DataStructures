@@ -2,8 +2,9 @@
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 538
-    // Submission Detail: https://leetcode.com/submissions/detail/160509921/
+    // Leetcode 538 - https://leetcode.com/problems/convert-bst-to-greater-tree/
+    // Submission Detail - https://leetcode.com/submissions/detail/160509921/
+
     public class ConvertBSTtoGreaterTree
     {
         //[0,-1,2,-3,null,null,4] => [6,5,6,2,null,null,4]

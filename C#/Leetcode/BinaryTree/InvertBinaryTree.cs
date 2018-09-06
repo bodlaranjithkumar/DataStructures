@@ -3,9 +3,10 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 226
-    // Submission Detail: https://leetcode.com/submissions/detail/137800536/
+    // Leetcode 226 - https://leetcode.com/problems/invert-binary-tree/
+    // Submission Detail - https://leetcode.com/submissions/detail/137800536/
     // Swap left and right nodes.
+
     public class InvertBinaryTree
     {
         // Tx = O(n)

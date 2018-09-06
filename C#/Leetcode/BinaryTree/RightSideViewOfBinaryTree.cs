@@ -5,8 +5,8 @@ using System.Text;
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 199
-    // Submission Detail: https://leetcode.com/submissions/detail/169375206/
+    // Leetcode 199 - https://leetcode.com/problems/binary-tree-right-side-view/
+    // Submission Detail - https://leetcode.com/submissions/detail/169375206/
 
     public class RightSideViewOfBinaryTree
     {
@@ -14,7 +14,9 @@ namespace LeetcodeSolutions.BinaryTree
         // Sx = O(m) {m: max nodes at a level. This is the #of nodes at last level in case the tree is a complete binary tree}
 
         // Breadth-First Traversal
-        // Idea: Extension/Modification of level-order traversal of a binary tree problem. If node values are enqueued to a queue from Left to Right, the last node in the queue is after dequeue is the node on the Right side view for that level. 
+        // Algorithm: Extension/Modification of level-order traversal of a binary tree problem. 
+        //            If node values are enqueued to a queue from Left to Right, the last node in the 
+        //            queue is after dequeue is the node on the Right side view for that level. 
 
         public IList<int> RightSideView(BinaryTreeNode root)
         {
@@ -30,7 +32,7 @@ namespace LeetcodeSolutions.BinaryTree
 
                 while (count > 0)
                 {
-                    if (count == 1)   // Since then nodes are enqueued from L -> R. The last node at current level is the Right most node
+                    if (count == 1)   // Since the nodes are enqueued from L -> R. The last node at current level is the Right most node
                         rightSideValues.Add(nodes.Peek().Val);
 
                     BinaryTreeNode node = nodes.Dequeue();

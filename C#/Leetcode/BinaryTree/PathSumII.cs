@@ -3,8 +3,9 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 113
-    // Submission Detail : https://leetcode.com/problems/path-sum-ii/discuss/36695/Java-Solution:-iterative-and-recursive
+    // Leetcode 113 - https://leetcode.com/problems/path-sum-ii/
+    // Submission Detail - https://leetcode.com/problems/path-sum-ii/discuss/36695/Java-Solution:-iterative-and-recursive
+
     public class PathSumII
     {
         public IList<IList<int>> PathSum(BinaryTreeNode root, int sum)

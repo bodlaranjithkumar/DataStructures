@@ -2,7 +2,9 @@
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 543
+    // Leetcode 543 - https://leetcode.com/problems/diameter-of-binary-tree/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/140324025/
+
     public class DiameterOfABinaryTree
     {
         private int MaxDiameter = 0;

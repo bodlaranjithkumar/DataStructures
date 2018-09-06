@@ -5,7 +5,9 @@ using System.Text;
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 404
+    // Leetcode 404 - https://leetcode.com/problems/sum-of-left-leaves/
+    // Submission Detail - https://leetcode.com/submissions/detail/140443683/
+
     public class SumOfLeftLeaves
     {
         // Tx = O(n)

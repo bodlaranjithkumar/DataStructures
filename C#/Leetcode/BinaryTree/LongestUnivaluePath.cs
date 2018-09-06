@@ -2,15 +2,17 @@
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 687
+    // Leetcode 687 - https://leetcode.com/problems/longest-univalue-path
+    // Submission Detail - https://leetcode.com/submissions/detail/142000453/
     // Based on the intuition from LCD-543 Diameter of a Binary Tree
-    // Submission Detail: https://leetcode.com/submissions/detail/142000453/
+
     public class LongestUnivaluePath
     {
         private int maxLength;
 
         // Tx = O(n)
         // Sx = O(d) for call stack
+
         public int FindLongestUnivaluePath(BinaryTreeNode root)
         {
             if (root != null) 

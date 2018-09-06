@@ -5,16 +5,18 @@ using System.Text;
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 662
-    // Submission Detail: https://leetcode.com/submissions/detail/169779901/
+    // Leetcode 662 - https://leetcode.com/problems/maximum-width-of-binary-tree/
+    // Submission Detail - https://leetcode.com/submissions/detail/169779901/
+
     public class MaximumHorizontalDepthOfBinaryTree
     {
         // Tx = O(n)
         // Sx = O(n)
 
         // BFS
-        // Idea: Since the given tree is a binary tree, for a given node it's left child node position is the 
-        //          current node position*2 and right childe node position is current node position*2+1. 
+        // Algorithm: Since the given tree is a binary tree, for the current level and for the current node, 
+        //          it's left child node position is the 
+        //          current node position*2 and right child node position is current node position*2+1. 
         //          With this observation, the depth at current level is the rightmost node's 
         //          position-left most node position+1. left value is set when the first node in a given level is visited.
         //          To hold the depth, position for a node, a custom datastructure is needed with props - node, 
@@ -37,6 +39,7 @@ namespace LeetcodeSolutions.BinaryTree
                     nodes.Enqueue(new TreeNodeDepthPosition(tdNode.node.Left, tdNode.depth + 1, tdNode.position * 2));
                     nodes.Enqueue(new TreeNodeDepthPosition(tdNode.node.Right, tdNode.depth + 1, tdNode.position * 2 + 1));
 
+                    // This is to get the first left most's node position for the current depth/level.
                     if (tdNode.depth != currentDepth)
                     {
                         currentDepth = tdNode.depth;

@@ -3,10 +3,10 @@
 namespace LeetcodeSolutions.BinaryTree
 {
     // Leetcode 235 - https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
+    // Submission Detail - https://leetcode.com/submissions/detail/128927057/
 
     public class LowestCommonAncestorOfBinarySearchTree
     {
-
         //      _______10_____
         //     /              \
         //  ___5__          ___13__
@@ -16,10 +16,10 @@ namespace LeetcodeSolutions.BinaryTree
         //        6  8
 
         // Runtime = 209 ms
-        // Submission Detail - https://leetcode.com/submissions/detail/128927057/
         // Tx = O(h) {h: height of the BST}
         // Sx = O(1)
         // Assumption : p,q nodes exist in the BST.
+
         public BinaryTreeNode LowestCommonAncestor(BinaryTreeNode root, BinaryTreeNode p, BinaryTreeNode q)
         {
             if (root == null || p == null || q == null)

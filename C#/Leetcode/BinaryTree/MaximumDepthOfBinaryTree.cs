@@ -4,8 +4,9 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 104
-    // Submission Detail: https://leetcode.com/submissions/detail/124144791/
+    // Leetcode 104 - https://leetcode.com/problems/maximum-depth-of-binary-tree/
+    // Submission Detail - https://leetcode.com/submissions/detail/124144791/
+
     public class MaximumDepthOfBinaryTree
     {
         // Solution 1: Recursive with depth returned from leaf node with increment of 1 while traversing to root.

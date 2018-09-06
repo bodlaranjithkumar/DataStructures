@@ -2,8 +2,9 @@
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 572
-    // Submission Details: https://leetcode.com/submissions/detail/165071916/
+    // Leetcode 572 - https://leetcode.com/problems/subtree-of-another-tree/
+    // Submission Details - https://leetcode.com/submissions/detail/165071916/
+
     public class SubtreeOfAnotherTree
     {
         public bool IsSubtree(BinaryTreeNode s, BinaryTreeNode t)

@@ -9,6 +9,7 @@ namespace LeetcodeSolutions.BinaryTree
     //       4   12
     //           /\
     //         10  14
+
     //  10 -> 12
     //  8  -> 20
     //  14 -> 20
@@ -16,6 +17,7 @@ namespace LeetcodeSolutions.BinaryTree
 
     // Leetcode 285
     // Ref: https://www.geeksforgeeks.org/inorder-successor-in-binary-search-tree/
+
     public class InorderSuccessorInBST
     {
         public BinaryTreeNode InorderSuccessor(BinaryTreeNode root, BinaryTreeNode p)

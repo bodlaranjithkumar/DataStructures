@@ -2,8 +2,9 @@
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 98
-    // Submission Detail: https://leetcode.com/submissions/detail/141736401/
+    // Leetcode 98 - https://leetcode.com/problems/validate-binary-search-tree/
+    // Submission Detail - https://leetcode.com/submissions/detail/141736401/
+
     public class BinaryTreeIsBST
     {
         // Method 1

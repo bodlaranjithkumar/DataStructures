@@ -2,8 +2,9 @@
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 100
-    // Submission Detail: https://leetcode.com/submissions/detail/165059153/
+    // Leetcode 100 - https://leetcode.com/problems/same-tree/
+    // Submission Detail - https://leetcode.com/submissions/detail/165059153/
+
     public class SameTree
     {
         public bool IsSameTree(BinaryTreeNode p, BinaryTreeNode q)

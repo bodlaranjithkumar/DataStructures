@@ -2,9 +2,9 @@
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 669
+    // Leetcode 669 - https://leetcode.com/problems/trim-a-binary-search-tree/
+    // Submission Detail - https://leetcode.com/submissions/detail/154047945/
 
-    // Submission Detail: https://leetcode.com/submissions/detail/154047945/
     public class TrimBST
     {
         public BinaryTreeNode TrimBSTRange(BinaryTreeNode root, int L, int R)

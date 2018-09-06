@@ -2,8 +2,9 @@
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 112
-    // Submission Detail: https://leetcode.com/submissions/detail/141729452/
+    // Leetcode 112 - https://leetcode.com/problems/path-sum/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/141729452/
+
     public class PathSum
     {
         // Tx = O(n)

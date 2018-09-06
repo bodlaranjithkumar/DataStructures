@@ -3,9 +3,10 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 173
-    // Submission Detail: https://leetcode.com/submissions/detail/137909876/
+    // Leetcode 173 - https://leetcode.com/problems/binary-search-tree-iterator/
+    // Submission Detail - https://leetcode.com/submissions/detail/137909876/
     // Inorder traversal, stack
+
     public class BinarySearchTreeIterator
     {
         Stack<BinaryTreeNode> nodes;
