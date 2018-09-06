@@ -6,7 +6,7 @@ namespace LeetcodeSolutions.Array
     // Dynamic Programming - Common subproblems
     // Reference - Explanation: https://www.youtube.com/watch?v=CE2b_-XfVDk
     //           - Code : https://github.com/mission-peace/interview/blob/master/src/com/interview/dynamic/LongestIncreasingSubsequence.java
-    // Submission - https://leetcode.com/submissions/detail/140963157/
+    // Submission - https://leetcode.com/submissions/detail/174288021/
 
     public class LongestIncreasingSubsequence
     {
@@ -37,19 +37,20 @@ namespace LeetcodeSolutions.Array
         // Sx = O(n)
         public int LengthOfLIS(int[] nums)
         {
-            int length = nums.Length;
+            int length = nums.Length, maxLIS = 0;
 
             int[] LIS = new int[length];
 
-            // Each number has a sequence of 1.
-            for (int i = 0; i < length; i++)
-                LIS[i] = 1;
-
-            // Initialize to 0 to cover the case of array is empty
-            int maxLIS = length == 0 ? 0 : 1;
+            if (length != 0)
+            {
+                LIS[0] = 1;
+                maxLIS = 1;        // Initialie to 0 to cover the case of array length to 0 else 1
+            }
 
             for (int i = 1; i < length; i++)
             {
+                LIS[i] = 1; // Each number has a sequence of 1.
+
                 for (int j = 0; j < i; j++)
                 {
                     if (nums[j] < nums[i])
@@ -60,7 +61,7 @@ namespace LeetcodeSolutions.Array
                     }
                 }
             }
-            
+
             return maxLIS;
         }
     }
