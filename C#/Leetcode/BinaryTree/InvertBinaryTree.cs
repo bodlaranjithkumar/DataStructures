@@ -5,12 +5,28 @@ namespace LeetcodeSolutions.BinaryTree
 {
     // Leetcode 226 - https://leetcode.com/problems/invert-binary-tree/
     // Submission Detail - https://leetcode.com/submissions/detail/137800536/
+    //                     https://leetcode.com/submissions/detail/175449512/
     // Swap left and right nodes.
 
     public class InvertBinaryTree
     {
         // Tx = O(n)
         // Sx = O(logn) or O(d) for the call stack
+        public BinaryTreeNode InvertTreeRecursiveEasy(BinaryTreeNode root)
+        {
+            if (root == null || (root.Left == null && root.Right == null))
+                return root;
+
+            var left = root.Left;
+            root.Left = root.Right;
+            root.Right = left;
+
+            InvertTreeRecursive(root.Left);
+            InvertTreeRecursive(root.Right);
+
+            return root;
+        }
+
         public BinaryTreeNode InvertTreeRecursive(BinaryTreeNode root)
         {
             if (root == null || (root.Left == null && root.Right == null))
