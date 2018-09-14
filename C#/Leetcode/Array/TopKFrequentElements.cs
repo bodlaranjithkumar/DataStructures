@@ -15,9 +15,12 @@ namespace LeetcodeSolutions.Array
         // Tx = O(n) {n : length(nums)}
         // Sx = O(n)
 
-        // Idea: 1. Count the number frequencies.
+        // Algorithm: 1. Count the number frequencies.
         //       2. Group the numbers with same frequencies.
-        //       3. Since the order of numbers doesn't matter for same frequencies, for each frequency from right to left (decreasing frequency) add the number to an output list until the list count reaches the given number k.
+        //       3. Since the order of numbers doesn't matter for same frequencies, for each frequency 
+        //          from right to left (decreasing frequency) add the number to an output list until the list 
+        //          count reaches the given number k.
+
         public IList<int> TopKFrequent(int[] nums, int k)
         {
             IDictionary<int, int> numFrequencies = new Dictionary<int, int>();

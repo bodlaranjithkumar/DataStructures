@@ -2,7 +2,7 @@
 {
     // Leetcode 70 - https://leetcode.com/problems/climbing-stairs
     // Submission Detail - https://leetcode.com/submissions/detail/128782293/
-    // Bottom-Up Dynami Programming
+    // Bottom-Up Dynamic Programming
 
     public class ClimbingStairs
     {

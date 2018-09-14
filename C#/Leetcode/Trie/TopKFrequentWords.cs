@@ -4,8 +4,8 @@ using System.Text;
 
 namespace LeetcodeSolutions.Trie
 {
-    // Leetcode 692
-    // Submission Detail: https://leetcode.com/submissions/detail/170057850/
+    // Leetcode 692 - https://leetcode.com/problems/top-k-frequent-words/
+    // Submission Detail - https://leetcode.com/submissions/detail/170057850/
 
     public class TopKFrequentWords
     {

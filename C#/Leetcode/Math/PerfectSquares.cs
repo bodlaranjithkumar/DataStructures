@@ -6,7 +6,9 @@
 
     public class PerfectSquares
     {
-        // Bottom up dynamic programming
+        // Tx = O(n* Sqrt(n))
+        // Sx = O(n)
+
         public int NumSquares(int n)
         {
             int[] numSquares = new int[n + 1];

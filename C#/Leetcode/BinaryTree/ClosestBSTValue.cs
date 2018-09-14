@@ -5,7 +5,7 @@ namespace LeetcodeSolutions.BinaryTree
 {
     // Leetcode 270
 
-    //          20
+    //           20
     //          / \
     //         8   25
     //        / \    \

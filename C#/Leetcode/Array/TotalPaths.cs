@@ -5,7 +5,7 @@ using System.Text;
 namespace LeetcodeSolutions.Array
 {
     // Question - https://www.geeksforgeeks.org/count-number-ways-reach-destination-maze/
-    // Similar to Rat-Maz problem - https://www.geeksforgeeks.org/rat-in-a-maze-backtracking-2/
+    // Similar to Rat-Maze problem - https://www.geeksforgeeks.org/rat-in-a-maze-backtracking-2/
 
     public class TotalPaths
     {

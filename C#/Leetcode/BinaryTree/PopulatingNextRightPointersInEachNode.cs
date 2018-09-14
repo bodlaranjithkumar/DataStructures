@@ -7,8 +7,9 @@
         TreeLinkNode(int x) { val = x; }
     }
 
-    // Leetcode 116
-    // Submission Detail: https://leetcode.com/submissions/detail/151040301/
+    // Leetcode 116 - https://leetcode.com/problems/populating-next-right-pointers-in-each-node
+    // Submission Detail - https://leetcode.com/submissions/detail/151040301/
+
     public class PopulatingNextRightPointersInEachNode
     {
         // Tx = O(n)

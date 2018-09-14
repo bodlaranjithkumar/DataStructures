@@ -31,7 +31,7 @@ namespace LeetcodeSolutions.BinaryTree
             if (node.Left != null)
             {
                 Helper(node.Left, result, list, sum - node.Val);
-                list.RemoveAt(list.Count - 1);
+                list.RemoveAt(list.Count - 1);  // Remove the node added at line 22 after calling the above recursive function.
             }
 
             if (node.Right != null)
