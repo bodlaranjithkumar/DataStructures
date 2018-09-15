@@ -1,6 +1,8 @@
 ﻿namespace LeetcodeSolutions.Array
 {
-    // Leetcode 59
+    // Leetcode 59 - https://leetcode.com/problems/spiral-matrix-ii/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/137099321/
+
     public class SprialMatrixGenerate
     {
         //public static void Main(string[] args)

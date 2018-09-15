@@ -4,6 +4,8 @@ namespace LeetcodeSolutions.Array
 {
     // Leetcode 215 - https://leetcode.com/problems/kth-largest-element-in-an-array/
     // Submission Detail - https://leetcode.com/submissions/detail/136029036/
+    // Note: The array may contain duplicates and the problem is to find 
+    //       the kth largest element in the sorted order, not the kth distinct element.
 
     public class FindKthLargestElement
     {
@@ -11,8 +13,8 @@ namespace LeetcodeSolutions.Array
         //{
         //    FindKthLargestElement ele = new FindKthLargestElement();
 
-        //    int[] A = { 3, 2, 1, 5, 6, 6, 4 };
-        //    int value = ele.FindKthLargestOptimized(A, 2);   //5
+        //    int[] A = { 3, 2, 1, 5, 6, 3, 6, 4 };
+        //    int value = ele.FindKthLargestOptimized(A, 2);   //6
         //    Console.WriteLine(value);
 
         //    int[] B = { -1, 0, 2 };
@@ -32,7 +34,7 @@ namespace LeetcodeSolutions.Array
         // Sx = O(1)
         public int FindKthLargestOptimized(int[] nums, int k)
         {
-            return QuickSort(nums, 0, nums.Length - 1, nums.Length - k); // Find 2nd largest. So, length-k.            
+            return QuickSort(nums, 0, nums.Length - 1, nums.Length - k); // Find kth largest. So, length-k.            
         }
 
         private static int QuickSort(int[] A, int start, int end, int k)

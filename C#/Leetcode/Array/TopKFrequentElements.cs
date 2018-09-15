@@ -4,8 +4,8 @@ using System.Text;
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 347
-    // Submission Detail: https://leetcode.com/submissions/detail/169465911/
+    // Leetcode 347 - https://leetcode.com/problems/top-k-frequent-elements/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/169465911/
 
     public class TopKFrequentElements
     {

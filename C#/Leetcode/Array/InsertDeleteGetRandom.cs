@@ -51,15 +51,15 @@ namespace LeetcodeSolutions.Array
                 if (!valuesLocation.ContainsKey(val))
                     return false;
 
-                int valLocation = valuesLocation[val];
+                int valIndex = valuesLocation[val];
                 int lastIndex = values.Count - 1;
 
-                if (valLocation != lastIndex)
+                if (valIndex != lastIndex)
                 {
                     int valAtLastIndex = values[lastIndex];
 
-                    values[valLocation] = valAtLastIndex;
-                    valuesLocation[valAtLastIndex] = valLocation;
+                    values[valIndex] = valAtLastIndex;
+                    valuesLocation[valAtLastIndex] = valIndex;
                     //values[lastIndex] = val;          // THis is not needed since it is going to be removed in the next step anyways.
                 }
 

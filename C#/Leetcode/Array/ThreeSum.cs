@@ -4,9 +4,12 @@ using System.Text;
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 15
+    // Leetcode 15 - https://leetcode.com/problems/3sum/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/129894562/
+
     // Input:  [-1, 0, 1, 2, -1, -4]
     // Output: [[-1, 0, 1],[-1, -1, 2]]
+
     public class ThreeSum
     {
         // Runtime : 576 ms

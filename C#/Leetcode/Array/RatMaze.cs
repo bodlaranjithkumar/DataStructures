@@ -52,16 +52,11 @@ namespace LeetcodeSolutions.Array
             {
                 path[x, y] = 1;
 
-                // go right
-                if (PathExists(maze, x + 1, y, path))
-                    return true;
-
-                // go down
-                if (PathExists(maze, x, y + 1, path))
+                // go right or go down
+                if (PathExists(maze, x + 1, y, path) || PathExists(maze, x, y + 1, path))
                     return true;
 
                 path[x, y] = 0;
-                //return false;
             }
 
             return false;

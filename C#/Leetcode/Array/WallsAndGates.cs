@@ -8,9 +8,12 @@ namespace LeetcodeSolutions.Array
     //You are given a m x n 2D grid initialized with these three possible values.
 
     //-1 - A wall or an obstacle.
-    //0 - A gate.
-    //INF - Infinity means an empty room.We use the value 2^31 - 1 = 2147483647 to represent INF as you may assume that the distance to a gate is less than 2147483647.
-    //Fill each empty room with the distance to its nearest gate.If it is impossible to reach a gate, it should be filled with INF.
+    //0 -  A gate.
+    //INF - Infinity means an empty room.We use the value 2^31 - 1 = 2147483647 to represent INF as you may 
+    //      assume that the distance to a gate is less than 2147483647.
+
+    //Question: Fill each empty room with the distance to its nearest gate.
+    //           If it is impossible to reach a gate, it should be filled with INF.
 
     //For example, given the 2D grid:
     //INF  -1  0  INF
@@ -63,8 +66,10 @@ namespace LeetcodeSolutions.Array
 
         private void FillWallsAndGates(int[,] rooms, int i, int j, int distance)
         {
-            // Breaking condition.
-            // rooms[i, j] < distance is to cover the case of the gate -1 unmodified.
+            // Base condition.
+            // rooms[i, j] < distance - covers:
+            //      1. if value at index -1
+            //      2. if value is not max which means previously found minimum is the minimum than the current distance.
             if (i < 0 || i >= m || j < 0 || j >= n || rooms[i, j] < distance) return;
 
             rooms[i, j] = distance;

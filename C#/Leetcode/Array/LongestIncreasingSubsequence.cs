@@ -44,7 +44,7 @@ namespace LeetcodeSolutions.Array
             if (length != 0)
             {
                 LIS[0] = 1;
-                maxLIS = 1;        // Initialie to 0 to cover the case of array length to 0 else 1
+                maxLIS = 1;
             }
 
             for (int i = 1; i < length; i++)

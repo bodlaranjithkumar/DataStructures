@@ -7,7 +7,7 @@ namespace LeetcodeSolutions.Array
     // Question - https://www.geeksforgeeks.org/count-number-ways-reach-destination-maze/
     // Similar to Rat-Maze problem - https://www.geeksforgeeks.org/rat-in-a-maze-backtracking-2/
 
-    public class TotalPaths
+    public class RatMazeTotalPaths
     {
         //public static void Main(string[] args)
         //{
