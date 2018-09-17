@@ -4,8 +4,9 @@ using System.Text;
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode 535
-    // Submission Detail: https://leetcode.com/submissions/detail/170097495/
+    // Leetcode 535 - https://leetcode.com/problems/encode-and-decode-tinyurl/
+    // Submission Detail - https://leetcode.com/submissions/detail/170097495/
+
     public class EncodeAndDecodeTinyURL
     {
         private string EncodeString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";

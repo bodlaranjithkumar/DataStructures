@@ -4,8 +4,8 @@ using System.Text;
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode 451
-    // Submission Detail: https://leetcode.com/submissions/detail/169459985/
+    // Leetcode 451 - https://leetcode.com/problems/sort-characters-by-frequency/
+    // Submission Detail - https://leetcode.com/submissions/detail/169459985/
 
     public class SortCharactersByFrequency
     {
@@ -17,7 +17,8 @@ namespace LeetcodeSolutions.String
 
         // Idea: 1. Count the character frequencies.
         //       2. Group the characters with same frequencies.
-        //       3. Since the order of characters doesn't matter for same frequencies, for each frequency from right to left (decreasing frequency) append the character in the list to an ouput string builder.
+        //       3. Since the order of characters doesn't matter, for each frequency from right to left 
+        //          (decreasing frequency) append the character in the list to an ouput string builder.
         public string FrequencySort(string s)
         {
             if (string.IsNullOrEmpty(s))

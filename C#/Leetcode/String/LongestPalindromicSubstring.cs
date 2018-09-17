@@ -2,13 +2,12 @@
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode 5
-    // Input: "babad"
-    // Output: "bab"
+    // Leetcode 5 - https://leetcode.com/problems/longest-palindromic-substring/
+    // Submission Detail - https://leetcode.com/submissions/detail/128760175/
+    // "babad" -> "bab"
+    // "cbbd" -> "bb"
 
-    // Input: "cbbd"
-    // Output: "bb"
-    class LongestPalindromicSubstring
+    public class LongestPalindromicSubstring
     {
         // Runtime = 159ms
         // Tx = O(n^2)

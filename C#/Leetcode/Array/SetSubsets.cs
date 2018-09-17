@@ -3,7 +3,10 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 78
+    // Leetcode 78 - https://leetcode.com/problems/subsets/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/176163960/
+    // Similar to LCD-46 - Permutation problem with a difference in the base condition - Add the list to result with no condition.
+
     public class SetSubsets
     {
         //public static void Main(string[] args)
@@ -21,22 +24,24 @@ namespace LeetcodeSolutions.Array
         // Runtime: 518ms
         // Tx = O(2^n) //?
         // Sx = O(2^n)
-        // Using Backtracking
+
+        List<List<int>> result = new List<List<int>>();
+
         public List<List<int>> FindSubsetsBackTrack(int[] nums)
         {
-            List<List<int>> result = new List<List<int>>();
-            System.Array.Sort(nums);
-            FindSubsetsBackTrack(result, new List<int>(), nums, 0);
+            FindSubsetsBackTrack(new List<int>(), nums, 0);
+
             return result;
         }
 
-        private void FindSubsetsBackTrack(List<List<int>> result, List<int> list, int[] nums, int start)
+        private void FindSubsetsBackTrack(List<int> list, int[] nums, int start)
         {
             result.Add(new List<int>(list));
+
             for (int i = start; i < nums.Length; i++)
             {
                 list.Add(nums[i]);
-                FindSubsetsBackTrack(result, list, nums, i + 1);
+                FindSubsetsBackTrack(list, nums, i + 1);
                 list.RemoveAt(list.Count - 1);
             }
         }

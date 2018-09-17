@@ -5,10 +5,10 @@ using System.Text;
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode 49
-    // Submission Detail: https://leetcode.com/submissions/detail/168055013/
-
+    // Leetcode 49 - https://leetcode.com/problems/group-anagrams/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/168055013/
     // Counting & Dictionary
+
     public class GroupAnagrams
     {
         // Input = ["eat", "tea", "tan", "ate", "nat", "bat"]

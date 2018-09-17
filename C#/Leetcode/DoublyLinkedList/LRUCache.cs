@@ -4,13 +4,13 @@ using System.Text;
 
 namespace LeetcodeSolutions.DoublyLinkedList
 {
-    // Leetcode 146
-    // Submission Detail: https://leetcode.com/submissions/detail/170193604/
+    // Leetcode 146 - https://leetcode.com/problems/lru-cache/
+    // Submission Detail - https://leetcode.com/submissions/detail/170193604/
     // Ref: https://medium.com/@krishankantsinghal/my-first-blog-on-medium-583159139237
 
     public class LRUCache
     {
-        public class DoublyLinkedListNode
+        private class DoublyLinkedListNode
         {
             public int Key;
             public int Value;
@@ -18,22 +18,22 @@ namespace LeetcodeSolutions.DoublyLinkedList
             public DoublyLinkedListNode Right;
         }
 
-        IDictionary<int, DoublyLinkedListNode> keyDLLNode;
+        IDictionary<int, DoublyLinkedListNode> cache;
         DoublyLinkedListNode start;
         DoublyLinkedListNode end;
         int capacity;
 
         public LRUCache(int cap)
         {
-            keyDLLNode = new Dictionary<int, DoublyLinkedListNode>(capacity);
+            cache = new Dictionary<int, DoublyLinkedListNode>(capacity);
             capacity = cap;
         }
 
         public int Get(int key)
         {
-            if (keyDLLNode.ContainsKey(key))
+            if (cache.ContainsKey(key))
             {
-                var node = keyDLLNode[key];
+                var node = cache[key];
 
                 RemoveNode(node);
                 AddNodeAtTop(node);
@@ -46,9 +46,9 @@ namespace LeetcodeSolutions.DoublyLinkedList
 
         public void Put(int key, int value)
         {
-            if (keyDLLNode.ContainsKey(key))
+            if (cache.ContainsKey(key))
             {
-                var node = keyDLLNode[key];
+                var node = cache[key];
                 node.Value = value; // if the key already exists, update the value.
 
                 RemoveNode(node);
@@ -62,14 +62,14 @@ namespace LeetcodeSolutions.DoublyLinkedList
                     Value = value
                 };
 
-                if (keyDLLNode.Count == capacity)
+                if (cache.Count == capacity)
                 {
-                    keyDLLNode.Remove(end.Key);
+                    cache.Remove(end.Key);
                     RemoveNode(end);
                 }
 
                 AddNodeAtTop(newNode);
-                keyDLLNode.Add(key, newNode);
+                cache.Add(key, newNode);
             }
         }
 

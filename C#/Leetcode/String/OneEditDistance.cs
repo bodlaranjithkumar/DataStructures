@@ -5,6 +5,7 @@ using System.Text;
 namespace LeetcodeSolutions.String
 {
     // Leetcode 161 - https://leetcode.com/problems/one-edit-distance/
+    // Question - Given two strings S and T, determine if they are both one edit distance apart.
     // Ref - https://www.programcreek.com/2014/05/leetcode-one-edit-distance-java/
 
     public class OneEditDistance
@@ -13,7 +14,7 @@ namespace LeetcodeSolutions.String
         //{
         //    OneEditDistance OED = new OneEditDistance();
         //    Console.WriteLine(OED.IsOneEditDistance("kit", "kitten"));      //false
-        //    Console.WriteLine(OED.IsOneEditDistance("kitten", "kiten"));    //true
+        //    Console.WriteLine(OED.IsOneEditDistance("kiten", "kitten"));    //true
         //    Console.WriteLine(OED.IsOneEditDistance("kitten", "kitte"));    //true
         //    Console.WriteLine(OED.IsOneEditDistance("kitten", "kidten"));   //true
         //    Console.WriteLine(OED.IsOneEditDistance("kitten", "kidden"));   //false
@@ -25,10 +26,9 @@ namespace LeetcodeSolutions.String
         // Sx = O(1)
 
         // Algorithm: There are 3 main operations that keep two strings at one edit distance - insert, delete, edit.
-        //     Cases: 1. If the different in length between 2 strings is greater than 1, then it is a false.
+        //     Cases: 1. If the difference in length between 2 strings is greater than 1, then it is a false.
         //            2. Else, use 2 pointers one for each string to compare the characters at those pointers.
-        //               If equal, increment both, else
-        //                  increment count which holds the edit distance.
+        //               If equal, increment both, else increment count which denotes the edit distance.
         //                  a. if m == n, increment both pointers
         //                  b. if m < n, increment 2nd pointer
         //                  c. if m > n, increment 1st pointer

@@ -3,8 +3,10 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode 3
-    class LongestSubStringWithoutRepeatingChars
+    // Leetcode 3 - https://leetcode.com/problems/longest-substring-without-repeating-characters/
+    // Submission Detail - https://leetcode.com/submissions/detail/136532273/
+
+    public class LongestSubStringWithoutRepeatingChars
     {
         // Runtime: 154ms
         // Tx = O(n)

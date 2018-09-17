@@ -4,8 +4,9 @@ using System.Text;
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode 459
-    // Submission Detail: https://leetcode.com/submissions/detail/170043524/
+    // Leetcode 459 - https://leetcode.com/problems/repeated-substring-pattern/
+    // Submission Detail - https://leetcode.com/submissions/detail/170043524/
+
     public class RepeatedSubstringPattern
     {
         // Tx = O(1). Contains function needs constant time

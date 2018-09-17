@@ -3,9 +3,11 @@ using System.Text;
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode 151
+    // Leetcode 151 - https://leetcode.com/problems/reverse-words-in-a-string/
+    // Submission Detail - https://leetcode.com/submissions/detail/136526575/
     // 2 pointers
-    class ReverseWordsInAString
+
+    public class ReverseWordsInAString
     {
         //public static void Main(string[] args)
         //{

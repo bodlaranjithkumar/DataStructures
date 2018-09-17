@@ -3,8 +3,10 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode 438
+    // Leetcode 438 - https://leetcode.com/problems/find-all-anagrams-in-a-string
+    // Submission Detail - https://leetcode.com/submissions/detail/136847326/
     // Sliding Window Technique & Counting/Frequency
+
     public class FindAllAnagramsInAString
     {
         //public static void Main(string[] args)

@@ -3,8 +3,10 @@ using System.Text;
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode 482
+    // Leetcode 482 - https://leetcode.com/problems/license-key-formatting/
+    // Submission Detail - https://leetcode.com/submissions/detail/139760389/
     // Similar to sliding window technique.
+
     public class LicenseKeyFormatting
     {
         //public static void Main(string[] args)

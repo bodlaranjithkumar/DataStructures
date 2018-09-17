@@ -5,8 +5,9 @@ using System.Text.RegularExpressions;
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode 819
-    // Submission Detail: https://leetcode.com/submissions/detail/163003918/
+    // Leetcode 819 - https://leetcode.com/problems/most-common-word/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/163003918/
+
     public class MostCommonWord
     {
         public string FindMostCommonWord(string paragraph, string[] banned)

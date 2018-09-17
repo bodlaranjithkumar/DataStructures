@@ -3,9 +3,10 @@ using System.Text;
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode 345
-    // Submission: https://leetcode.com/submissions/detail/140495752/
+    // Leetcode 345 - https://leetcode.com/problems/reverse-vowels-of-a-string/
+    // Submission - https://leetcode.com/submissions/detail/140495752/
     // 2 pointers
+
     public class ReverseVowelsOfAString
     {
         //"hello", return "holle"
@@ -43,7 +44,8 @@ namespace LeetcodeSolutions.String
                     sb[high] = temp;
                 }
 
-                low++; high--;
+                low++;
+                high--;
             }
 
             return sb.ToString();

@@ -2,7 +2,8 @@
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode 125
+    // Leetcode 125 - https://leetcode.com/problems/valid-palindrome/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/128605666/
     // empty string is a palindrome
     // 0p - false
     // a. - true

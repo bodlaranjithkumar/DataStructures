@@ -1,7 +1,8 @@
 ﻿namespace LeetcodeSolutions.String
 {
-    // Leetcode 389
-    // Submission: https://leetcode.com/submissions/detail/141070720/
+    // Leetcode 389 - https://leetcode.com/problems/find-the-difference/
+    // Submission - https://leetcode.com/submissions/detail/141070720/
+
     public class FindTheDifference
     {
         // Calculate the ASCII value difference.

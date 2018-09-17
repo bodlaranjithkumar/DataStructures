@@ -3,7 +3,9 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 46
+    // Leetcode 46 - https://leetcode.com/problems/permutations/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/137275400/
+
     public class Permutations
     {
         //public static void Main(string[] args)
@@ -13,35 +15,33 @@ namespace LeetcodeSolutions.Array
         //    var result2 = p.Permute(new int[] { });
         //}
 
-        // Using backtracking
         // Runtime: 494ms
         // Tx = O(n!)
         // Sx = O(n!)
+
+        IList<IList<int>> result = new List<IList<int>>();
+
         public IList<IList<int>> Permute(int[] nums)
-        {
-            IList<IList<int>> result = new List<IList<int>>();
-            Permute(result, new List<int>(), nums);
+        {            
+            Permute(new List<int>(), nums);
+
             return result;
         }
 
-        private void Permute(IList<IList<int>> result, IList<int> list, int[] nums)
+        private void Permute(IList<int> list, int[] nums)
         {
             if (list.Count == nums.Length)
-            {
                 result.Add(new List<int>(list));
-            }
             else
-            {
                 for (int i = 0; i < nums.Length; i++)
                 {
                     if (list.Contains(nums[i]))
                         continue; // Skip the number previously added.
 
                     list.Add(nums[i]);
-                    Permute(result, list, nums);
+                    Permute(list, nums);
                     list.RemoveAt(list.Count - 1);
                 }
-            }
         }
     }
 }

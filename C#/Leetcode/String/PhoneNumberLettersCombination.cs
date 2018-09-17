@@ -3,7 +3,9 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode 17
+    // Leetcode 17 - https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/123789159/
+
     public class PhoneNumberLettersCombination
     {
         //static void Main(string[] args)

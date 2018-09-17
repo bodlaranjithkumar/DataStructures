@@ -2,9 +2,11 @@
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode 387
+    // Leetcode 387 - https://leetcode.com/problems/first-unique-character-in-a-string/
+    // Submission Detail - https://leetcode.com/submissions/detail/136150730/
     // Frequencies Technique
-    class FirstUniqueCharInString
+
+    public class FirstUniqueCharInString
     {
         //static void Main(string[] args)
         //{

@@ -3,8 +3,11 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode: 266
-    // "code" -> False,  "aab" -> True,  "carerac" -> True.
+    // Leetcode: 266 - https://leetcode.com/problems/palindrome-permutation
+    // "code" -> False
+    // "aab" -> True
+    // "carerac" -> True
+
     public class PalindromePermutation
     {
         // Bruteforce: 

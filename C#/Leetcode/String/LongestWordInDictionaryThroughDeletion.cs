@@ -2,9 +2,10 @@
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode 524
-    // Submission Detail: https://leetcode.com/submissions/detail/141833363/
-    // Comparision problem.
+    // Leetcode 524 - https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/141833363/
+    // Comparision problem
+
     public class LongestWordInDictionaryThroughDeletion
     {
         // Input: s = "abpcplea", d = ["ale","apple","monkey","plea"]
@@ -17,7 +18,7 @@ namespace LeetcodeSolutions.String
         // Output: ""
 
         // Tx = O(n * k) {n: d.Length, k: s.Length}
-        // Sx = O(k) for longest string
+        // Sx = O(k) for longest stringx    
         public string FindLongestWord(string s, IList<string> d)
         {
             string longest = string.Empty;
@@ -31,8 +32,8 @@ namespace LeetcodeSolutions.String
                     if (i < word.Length && c == word[i])
                         i++;
 
-                // check if the full current word in dictionary is a subsequence in s
-                // and if the word length is >= longest length.
+                // check if the current word in dictionary is a subsequence of s
+                // and if the word length is >= longest length.aa
                 // = condition is required to check lexicographical order (compareTo in nested if)
                 if (i == word.Length && word.Length >= longest.Length)
                     if (word.Length > longest.Length || word.CompareTo(longest) < 0)

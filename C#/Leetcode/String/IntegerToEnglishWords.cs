@@ -3,10 +3,11 @@ using System.Text;
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode : 273
-    // Submission Detail: https://leetcode.com/submissions/detail/161037769/
+    // Leetcode 273 - https://leetcode.com/problems/integer-to-english-words/
+    // Submission Detail - https://leetcode.com/submissions/detail/161037769/
     // Reference: https://leetcode.com/problems/integer-to-english-words/discuss/70627/Short-clean-Java-solution
     // Use ranges - 0-10,10-20,20-100 and call recursively for bigger numbers.
+
     public class IntegerToEnglishWords
     {
         //public static void Main(string[] args)

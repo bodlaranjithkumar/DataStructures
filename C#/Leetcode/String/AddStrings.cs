@@ -4,10 +4,11 @@ using System.Text;
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode 415
-    // Submission : https://leetcode.com/submissions/detail/141064879/
+    // Leetcode 415 - https://leetcode.com/problems/add-strings
+    // Submission - https://leetcode.com/submissions/detail/141064879/
     // Use carry
     // Similar to Leetcode 67: Add Binary
+
     public class AddStrings
     {
         // Tx = O(n)

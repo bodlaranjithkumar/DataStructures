@@ -38,14 +38,10 @@ namespace LeetcodeSolutions.String
             while (left < right)
             {
                 while (left < right && !Char.IsLetterOrDigit(chars[left]))
-                {
                     left++;
-                }
 
                 while (left < right && !Char.IsLetterOrDigit(chars[right]))
-                {
                     right--;
-                }
 
                 if (left < right)
                 {

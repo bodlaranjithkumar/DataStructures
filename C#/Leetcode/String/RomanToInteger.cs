@@ -3,9 +3,10 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode 13
-    // Submission Detail: https://leetcode.com/submissions/detail/123691683/
+    // Leetcode 13 - https://leetcode.com/problems/roman-to-integer/
+    // Submission Detail - https://leetcode.com/submissions/detail/123691683/
     // 2 pointers
+
     public class RomanToInteger
     {
         //static void Main(string[] args)

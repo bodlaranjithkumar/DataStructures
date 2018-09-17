@@ -7,10 +7,10 @@ namespace LeetcodeSolutions.String
     // Leetcode 647 - https://leetcode.com/problems/palindromic-substrings/description/
     // Submission Detail - https://leetcode.com/submissions/detail/171122845/
     // ref: https://leetcode.com/problems/palindromic-substrings/discuss/105688/Very-Simple-Java-Solution-with-Detail-Explanation
+    // Similar to LCD 5 - LongestPalindromicSubstring
 
     public class PalindromicSubstrings
     {
-
         // case sensitive
         int count = 0;
         public int CountSubstrings(string s)
@@ -20,8 +20,8 @@ namespace LeetcodeSolutions.String
 
             for (int i = 0; i < s.Length; i++)
             {
-                CountSubstrings(s, i, i);   // To cover the case of palindromic substring of odd length.
-                CountSubstrings(s, i, i + 1); // To cover the case of palindromic substring of even length.
+                CountSubstrings(s, i, i);   // Palindromic substring of odd length.
+                CountSubstrings(s, i, i + 1); // Palindromic substring of even length.
             }
 
             return count;

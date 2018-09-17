@@ -1,24 +1,57 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LeetcodeSolutions.String
 {
-    // Reference: http://javabypatel.blogspot.com/2015/08/program-to-print-permutations-of-string-without-repetition.html
     public class PermutationString
     {
-        //public static void Main(string[] args)
-        //{
-        //    PermutationString p = new PermutationString();
-        //    var permutations = p.PermutationsOfAString("abc");
-        //}
+        public static void Main(string[] args)
+        {
+            PermutationString p = new PermutationString();
+            //var permutations = p.PermutationsOfAString("abc");
+            var permutations = p.PermutationsOfAStringUsingCharArray("abc");
 
-        private IList<string> Permutations;
+            Console.ReadKey();
+        }
+
+        private IList<string> permutations;
 
         public PermutationString()
         {
-            Permutations = new List<string>();
+            permutations = new List<string>();
         }
 
+        // Similar to Permuations of an Array - LCD 46 - https://leetcode.com/problems/permutations/description/
+        // Works when the characters in the string are unique.
+        public IList<string> PermutationsOfAStringUsingCharArray(string s)
+        {
+            char[] chars = s.ToCharArray();
+
+            PermutationsOfAStringUsingCharArray(chars, new List<char>());
+
+            return permutations;
+        }
+
+        private void PermutationsOfAStringUsingCharArray(char[] chars, IList<char> permuteChars)
+        {
+            if(permuteChars.Count == chars.Length)
+            {
+                permutations.Add(new string(permuteChars.ToArray()));
+            }
+
+            for(int i = 0; i < chars.Length; i++)
+            {
+                if (permuteChars.Contains(chars[i]))
+                    continue;
+
+                permuteChars.Add(chars[i]);
+                PermutationsOfAStringUsingCharArray(chars, permuteChars);
+                permuteChars.RemoveAt(permuteChars.Count - 1);
+            }
+        }
+
+        // Reference: http://javabypatel.blogspot.com/2015/08/program-to-print-permutations-of-string-without-repetition.html
         public IList<string> PermutationsOfAString(string s)
         {
             return PermutationsOfAString(s, "");
@@ -29,7 +62,7 @@ namespace LeetcodeSolutions.String
         private IList<string> PermutationsOfAString(string s, string p)
         {
             if (s.Length == 0)
-                Permutations.Add(p);
+                permutations.Add(p);
 
             for (int i = 0; i < s.Length; i++)
             {
@@ -39,7 +72,7 @@ namespace LeetcodeSolutions.String
                 PermutationsOfAString(right, p + left);
             }
 
-            return Permutations;
+            return permutations;
         }
     }
 }

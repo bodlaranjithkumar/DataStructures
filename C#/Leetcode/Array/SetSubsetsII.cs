@@ -3,7 +3,9 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 90
+    // Leetcode 90 - https://leetcode.com/problems/subsets-ii/
+    // Submission Detail - https://leetcode.com/submissions/detail/137052493/
+
     public class SetSubsetsII
     {
         //public static void Main(string[] args)
@@ -16,24 +18,28 @@ namespace LeetcodeSolutions.Array
         // Runtime= 643ms
         // Tx= O(2^n)
         // Sx= O(2^n)
-        // Using backtracking
+
+        IList<IList<int>> result = new List<IList<int>>();
+
         public IList<IList<int>> SubsetsWithDup(int[] nums)
         {
-            IList<IList<int>> result = new List<IList<int>>();
-            System.Array.Sort(nums);
-            SubsetsWithDup(result, new List<int>(), nums, 0);
+            System.Array.Sort(nums);    // This the first difference between no duplicates and duplicates subset problem.
+            SubsetsWithDup(new List<int>(), nums, 0);
+
             return result;
         }
 
-        private void SubsetsWithDup(IList<IList<int>> result, IList<int> list, int[] nums, int start)
+        private void SubsetsWithDup(IList<int> list, int[] nums, int start)
         {
             result.Add(new List<int>(list));
 
             for (int i = start; i < nums.Length; i++)
             {
-                if (i > start && nums[i] == nums[i - 1]) continue;
+                if (i > start && nums[i] == nums[i - 1])    // This the second difference between no duplicates and duplicates subset problem.
+                    continue;
+
                 list.Add(nums[i]);
-                SubsetsWithDup(result, list, nums, i + 1);
+                SubsetsWithDup(list, nums, i + 1);
                 list.RemoveAt(list.Count - 1);
             }
         }

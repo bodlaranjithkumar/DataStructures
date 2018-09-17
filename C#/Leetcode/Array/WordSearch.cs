@@ -4,9 +4,10 @@ using System.Text;
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 79
-    // Submission Detail: https://leetcode.com/submissions/detail/164768711/
-    // Similar to Leetcode 200 - NumberOfIslands problem.
+    // Leetcode 79 - https://leetcode.com/problems/word-search/
+    // Submission Detail - https://leetcode.com/submissions/detail/164768711/
+    // Similar to Leetcode 200 - NumberOfIslands problem
+
     public class WordSearch
     {
         //public static void Main(string[] args)

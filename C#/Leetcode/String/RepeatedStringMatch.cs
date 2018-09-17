@@ -2,8 +2,9 @@
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode 686
-    // Submission : https://leetcode.com/submissions/detail/140491920/
+    // Leetcode 686 - https://leetcode.com/problems/repeated-string-match/
+    // Submission - https://leetcode.com/submissions/detail/140491920/
+
     public class RepeatedStringMatch
     {
         // abcd, cdabcdab -> 3
