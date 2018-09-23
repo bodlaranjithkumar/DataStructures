@@ -26,7 +26,7 @@ namespace LeetcodeSolutions.String
             int[,] dp = new int[length, length];
 
             for (int i = 0; i < length; i++)
-                dp[i, i] = 1;    //A character is always a palindrome. Ofcourse, of length 1.
+                dp[i, i] = 1;    //A single character is always a palindrome of length 1.
 
             for (int l = 2; l <= length; l++)        // l - length of the string from 2 to length.
             {

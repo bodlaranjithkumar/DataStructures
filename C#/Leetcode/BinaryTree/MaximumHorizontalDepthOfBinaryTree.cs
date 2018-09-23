@@ -39,7 +39,7 @@ namespace LeetcodeSolutions.BinaryTree
                     nodes.Enqueue(new TreeNodeDepthPosition(tdNode.node.Left, tdNode.depth + 1, tdNode.position * 2));
                     nodes.Enqueue(new TreeNodeDepthPosition(tdNode.node.Right, tdNode.depth + 1, tdNode.position * 2 + 1));
 
-                    // This is to get the first left most's node position for the current depth/level.
+                    // This is to get the first left most node's position for the current depth/level.
                     if (tdNode.depth != currentDepth)
                     {
                         currentDepth = tdNode.depth;

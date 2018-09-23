@@ -1,13 +1,11 @@
-﻿using System;
-
-namespace LeetcodeSolutions.Array
+﻿namespace LeetcodeSolutions.Array
 {
     // Leetcode 238 - https://leetcode.com/problems/product-of-array-except-self/description/
     // Submission Detail - https://leetcode.com/submissions/detail/129892687/
 
     // Input:  [1,2,3,4]
     // Output: [24,12,8,6]
-    class ProductofArrayExceptSelf
+    public class ProductofArrayExceptSelf
     {
         // Runtime : 472 ms
         // Tx = O(n) {O(2n), n: length of nums} 

@@ -14,11 +14,10 @@ namespace LeetcodeSolutions.LinkedList
         {
             ListNode current = head;
             ListNode previous = null;
-            ListNode nextNode = null;
 
             while (current != null)
             {
-                nextNode = current.Next;
+                ListNode nextNode = current.Next;
                 current.Next = previous;
                 previous = current;
                 current = nextNode;

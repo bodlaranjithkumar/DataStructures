@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LeetcodeSolutions.Array
+﻿namespace LeetcodeSolutions.Array
 {
     // Example of BackTracking Algorithm
     // https://www.geeksforgeeks.org/backttracking-set-2-rat-in-a-maze/
@@ -47,28 +43,18 @@ namespace LeetcodeSolutions.Array
                 return true;
             }
 
-            // Check if the step in the maze is safe.
-            if (IsSafe(maze, x, y))
-            {
-                path[x, y] = 1;
+            if (x < 0 || x >= rows || y < 0 || y >= columns || maze[x, y] == 1)
+                return false;
 
-                // go right or go down
-                if (PathExists(maze, x + 1, y, path) || PathExists(maze, x, y + 1, path))
-                    return true;
+            path[x, y] = 1;
 
-                path[x, y] = 0;
-            }
+            // go right or go down
+            if (PathExists(maze, x + 1, y, path) || PathExists(maze, x, y + 1, path))
+                return true;
+
+            path[x, y] = 0;
 
             return false;
-        }
-
-        private bool IsSafe(int[,] maze, int x, int y)
-        {
-            return x >= 0
-                    && x < rows
-                    && y >= 0
-                    && y < columns
-                    && maze[x, y] == 1;
         }
     }
 }

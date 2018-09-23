@@ -5,7 +5,7 @@ using System.Text;
 namespace LeetcodeSolutions.String
 {
     // Leetcode 415 - https://leetcode.com/problems/add-strings
-    // Submission - https://leetcode.com/submissions/detail/141064879/
+    // Submission - https://leetcode.com/submissions/detail/177155207/
     // Use carry
     // Similar to Leetcode 67: Add Binary
 
@@ -23,10 +23,10 @@ namespace LeetcodeSolutions.String
             // Run the while loop any digit in either num1, num2 is left over or carry == 1
             while (i >= 0 || j >= 0 || carry == 1)
             {
-                int digit1 = i >= 0 ? num1[i--] - '0' : 0;
-                int digit2 = j >= 0 ? num2[j--] - '0' : 0;
-                sb.Insert(0,((digit1 + digit2 + carry) % 10));  // Insert the remainder at the 0th index
-                carry = (digit1 + digit2 + carry) / 10;
+                carry += i >= 0 ? num1[i--] - '0' : 0;
+                carry += j >= 0 ? num2[j--] - '0' : 0;
+                sb.Insert(0, carry % 10);  // Insert the remainder at the 0th index
+                carry /= 10;
             }
 
             return sb.ToString();

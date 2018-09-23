@@ -2,9 +2,10 @@
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode 139
-    // Submission Detail : https://leetcode.com/submissions/detail/136149063/
+    // Leetcode 139 - https://leetcode.com/problems/word-break/
+    // Submission Detail - https://leetcode.com/submissions/detail/136149063/
     // Dynamic Programming
+    
     public class WordBreak
     {
         // Bottom-up dynamic programming

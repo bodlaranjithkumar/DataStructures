@@ -13,24 +13,24 @@ namespace LeetcodeSolutions.String
         // Tx = O(n^2)
         // Sx = O(1)
         // Reference : https://discuss.leetcode.com/topic/23498/very-simple-clean-java-solution
+
+        int start = 0, maxLen = 0;
         public string LongestPalindrome(string s)
         {
             int length = s.Length;
             if (length < 2)
                 return s;
 
-            int start = 0, maxLen = 0;
-
             for (int index = 0; index < length - 1; index++)
             {
-                ValidatePalindrome(s, index, index, ref start, ref maxLen); // assume length of palindrome is odd
-                ValidatePalindrome(s, index, index + 1, ref start, ref maxLen); // assume length of palindrome is even
+                ValidatePalindrome(s, index, index); // length of palindrome is odd
+                ValidatePalindrome(s, index, index + 1); // length of palindrome is even
             }
 
             return s.Substring(start, maxLen);
         }
 
-        private void ValidatePalindrome(string s, int leftIndex, int rightIndex, ref int start, ref int maxLen)
+        private void ValidatePalindrome(string s, int leftIndex, int rightIndex)
         {
             while (leftIndex >= 0 && rightIndex < s.Length && s[leftIndex] == s[rightIndex])
             {
@@ -38,9 +38,9 @@ namespace LeetcodeSolutions.String
                 rightIndex++;
             }
 
-            if (maxLen < rightIndex - leftIndex - 1)
+            if (maxLen < rightIndex - leftIndex - 1)    // rightIndex-leftIndex+1-2
             {
-                start = leftIndex + 1;
+                start = leftIndex + 1;  // Found the new max length - Update the start position of the new palindromic substring.
                 maxLen = rightIndex - leftIndex - 1;
             }
         }

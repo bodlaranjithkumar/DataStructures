@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace LeetcodeSolutions.Array
 {
     // Leetcode 325
+    // Greedy Algorithm
     // Ref - http://buttercola.blogspot.com/2016/01/leetcode-maximum-size-subarray-sum.html
 
     // Array=[-2,-1,2,1,1]          K=1   

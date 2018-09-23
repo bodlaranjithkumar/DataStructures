@@ -34,7 +34,7 @@ namespace LeetcodeSolutions.String
             {
                 string str = s.Substring(left, right-left+1);
 
-                if (palindromicSubstrings.Contains(str))
+                if (!palindromicSubstrings.Contains(str))
                     palindromicSubstrings.Add(str);
 
                 left--;
