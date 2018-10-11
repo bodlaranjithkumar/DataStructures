@@ -3,6 +3,7 @@
 namespace LeetcodeSolutions.Array
 {
     // Leetcode 325
+    // Submission Detail - https://leetcode.com/submissions/detail/181972201/
     // Greedy Algorithm
     // Ref - http://buttercola.blogspot.com/2016/01/leetcode-maximum-size-subarray-sum.html
 
@@ -66,11 +67,11 @@ namespace LeetcodeSolutions.Array
             {
                 sum_I += nums[i];
 
-                if (!sumIndices.ContainsKey(sum_I))
-                    sumIndices.Add(sum_I, i);
-
                 if (sumIndices.ContainsKey(sum_I - k))
                     maxLen = System.Math.Max(maxLen, i - sumIndices[sum_I - k]);
+
+                if (!sumIndices.ContainsKey(sum_I))
+                    sumIndices.Add(sum_I, i);
             }
 
             return maxLen;
