@@ -6,6 +6,7 @@ using System.Linq;
 namespace LeetcodeSolutions.BinaryTree
 {
     // Leetcode 314
+    // Submission Detail: 
 
     //    _3_
     //   /   \
@@ -24,43 +25,50 @@ namespace LeetcodeSolutions.BinaryTree
         //      create new binary tree with col value as col-1 for left child and col+1 for right child.
         //      Then traverse the tree and add the col as key, list as values into a dictionary.
 
-        //public static void Main(string[] args)
-        //{
-        //    BinaryTreeNode root = new BinaryTreeNode(3)
-        //    {
-        //        Left = new BinaryTreeNode(9)
-        //        {
-        //            Left = new BinaryTreeNode(4),
-        //            Right = new BinaryTreeNode(5)
-        //        },
-        //        Right = new BinaryTreeNode(20)
-        //        {
-        //            Left = new BinaryTreeNode(2),
-        //            Right = new BinaryTreeNode(7)
-        //        }
-        //    };
+        public static void Main(string[] args)
+        {
+            BinaryTreeNode root = new BinaryTreeNode(3)
+            {
+                Left = new BinaryTreeNode(9)
+                {
+                    Left = new BinaryTreeNode(4),
+                    Right = new BinaryTreeNode(5)
+                },
+                Right = new BinaryTreeNode(20)
+                {
+                    Left = new BinaryTreeNode(2),
+                    Right = new BinaryTreeNode(7)
+                }
+            };
 
-        //    BinaryTreeVerticalOrderTraversal t = new BinaryTreeVerticalOrderTraversal();
+            BinaryTreeVerticalOrderTraversal t = new BinaryTreeVerticalOrderTraversal();
 
-        //    //var list = t.VerticalTraversal(root);
-        //    var list = t.BTVerticalOrderTraversal(root);
+            //var list = t.VerticalTraversal(root);
+            IList<IList<int>> list = t.BTVerticalOrderTraversal(root);
 
-        //    foreach (var l in list)
-        //        Helper.PrintListElements(l);
+            foreach (IList<int> l in list)
+            {
+                Helper.PrintListElements(l);
+            }
 
-        //    Console.ReadKey();
-        //}
+            Console.ReadKey();
+        }
+
+        // Note: If the order matters (left to right and top to bottom) then, using BFS is the solution.
 
         int min = 0, max = 0;
-        List<List<int>> outerList;
-        public List<List<int>> BTVerticalOrderTraversal(BinaryTreeNode root)
+        IList<IList<int>> outerList;
+        public IList<IList<int>> BTVerticalOrderTraversal(BinaryTreeNode root)
         {
             CalculateMinMax(root, 0);
 
-            outerList = new List<List<int>>(max - min + 1);
+            int length = max - min + 1;
+            outerList = new List<IList<int>>(length);
 
-            for (int i = 0; i < outerList.Capacity; i++)
+            for (int i = 0; i < length; i++)
+            {
                 outerList.Add(new List<int>());
+            }
 
             BTVerticalOrderTraversal(root, 0 - min);
 
@@ -69,7 +77,10 @@ namespace LeetcodeSolutions.BinaryTree
 
         private void CalculateMinMax(BinaryTreeNode node, int level)
         {
-            if (node == null) return;
+            if (node == null)
+            {
+                return;
+            }
 
             min = System.Math.Min(min, level);
             max = System.Math.Max(max, level);
@@ -80,7 +91,10 @@ namespace LeetcodeSolutions.BinaryTree
 
         public void BTVerticalOrderTraversal(BinaryTreeNode root, int level)
         {
-            if (root == null) return;
+            if (root == null)
+            {
+                return;
+            }
 
             outerList[level].Add(root.Val);
 
@@ -109,10 +123,15 @@ namespace LeetcodeSolutions.BinaryTree
 
         private void VerticalTraversal(BinaryTreeNode node, int col)
         {
-            if (node == null) return;
+            if (node == null)
+            {
+                return;
+            }
 
             if (!nodes.ContainsKey(col))
+            {
                 nodes.Add(col, new List<int>());
+            }
 
             nodes[col].Add(node.Val);
 
