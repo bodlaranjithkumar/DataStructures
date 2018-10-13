@@ -3,6 +3,8 @@
 namespace LeetcodeSolutions.Array
 {
     // Leetcode 311
+    // Submission Detail: https://leetcode.com/submissions/detail/182412206/
+
     public class SparseMatrixMultiplication
     {
         //public static void Main(string[] args)
