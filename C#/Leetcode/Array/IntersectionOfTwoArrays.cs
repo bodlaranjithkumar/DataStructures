@@ -8,9 +8,10 @@ namespace LeetcodeSolutions.Array
     public class IntersectionOfTwoArrays
     {
         // Alternative solution to below which optimizes space to O(1) and makes time worse to O(nlogn)
-        // Sort either of the array and iterating through the array, search for the number in the sorted
+        // Sort any array and iterating through the array, search for the number in the sorted
         //  array in O(logn). If the number is found, add it to a hashset. In the end, iterate through the
-        //  values in the hashset and add it to a new resultant array to return.
+        //  values in the hashset and add it to the common hashset. Finally, iterate throught the common
+        // hashset and add it to the resultant array.
 
         // Optimized for time.
         // Tx = (m+n)
