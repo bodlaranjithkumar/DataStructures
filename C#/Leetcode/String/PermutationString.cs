@@ -6,14 +6,14 @@ namespace LeetcodeSolutions.String
 {
     public class PermutationString
     {
-        public static void Main(string[] args)
-        {
-            PermutationString p = new PermutationString();
-            //var permutations = p.PermutationsOfAString("abc");
-            var permutations = p.PermutationsOfAStringUsingCharArray("abc");
+        //public static void Main(string[] args)
+        //{
+        //    PermutationString p = new PermutationString();
+        //    //var permutations = p.PermutationsOfAString("abc");
+        //    var permutations = p.PermutationsOfAStringUsingCharArray("abc");
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
 
         private IList<string> permutations;
 
