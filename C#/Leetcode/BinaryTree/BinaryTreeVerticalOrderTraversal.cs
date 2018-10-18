@@ -25,34 +25,34 @@ namespace LeetcodeSolutions.BinaryTree
         //      create new binary tree with col value as col-1 for left child and col+1 for right child.
         //      Then traverse the tree and add the col as key, list as values into a dictionary.
 
-        public static void Main(string[] args)
-        {
-            BinaryTreeNode root = new BinaryTreeNode(3)
-            {
-                Left = new BinaryTreeNode(9)
-                {
-                    Left = new BinaryTreeNode(4),
-                    Right = new BinaryTreeNode(5)
-                },
-                Right = new BinaryTreeNode(20)
-                {
-                    Left = new BinaryTreeNode(2),
-                    Right = new BinaryTreeNode(7)
-                }
-            };
+        //public static void Main(string[] args)
+        //{
+        //    BinaryTreeNode root = new BinaryTreeNode(3)
+        //    {
+        //        Left = new BinaryTreeNode(9)
+        //        {
+        //            Left = new BinaryTreeNode(4),
+        //            Right = new BinaryTreeNode(5)
+        //        },
+        //        Right = new BinaryTreeNode(20)
+        //        {
+        //            Left = new BinaryTreeNode(2),
+        //            Right = new BinaryTreeNode(7)
+        //        }
+        //    };
 
-            BinaryTreeVerticalOrderTraversal t = new BinaryTreeVerticalOrderTraversal();
+        //    BinaryTreeVerticalOrderTraversal t = new BinaryTreeVerticalOrderTraversal();
 
-            //var list = t.VerticalTraversal(root);
-            IList<IList<int>> list = t.BTVerticalOrderTraversal(root);
+        //    //var list = t.VerticalTraversal(root);
+        //    IList<IList<int>> list = t.BTVerticalOrderTraversal(root);
 
-            foreach (IList<int> l in list)
-            {
-                Helper.PrintListElements(l);
-            }
+        //    foreach (IList<int> l in list)
+        //    {
+        //        Helper.PrintListElements(l);
+        //    }
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
 
         // Note: If the order matters (left to right and top to bottom) then, using BFS is the solution.
 
