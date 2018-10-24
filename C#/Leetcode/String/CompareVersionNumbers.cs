@@ -7,14 +7,14 @@ namespace LeetcodeSolutions.String
 
     public class CompareVersionNumbers
     {
-        public static void Main(string[] args)
-        {
-            CompareVersionNumbers comp = new CompareVersionNumbers();
-            Console.WriteLine(comp.CompareVersion("1.0.1", "1"));   // 1
-            Console.WriteLine(comp.CompareVersion("01", "1"));      // -1
+        //public static void Main(string[] args)
+        //{
+        //    CompareVersionNumbers comp = new CompareVersionNumbers();
+        //    Console.WriteLine(comp.CompareVersion("1.0.1", "1"));   // 1
+        //    Console.WriteLine(comp.CompareVersion("01", "1"));      // -1
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
 
         public int CompareVersion(string version1, string version2)
         {
