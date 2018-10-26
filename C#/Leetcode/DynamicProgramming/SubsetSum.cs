@@ -6,16 +6,16 @@
     {
         // Ref: https://www.youtube.com/watch?v=s6FhG--P7z0
 
-        public static void Main(string[] args)
-        {
-            SubsetSum subsetSum = new SubsetSum();
+        //public static void Main(string[] args)
+        //{
+        //    SubsetSum subsetSum = new SubsetSum();
 
-            int[] arr1 = { 2, 3, 7, 8 };
-            bool result1 = subsetSum.IsSubsetWithGivenSumExists(arr1, 9);     // true;
-            bool result2 = subsetSum.IsSubsetWithGivenSumExists(arr1, 17);     // true;
-            bool result3 = subsetSum.IsSubsetWithGivenSumExists(arr1, 12);     // true;
-            bool result4 = subsetSum.IsSubsetWithGivenSumExists(arr1, 6);     // false;
-        }
+        //    int[] arr1 = { 2, 3, 7, 8 };
+        //    bool result1 = subsetSum.IsSubsetWithGivenSumExists(arr1, 9);     // true;
+        //    bool result2 = subsetSum.IsSubsetWithGivenSumExists(arr1, 17);     // true;
+        //    bool result3 = subsetSum.IsSubsetWithGivenSumExists(arr1, 12);     // true;
+        //    bool result4 = subsetSum.IsSubsetWithGivenSumExists(arr1, 6);     // false;
+        //}
 
         // Bottom-Up
         public bool IsSubsetWithGivenSumExists(int[] nums, int targetSum)

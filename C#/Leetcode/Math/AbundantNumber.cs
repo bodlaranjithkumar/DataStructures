@@ -4,7 +4,7 @@ namespace LeetcodeSolutions.Math
 {
     public class AbundantNumber
     {
-        // Ref: https://www.geeksforgeeks.org/abundant-number/
+        // Description: https://www.geeksforgeeks.org/abundant-number/
 
         //public static void Main(string[] args)
         //{
@@ -23,9 +23,9 @@ namespace LeetcodeSolutions.Math
         // Tx = O(Sqrt(n))
         private long GetDivisorsSumOptimized(int n)
         {
-            long sum = 0;
+            long sum = 1;
 
-            for(int i = 1; i <= System.Math.Sqrt(n); i++)
+            for(int i = 2; i <= System.Math.Sqrt(n); i++)
             {
                 if(n % i == 0)
                 {
@@ -36,7 +36,6 @@ namespace LeetcodeSolutions.Math
                 }
             }
 
-            sum -= n;   // when i is 1, we are adding n to sum above. So, subtract it from sum.
             return sum;
         }
 
