@@ -3,7 +3,8 @@ using System;
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 270
+    // Leetcode 270 - https://leetcode.com/problems/closest-binary-search-tree-value/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/185766978/
 
     //           20
     //          / \
@@ -40,13 +41,31 @@ namespace LeetcodeSolutions.BinaryTree
         //    };
 
         //    ClosestBSTValue closest = new ClosestBSTValue();
-        //    Console.WriteLine(closest.FindClosestBSTValue(root, 4));
-        //    Console.WriteLine(closest.FindClosestBSTValue(root, 7));
-        //    Console.WriteLine(closest.FindClosestBSTValue(root, 11));
-        //    Console.WriteLine(closest.FindClosestBSTValue(root, 46));
+        //    Console.WriteLine(closest.ClosestValueOptimized(root, 4));
+        //    Console.WriteLine(closest.ClosestValueOptimized(root, 7));
+        //    Console.WriteLine(closest.ClosestValueOptimized(root, 11));
+        //    Console.WriteLine(closest.ClosestValueOptimized(root, 46));
 
         //    Console.ReadKey();
         //}
+
+        // Sx = O(1)
+        public int ClosestValueOptimized(BinaryTreeNode root, double target)
+        {
+            int closestValue = root.Val;
+
+            // Traverse through a path. So, Tx = O(d).
+            while (root != null)
+            {
+                if (System.Math.Abs(root.Val - target) < System.Math.Abs(closestValue - target))
+                    closestValue = root.Val;    // Found new closest value
+
+                // if target value is less than nodes value, then check if it is closest to it's left child node, else right node.
+                root = root.Val > target ? root.Left : root.Right;
+            }
+
+            return closestValue;
+        }
 
         public int FindClosestBSTValue(BinaryTreeNode root, int value)
         {

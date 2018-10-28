@@ -2,9 +2,13 @@
 {
     public class TreeLinkNode
     {
-        int val;
-        public TreeLinkNode left, right, next;
-        TreeLinkNode(int x) { val = x; }
+        private readonly int Val;
+        public TreeLinkNode Left, Right, Next;
+
+        TreeLinkNode(int x)
+        {
+            Val = x;
+        }
     }
 
     // Leetcode 116 - https://leetcode.com/problems/populating-next-right-pointers-in-each-node
@@ -17,17 +21,21 @@
         // Breadth-First Traversal
         public void Connect(TreeLinkNode root)
         {
-            while (root != null && root.left != null)
+            while (root != null && root.Left != null)
             {
                 TreeLinkNode CurrLevelLeftNode = root;
+
                 while (root != null)
                 {
-                    root.left.next = root.right;
-                    if (root.next != null) root.right.next = root.next.left;
-                    root = root.next;
+                    root.Left.Next = root.Right;
+
+                    if (root.Next != null)
+                        root.Right.Next = root.Next.Left;
+
+                    root = root.Next;
                 }
 
-                root = CurrLevelLeftNode.left;
+                root = CurrLevelLeftNode.Left;
             }
         }
     }

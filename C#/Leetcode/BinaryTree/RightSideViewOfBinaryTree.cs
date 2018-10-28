@@ -1,7 +1,6 @@
 ﻿using LeetcodeSolutions.DataStructures;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace LeetcodeSolutions.BinaryTree
 {
@@ -11,12 +10,13 @@ namespace LeetcodeSolutions.BinaryTree
     public class RightSideViewOfBinaryTree
     {
         // Tx = O(n) {n: # of nodes in the tree}
-        // Sx = O(m) {m: max nodes at a level. This is the #of nodes at last level in case the tree is a complete binary tree}
+        // Sx = O(m) {m: max nodes at a level. This is the # of nodes at last level in case the tree is a complete binary tree}
 
         // Breadth-First Traversal
-        // Algorithm: Extension/Modification of level-order traversal of a binary tree problem. 
-        //            If node values are enqueued to a queue from Left to Right, the last node in the 
-        //            queue is after dequeue is the node on the Right side view for that level. 
+        // Algorithm: Extension/Modification of level-order traversal of 
+        //  a binary tree problem. If node values are enqueued to a queue
+        //  from Left to Right, the last node in the queue is after 
+        //  dequeue is the node on the Right side view for that level. 
 
         public IList<int> RightSideView(BinaryTreeNode root)
         {

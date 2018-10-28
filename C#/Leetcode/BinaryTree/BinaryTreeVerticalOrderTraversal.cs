@@ -66,9 +66,7 @@ namespace LeetcodeSolutions.BinaryTree
             outerList = new List<IList<int>>(length);
 
             for (int i = 0; i < length; i++)
-            {
                 outerList.Add(new List<int>());
-            }
 
             BTVerticalOrderTraversal(root, 0 - min);
 
@@ -78,9 +76,7 @@ namespace LeetcodeSolutions.BinaryTree
         private void CalculateMinMax(BinaryTreeNode node, int level)
         {
             if (node == null)
-            {
                 return;
-            }
 
             min = System.Math.Min(min, level);
             max = System.Math.Max(max, level);
@@ -92,9 +88,7 @@ namespace LeetcodeSolutions.BinaryTree
         public void BTVerticalOrderTraversal(BinaryTreeNode root, int level)
         {
             if (root == null)
-            {
                 return;
-            }
 
             outerList[level].Add(root.Val);
 

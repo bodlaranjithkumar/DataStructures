@@ -41,6 +41,7 @@ namespace LeetcodeSolutions.LinkedList
 
             ListNode prev = dummyHead;
 
+            // Traverse till the node before node at m
             while (m > 1 && prev != null)
             {
                 prev = prev.Next;
@@ -68,6 +69,7 @@ namespace LeetcodeSolutions.LinkedList
                 n--;
             }
 
+            // The nth node is new next node of head.
             head.Next = current;
 
             return prev;

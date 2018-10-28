@@ -1,12 +1,12 @@
 ﻿using LeetcodeSolutions.DataStructures;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 545
-    // Ref: https://www.geeksforgeeks.org/boundary-traversal-of-binary-tree/
+    // Leetcode 545 - https://leetcode.com/problems/boundary-of-binary-tree/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/185762858/
+    // Ref - https://www.geeksforgeeks.org/boundary-traversal-of-binary-tree/
 
     public class BoundaryOfBinaryTree
     {
@@ -54,6 +54,7 @@ namespace LeetcodeSolutions.BinaryTree
         //       2. Add all leaf nodes to the list.
         //       3. Traverse recursively to the last right boundary node and add to the list.
 
+        // ClockWise. For Anti-Clockwise, call the modular functions from this method in reverse order.
         public IList<int> BoundaryOfABinaryTree(BinaryTreeNode root)
         {
             if (root == null) return boundaryNodes;
@@ -85,7 +86,8 @@ namespace LeetcodeSolutions.BinaryTree
 
         private void Leaves(BinaryTreeNode node)
         {
-            if (node == null) return;
+            if (node == null)
+                return;
 
             if (node.Left == null && node.Right == null)
                 boundaryNodes.Add(node.Val);
@@ -96,7 +98,8 @@ namespace LeetcodeSolutions.BinaryTree
 
         private void RightBoundary(BinaryTreeNode node)
         {
-            if (node == null) return;
+            if (node == null || (node.Left == null && node.Right == null))
+                return;
 
             if (node.Right != null)
                 RightBoundary(node.Right);

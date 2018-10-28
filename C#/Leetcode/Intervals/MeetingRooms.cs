@@ -1,10 +1,11 @@
 ﻿using LeetcodeSolutions.DataStructures;
-using System;
 
 namespace LeetcodeSolutions.Intervals
 {
-    // Leetcode 252
+    // Leetcode 252 - https://leetcode.com/problems/meeting-rooms/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/185728670/
     // Problem Explanation : http://www.cnblogs.com/grandyang/p/5240774.html
+
     public class MeetingRooms
     {
         //public static void Main(string[] args)
@@ -27,18 +28,16 @@ namespace LeetcodeSolutions.Intervals
         // Sx = O(1)
         public bool CanAttendMeetings(Interval[] intervals)
         {
-            if (intervals != null)
+            System.Array.Sort(intervals, (i1, i2) =>
             {
-                System.Array.Sort(intervals);
+                return i1.start.CompareTo(i2.start);
+            });
 
-                for (int i = 1; i < intervals.Length; i++)
-                {
-                    if (intervals[i - 1].end > intervals[i].start)
-                        return false;
-                }
-            }
+            for (int i = 1; i < intervals.Length; i++)
+                if (intervals[i - 1].end > intervals[i].start)
+                    return false;
 
-            return true;
+            return true;    
         }
 
 

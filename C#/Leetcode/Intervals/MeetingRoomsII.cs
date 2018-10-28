@@ -2,8 +2,8 @@
 
 namespace LeetcodeSolutions.Intervals
 {
-    // Leetcode 253
-    // Submission Detail: https://leetcode.com/submissions/detail/181966142/
+    // Leetcode 253 - https://leetcode.com/problems/meeting-rooms-ii/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/181966142/
 
     // Input: [[15,20],[0,30],[35,40]] -> 2
     // Input: [[15,40],[15,20],[0,30]] -> 3

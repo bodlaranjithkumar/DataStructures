@@ -5,11 +5,11 @@ using System.Text;
 namespace LeetcodeSolutions.BinaryTree
 {
     // Leetcode 449 - https://leetcode.com/problems/serialize-and-deserialize-bst/
-    // Submission Detail: https://leetcode.com/submissions/detail/170396771/
+    // Submission Detail - https://leetcode.com/submissions/detail/170396771/
 
     public class SerializeAndDeserializeBST
     {
-        // Encodes a tree to a single string.
+        // Encodes a tree to a string.
         public string Serialize(BinaryTreeNode root)
         {
             if (root == null)
@@ -27,8 +27,6 @@ namespace LeetcodeSolutions.BinaryTree
                 if (node != null)
                 {
                     str.Append(node.Val);
-
-                    // TODO: Optimization - Leaf nodes doesn't need to be added to the queue and to the seriazlized string
 
                     nodes.Enqueue(node.Left);
                     nodes.Enqueue(node.Right);
@@ -60,7 +58,7 @@ namespace LeetcodeSolutions.BinaryTree
             var queue = new Queue<BinaryTreeNode>();
             queue.Enqueue(root);
 
-            for (int i = 1; i < values.Length; i = i + 2)
+            for (int i = 1; i < values.Length; i += 2)
             {
                 var node = queue.Dequeue();
 

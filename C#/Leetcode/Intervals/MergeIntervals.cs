@@ -5,7 +5,9 @@ using LeetcodeSolutions.DataStructures;
 
 namespace LeetcodeSolutions.Intervals
 {
-    //Leetcode 56
+    // Leetcode 56 - https://leetcode.com/problems/merge-intervals/
+    // Submission Detail - https://leetcode.com/submissions/detail/128324956/
+
     public class MergeIntervals
     {
         //[[4,5],[2,4],[4,6],[3,4],[0,0],[1,1],[3,5],[2,2]]
@@ -16,18 +18,13 @@ namespace LeetcodeSolutions.Intervals
         // Runtime = 655 ms
         // Tx = O(nlogn)
         // Sx = O(n) for output list
-        public IList<Interval> Merge(IList<Interval> intervals)
+        public IList<Interval> Merge(List<Interval> intervals)
         {
-            if (intervals == null || intervals.Count == 0)
-            {
+            if (intervals == null)
                 return intervals;
-            }
 
             // Sort the array on the start time.
-            intervals = intervals
-                            .OrderBy(i => i.start)
-                            .ThenBy(i => i.end)
-                            .ToList();
+            intervals.Sort((i1, i2) => i1.start.CompareTo(i2.start));
 
             IList<Interval> mergedIntervals = new List<Interval>{
                 intervals[0]
@@ -38,14 +35,10 @@ namespace LeetcodeSolutions.Intervals
                 Interval lastMergedInterval = mergedIntervals.Last();
 
                 if (lastMergedInterval.end >= currentInterval.start)
-                {
                     lastMergedInterval.end = sys.Math.Max(currentInterval.end, lastMergedInterval.end);
-                }
                 else
-                {
                     // Last and current intervals do not overlap. So, add current interval at last in the list.
                     mergedIntervals.Add(currentInterval);
-                }
             }
 
             return mergedIntervals;

@@ -25,9 +25,9 @@ namespace LeetcodeSolutions.Trie
         //      Output:   [null,null,null,null,false,true,true,false]
         //      Expected: [null,null,null,null,false,true,true,true]
 
-        private static int Size = 26;   // Alphabets a-z count
+        private static readonly int Size = 26;   // Alphabets a-z count
 
-        private TrieNode root;
+        private readonly TrieNode root;
         /** Initialize your data structure here. */
         public AddandSearchWords()
         {

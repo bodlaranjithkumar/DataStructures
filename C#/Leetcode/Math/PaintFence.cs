@@ -2,8 +2,10 @@
 
 namespace LeetcodeSolutions.Math
 {
-    // Leetcode 276
+    // Leetcode 276 - https://leetcode.com/problems/paint-fence/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/185722346/
     // Reference: https://www.geeksforgeeks.org/painting-fence-algorithm/
+
     public class PaintFence
     {
         //public static void Main(string[] args)
@@ -19,6 +21,8 @@ namespace LeetcodeSolutions.Math
         //Sx = O(1)
         public int NumWays(int n, int k)
         {
+            if (n == 0) return 0;
+
             // Total for n = 1;
             int total = k;
 

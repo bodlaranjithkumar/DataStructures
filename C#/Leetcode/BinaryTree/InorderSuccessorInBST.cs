@@ -15,8 +15,9 @@ namespace LeetcodeSolutions.BinaryTree
     //  14 -> 20
     //  22 -> null
 
-    // Leetcode 285
-    // Ref: https://www.geeksforgeeks.org/inorder-successor-in-binary-search-tree/
+    // Leetcode 285 - https://leetcode.com/problems/inorder-successor-in-bst/
+    // Submission Detail - https://leetcode.com/submissions/detail/185771295/
+    // Ref - https://www.geeksforgeeks.org/inorder-successor-in-binary-search-tree/
 
     public class InorderSuccessorInBST
     {

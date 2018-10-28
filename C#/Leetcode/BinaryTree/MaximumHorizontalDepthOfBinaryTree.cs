@@ -14,13 +14,15 @@ namespace LeetcodeSolutions.BinaryTree
         // Sx = O(n)
 
         // BFS
-        // Algorithm: Since the given tree is a binary tree, for the current level and for the current node, 
-        //          it's left child node position is the 
-        //          current node position*2 and right child node position is current node position*2+1. 
-        //          With this observation, the depth at current level is the rightmost node's 
-        //          position-left most node position+1. left value is set when the first node in a given level is visited.
-        //          To hold the depth, position for a node, a custom datastructure is needed with props - node, 
-        //          depth, position.
+        // Algorithm: Since the given tree is a binary tree, for the 
+        //  current level and for the current node, it's left child node 
+        //  position is the current node position*2 and right child node 
+        //  position is current node position*2+1. With this observation,
+        //  the depth at current level is the rightmost node's 
+        //  position-left most node's position+1. Left value is set when 
+        //  the when the first node in a given level is visited.
+        //  hold the depth, position for a node, a custom 
+        //  datastructure is needed with props - node, depth, position.
         public int WidthOfBinaryTree(BinaryTreeNode root)
         {
             Queue<TreeNodeDepthPosition> nodes = new Queue<TreeNodeDepthPosition>();

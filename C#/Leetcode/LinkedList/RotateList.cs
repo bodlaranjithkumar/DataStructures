@@ -44,7 +44,7 @@ namespace LeetcodeSolutions.LinkedList
                 newHeadIndex--;
             }
 
-            // Set the node before the newHeadIndex next to null.
+            // Set the next pointer of the node before the newHeadIndex to null.
             newHead = current.Next;
             current.Next = null;
 

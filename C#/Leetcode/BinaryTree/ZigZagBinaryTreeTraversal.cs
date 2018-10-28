@@ -9,7 +9,6 @@ namespace LeetcodeSolutions.BinaryTree
 
     public class ZigZagBinaryTreeTraversal
     {
-        // Runtime : 558 ms
         // Tx: O(n) { n: n is the number of nodes in the binary tree}
         // Sx: O(n) { n: n is the number of nodes in the binary tree}
         public static IList<IList<int>> ZigzagLevelOrder(BinaryTreeNode root)

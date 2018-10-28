@@ -3,8 +3,8 @@
 namespace LeetcodeSolutions.BinaryTree
 {
     // Leetcode 236 - https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/
-    // submission detail: https://leetcode.com/submissions/detail/168752862/
-    // ref: https://www.youtube.com/watch?v=13m9ZCB8gjw
+    // Submission Detail - https://leetcode.com/submissions/detail/168752862/
+    // ref - https://www.youtube.com/watch?v=13m9ZCB8gjw
 
     public class LowestCommonAncestorOfBinaryTree
     {

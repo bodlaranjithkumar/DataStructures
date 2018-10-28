@@ -23,9 +23,8 @@ namespace LeetcodeSolutions.BinaryTree
 
     public class MergeTwoBinaryTrees
     {
-        // Runtime = 212 ms
         // Tx = O(n)
-        // Sx = O(n) for the recursive call stack
+        // Sx = O(d) for the recursive call stack
         public BinaryTreeNode MergeTrees(BinaryTreeNode t1, BinaryTreeNode t2)
         {
             if (t1 == null && t2 == null)    // leaf node

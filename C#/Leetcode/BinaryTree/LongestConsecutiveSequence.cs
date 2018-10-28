@@ -3,8 +3,9 @@ using System;
 
 namespace LeetcodeSolutions.BinaryTree
 {
-    // Leetcode 298
-    // Explanation: https://www.geeksforgeeks.org/longest-consecutive-sequence-binary-tree/
+    // Leetcode 298 - https://leetcode.com/submissions/detail/185774782/
+    // Submission Detail - https://leetcode.com/submissions/detail/185774782/
+    // Explanation - https://www.geeksforgeeks.org/longest-consecutive-sequence-binary-tree/
 
     public class LongestConsecutiveSequence
     {
