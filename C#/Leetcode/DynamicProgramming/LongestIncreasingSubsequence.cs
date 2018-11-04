@@ -2,11 +2,11 @@
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 300
-    // Dynamic Programming - Common subproblems
+    // Leetcode 300 - https://leetcode.com/problems/longest-increasing-subsequence/
+    // Submission - https://leetcode.com/submissions/detail/174288021/
     // Reference - Explanation: https://www.youtube.com/watch?v=CE2b_-XfVDk
     //           - Code : https://github.com/mission-peace/interview/blob/master/src/com/interview/dynamic/LongestIncreasingSubsequence.java
-    // Submission - https://leetcode.com/submissions/detail/174288021/
+    // Bottom-Up Dynamic Programming
 
     public class LongestIncreasingSubsequence
     {

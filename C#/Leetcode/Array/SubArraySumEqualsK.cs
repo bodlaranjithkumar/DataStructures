@@ -2,8 +2,8 @@
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 560
-    // Submission Detail: https://leetcode.com/submissions/detail/181998316/
+    // Leetcode 560 - https://leetcode.com/problems/subarray-sum-equals-k/
+    // Submission Detail - https://leetcode.com/submissions/detail/181998316/
 
     public class SubArraySumEqualsK
     {
@@ -28,14 +28,10 @@ namespace LeetcodeSolutions.Array
                 sumSoFar += num;
 
                 if (sumFrequencies.ContainsKey(sumSoFar - k))
-                {
                     count += sumFrequencies[sumSoFar - k];
-                }
 
                 if (!sumFrequencies.ContainsKey(sumSoFar))
-                {
                     sumFrequencies.Add(sumSoFar, 0);
-                }
 
                 sumFrequencies[sumSoFar]++;
             }

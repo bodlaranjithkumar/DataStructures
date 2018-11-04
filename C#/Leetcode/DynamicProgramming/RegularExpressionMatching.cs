@@ -21,12 +21,8 @@
 
             //Deals with patterns like a* or a*b* or a*b*c*
             for (int i = 1; i <= length2; i++)
-            {
                 if (pattern[i - 1] == '*')
-                {
                     dp[0, i] = dp[0, i - 2];
-                }
-            }
 
             for (int i = 1; i <= length1; i++)
             {
@@ -41,9 +37,7 @@
                         dp[i, j] = dp[i, j - 2];   // This could be T or F
 
                         if (pattern[j - 2] == '.' || text[i - 1] == pattern[j - 2])
-                        {
                             dp[i, j] = dp[i, j] | dp[i - 1, j]; // boolean logical OR
-                        }
                     }
                 }
             }

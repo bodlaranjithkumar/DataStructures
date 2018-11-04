@@ -2,8 +2,8 @@
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 350
-    // Submission Detail: https://leetcode.com/submissions/detail/182418042/
+    // Leetcode 350 - https://leetcode.com/problems/intersection-of-two-arrays-ii/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/182418042/
 
     public class IntersectionOfTwoArraysII
     {
@@ -20,16 +20,16 @@ namespace LeetcodeSolutions.Array
         {
             IDictionary<int, int> nums1Frequency = new Dictionary<int, int>();
 
+            // Count the frequency of numbers in first array.
             foreach (int num in nums1)
             {
                 if (!nums1Frequency.ContainsKey(num))
-                {
                     nums1Frequency.Add(num, 0);
-                }
 
                 nums1Frequency[num]++;
             }
 
+            // Iterate through 2nd array and add it to list if exists in dictionary with frequency >1.
             IList<int> common = new List<int>();
             foreach (int num in nums2)
             {
@@ -38,21 +38,15 @@ namespace LeetcodeSolutions.Array
                     common.Add(num);
 
                     if (nums1Frequency[num] > 1)
-                    {
                         nums1Frequency[num]--;
-                    }
                     else
-                    {
                         nums1Frequency.Remove(num);
-                    }
                 }
             }
 
             int[] result = new int[common.Count];
             for (int i = 0; i < common.Count; i++)
-            {
                 result[i] = common[i];
-            }
 
             return result;
         }

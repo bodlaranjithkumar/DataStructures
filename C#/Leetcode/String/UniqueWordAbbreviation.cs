@@ -41,7 +41,7 @@ namespace LeetcodeSolutions.String
             }
         }
 
-        // Tx = O(1);
+        // Tx = O(1)
         bool IsUnique(string word)
         {
             // True when there abbreviations is empty or there is current abbreviation in the abbreviations list.

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace LeetcodeSolutions.DoublyLinkedList
 {
@@ -19,9 +18,8 @@ namespace LeetcodeSolutions.DoublyLinkedList
         }
 
         IDictionary<int, DoublyLinkedListNode> cache;
-        DoublyLinkedListNode start;
-        DoublyLinkedListNode end;
-        int capacity;
+        DoublyLinkedListNode start, end;
+        readonly int capacity;
 
         public LRUCache(int cap)
         {
@@ -31,17 +29,15 @@ namespace LeetcodeSolutions.DoublyLinkedList
 
         public int Get(int key)
         {
-            if (cache.ContainsKey(key))
-            {
-                var node = cache[key];
+            if (!cache.ContainsKey(key))
+                return -1;
 
-                RemoveNode(node);
-                AddNodeAtTop(node);
+            var node = cache[key];
 
-                return node.Value;
-            }
+            RemoveNode(node);
+            AddNodeAtTop(node);
 
-            return -1;
+            return node.Value;
         }
 
         public void Put(int key, int value)

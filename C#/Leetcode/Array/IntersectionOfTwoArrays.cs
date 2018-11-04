@@ -2,8 +2,8 @@
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 349
-    // Submission Detail: https://leetcode.com/submissions/detail/182415531/
+    // Leetcode 349 - https://leetcode.com/problems/intersection-of-two-arrays/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/182415531/
 
     public class IntersectionOfTwoArrays
     {
@@ -21,11 +21,11 @@ namespace LeetcodeSolutions.Array
             HashSet<int> nums1Set = new HashSet<int>();
             HashSet<int> common = new HashSet<int>();
 
+            // Add the array1 values to the hashset for constant look up.
             foreach (int num in nums1)
-            {
                 nums1Set.Add(num);
-            }
 
+            // Iterate through the array2 values and add it to common if exists in nums1set.
             foreach (int num in nums2)
             {
                 if (nums1Set.Contains(num))
@@ -35,12 +35,11 @@ namespace LeetcodeSolutions.Array
                 }
             }
 
+            // Store the values in the hashset to array.
             int[] result = new int[common.Count];
             int i = 0;
             foreach (int num in common)
-            {
                 result[i++] = num;
-            }
 
             return result;
         }

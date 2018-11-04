@@ -4,9 +4,10 @@ using System.Text;
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode 91
-    // Dynamic Programming
-    // Submission Detail: https://leetcode.com/submissions/detail/144408535/
+    // Leetcode 91 - https://leetcode.com/problems/decode-ways/
+    // Submission Detail - https://leetcode.com/submissions/detail/144408535/
+    // Bottom-Up Dynamic Programming
+
     public class DecodeWays
     {
         //public static void Main(string[] args)

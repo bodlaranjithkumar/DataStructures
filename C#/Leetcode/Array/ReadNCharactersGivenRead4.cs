@@ -2,8 +2,8 @@
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 157
-    // Submission Detail: https://leetcode.com/submissions/detail/182491830/
+    // Leetcode 157 - https://leetcode.com/problems/read-n-characters-given-read4/
+    // Submission Detail - https://leetcode.com/submissions/detail/182491830/
 
     public class ReadNCharactersGivenRead4
     {

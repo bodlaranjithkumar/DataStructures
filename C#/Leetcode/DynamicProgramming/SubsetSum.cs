@@ -1,11 +1,10 @@
 ﻿namespace LeetcodeSolutions.DynamicProgramming
 {
-    // Dynamic programming
+    // Bottom-Up Dynamic programming
+    // Ref: https://www.youtube.com/watch?v=s6FhG--P7z0
 
     public class SubsetSum
     {
-        // Ref: https://www.youtube.com/watch?v=s6FhG--P7z0
-
         //public static void Main(string[] args)
         //{
         //    SubsetSum subsetSum = new SubsetSum();

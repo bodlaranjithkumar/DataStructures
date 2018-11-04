@@ -2,10 +2,12 @@
 
 namespace LeetcodeSolutions.Strings
 {
-    // Leetcode 72
-    // Dynamic Programming
-    // Referene : https://www.geeksforgeeks.org/dynamic-programming-set-5-edit-distance/
+    // Leetcode 72 - https://leetcode.com/problems/edit-distance/
     // Submission Detail: https://leetcode.com/submissions/detail/142221965/
+    // Referene : https://www.geeksforgeeks.org/dynamic-programming-set-5-edit-distance/
+
+    // Dynamic Programming
+
     public class EditDistance
     {
         public int MinDistance(string word1, string word2)

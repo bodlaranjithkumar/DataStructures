@@ -1,7 +1,7 @@
 ﻿namespace LeetcodeSolutions.Array
 {
-    // Leetcode 158
-    // Submission Detail: https://leetcode.com/submissions/detail/182602133/
+    // Leetcode 158 - https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/
+    // Submission Detail - https://leetcode.com/submissions/detail/182602133/
 
     public class ReadNCharactersII_CallMultipleTimes
     {

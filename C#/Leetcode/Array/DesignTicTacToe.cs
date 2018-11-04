@@ -7,7 +7,8 @@ namespace LeetcodeSolutions.Array
 
     public class DesignTicTacToe
     {
-        int[] rows, cols;
+        private readonly int[] rows;
+        private readonly int[] cols;
         int diagonalLR, diagonalRL;
 
         /** Initialize your data structure here. */

@@ -2,7 +2,9 @@
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 280
+    // Leetcode  - https://leetcode.com/problems/wiggle-sort/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/185919227/
+
     public class WiggleSort
     {
         //public static void Main(string[] args)
@@ -19,6 +21,9 @@ namespace LeetcodeSolutions.Array
         //    Console.ReadLine();
         //}
 
+        // Algorithm: For every alternate positions starting with index 1 do:
+        //      1. if the current number is less than previous, then swap
+        //      2. if the current numebr if less than next, then swap
         // Tx = O(n)
         // Sx = O(1)
         public void WiggleSortt(int[] nums)

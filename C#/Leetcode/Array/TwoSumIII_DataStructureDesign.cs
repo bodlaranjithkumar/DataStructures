@@ -2,8 +2,8 @@
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 170
-    // Submission Detail: https://leetcode.com/submissions/detail/182406463/
+    // Leetcode 170 - https://leetcode.com/problems/two-sum-iii-data-structure-design/
+    // Submission Detail - https://leetcode.com/submissions/detail/182406463/
 
     public class TwoSumIII_DataStructureDesign
     {
@@ -22,13 +22,9 @@ namespace LeetcodeSolutions.Array
         public void Add(int number)
         {
             if (!numberFrequency.ContainsKey(number))
-            {
                 numberFrequency.Add(number, 1);
-            }
             else
-            {
                 numberFrequency[number] = 2;    // Since the problem is two sum. Doesn't matter if there are > 2 duplicates.
-            }
         }
 
         // Tx = O(n)
@@ -39,12 +35,8 @@ namespace LeetcodeSolutions.Array
                 int diff = value - number;
 
                 if (numberFrequency.ContainsKey(diff))
-                {
                     if (number != diff || numberFrequency[diff] == 2)
-                    {
                         return true;
-                    }
-                }
             }
 
             return false;
@@ -70,24 +62,14 @@ namespace LeetcodeSolutions.Array
         public void Add1(int number)
         {
             if (!numberSet.Contains(number))
-            {
                 numberSet.Add(number);
-            }
             else
-            {
                 sumSet.Add(number * 2); // If duplicate number, add twice the number.
-            }
 
             if (numberSet.Count > 1)
-            {
                 foreach (int num in numberSet)
-                {
                     if (num != number)
-                    {
                         sumSet.Add(num + number);
-                    }
-                }
-            }
         }
 
         // Tx = O(1)

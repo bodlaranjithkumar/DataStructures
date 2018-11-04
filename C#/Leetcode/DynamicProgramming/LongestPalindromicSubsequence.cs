@@ -1,22 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace LeetcodeSolutions.String
 {
     // Leetcode 516 - https://leetcode.com/problems/longest-palindromic-subsequence/description/
     // Submission Detail - https://leetcode.com/submissions/detail/171142369/
+    
+    // Ref: https://www.youtube.com/watch?v=TLaGwTnd3HY
+    //      https://www.geeksforgeeks.org/longest-palindromic-subsequence-dp-12/
+    //      https://www.youtube.com/watch?v=_nCsPn7_OgI
+
+    // Bottom-Up Dynamic Programming
 
     public class LongestPalindromicSubsequence
     {
-        // Ref: https://www.youtube.com/watch?v=TLaGwTnd3HY
-        //      https://www.geeksforgeeks.org/longest-palindromic-subsequence-dp-12/
-        //      https://www.youtube.com/watch?v=_nCsPn7_OgI
-
         // Tx = O(n^2)
         // Sx = O(n^2)
-        // Bottom-Up Dynamic Programming
-
         public int LongestPalindromeSubseq(string s)
         {
             if (s == null || s.Length == 0)

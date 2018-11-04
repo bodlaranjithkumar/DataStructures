@@ -3,7 +3,9 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.Queue
 {
-    // Leetcode 346
+    // Leetcode 346 - https://leetcode.com/problems/moving-average-from-data-stream/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/186286478/
+
     public class MovingAverage
     {
         //private static void Main(string[] args)

@@ -4,7 +4,6 @@ using System.Text;
 
 namespace LeetcodeSolutions.String
 {
-
     // Leetcode 402:  https://leetcode.com/problems/remove-k-digits/description/
     // Submission Detail: https://leetcode.com/submissions/detail/183529286/
 
@@ -22,7 +21,13 @@ namespace LeetcodeSolutions.String
         //    obj.Removekdigits("0000", 1);
         //}
 
-        // Algorithm: Iterate through the string. If the current number is less than the previous number inserted into the char array, then remove decrement the top pointer until a lower number in the array is found. Decrement k at the same time which basically means the numbers are being removed. In the end, leading zeros needs to be removed. So, find the index until the first non zero index is found.
+        // Algorithm: Iterate through the string. If the current number is 
+        //   less than the previous number inserted into the char array, 
+        //   then decrement the top pointer until a lower number in
+        //   the array is found. Decrement k at the same time which basically
+        //   means the numbers are being removed. In the end, leading zeros 
+        //   needs to be removed. So, find the index until the first non zero
+        //   index is found.
 
         public string RemoveKdigits(string num, int k)
         {
@@ -48,8 +53,11 @@ namespace LeetcodeSolutions.String
                     : new string(nums, firstNonZeroIndex, totalDigitsInTheResult - firstNonZeroIndex);
         }
 
-        //"1234567890",9 => 1   Failed for this case
 
+
+
+        //"1234567890",9 => 1   Failed for this case
+        // Method 2
         public string Removekdigits(string num, int k)
         {
             if (num.Length <= k)

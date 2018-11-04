@@ -17,8 +17,8 @@ namespace LeetcodeSolutions.String
         // Intput: s = "abpcplea", d = ["z","y","x","d"]
         // Output: ""
 
-        // Tx = O(n * k) {n: d.Length, k: s.Length}
-        // Sx = O(k) for longest stringx    
+        // Tx = O(n * k) {n: d.Count, k: s.Length}
+        // Sx = O(k) for longest string    
         public string FindLongestWord(string s, IList<string> d)
         {
             string longest = string.Empty;

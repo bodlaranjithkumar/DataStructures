@@ -3,7 +3,9 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.String
 {
-    // Leetcode: 266 - https://leetcode.com/problems/palindrome-permutation
+    // Leetcode 266 - https://leetcode.com/problems/palindrome-permutation
+    // Submission Detail - https://leetcode.com/submissions/detail/186280084/
+
     // "code" -> False
     // "aab" -> True
     // "carerac" -> True

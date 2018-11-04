@@ -3,19 +3,18 @@
 namespace LeetcodeSolutions.Array
 {
     // Leetcode 169 - https://leetcode.com/problems/majority-element/description/
-    // Submission Detail - https://leetcode.com/submissions/detail/183876397/
+    // Submission Detail - https://leetcode.com/submissions/detail/185909551/
     // Boyer - Moore Voting Algorithm
 
-
-    //Input : [1,2| 1,1,4,3] -> 1
-    // [7, 7, 5, 7, 5, 1 | 5, 7 | 5, 5, 7, 7 | 7, 7, 7, 7] -> 7
+    //Input : [1,2 | 1,1,4,3] -> 1
+    //        [7, 7, 5, 7, 5, 1 | 5, 7 | 5, 5, 7, 7 | 7, 7, 7, 7] -> 7
     public class MajorityElement
     {
         // Tx = O(n)
         // Sx = O(1)
         public int FindMajorityElement(int[] nums)
         {
-            int major = nums[0], count = 0;
+            int major = 0, count = 0;
 
             foreach (int num in nums)
             {
