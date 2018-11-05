@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LeetcodeSolutions.Algorithms
+namespace LeetcodeSolutions.DSandAlgorithms
 {
     // Theory - https://www.youtube.com/watch?v=COk73cpQbFQ
     public class QuickSort

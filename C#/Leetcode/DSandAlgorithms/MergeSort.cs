@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetcodeSolutions.Algorithms
+namespace LeetcodeSolutions.DSandAlgorithms
 {
     public class MergeSort
     {
