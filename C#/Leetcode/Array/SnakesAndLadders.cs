@@ -8,38 +8,38 @@ namespace LeetcodeSolutions.Array
 
     public class SnakesAndLadders
     {
-        public static void Main(string[] args)
-        {
-            int[] board = new int[30];
-            for (int i = 0; i < board.Length; i++)
-                board[i] = -1;  // No snake or ladder
+        //public static void Main(string[] args)
+        //{
+        //    int[] board = new int[30];
+        //    for (int i = 0; i < board.Length; i++)
+        //        board[i] = -1;  // No snake or ladder
 
-            //[-1,-1,21,-1,7,-1,-1,-1,-1,25
-            //,-1,-1,-1,-1,-1,3,-1,6,28,8
-            //,-1,-1,-1,-1,-1,0,-1,-1,-1,-1]
-            // Ladders 
-            board[2] = 21;
-            board[4] = 7;
-            board[10] = 25;
-            board[19] = 28;
+        //    //[-1,-1,21,-1,7,-1,-1,-1,-1,25
+        //    //,-1,-1,-1,-1,-1,3,-1,6,28,8
+        //    //,-1,-1,-1,-1,-1,0,-1,-1,-1,-1]
+        //    // Ladders 
+        //    board[2] = 21;
+        //    board[4] = 7;
+        //    board[10] = 25;
+        //    board[19] = 28;
 
-            // Snakes 
-            board[26] = 0;
-            board[20] = 8;
-            board[16] = 3;
-            board[18] = 6;
+        //    // Snakes 
+        //    board[26] = 0;
+        //    board[20] = 8;
+        //    board[16] = 3;
+        //    board[18] = 6;
 
-            SnakesAndLadders sl = new SnakesAndLadders();
-            Console.WriteLine(sl.MinDiceRolls(board));  //3
+        //    SnakesAndLadders sl = new SnakesAndLadders();
+        //    Console.WriteLine(sl.MinDiceRolls(board));  //3
 
-            int[] board1 = { -1, -1, -1, -1, -1, -1 };
-            Console.WriteLine(sl.MinDiceRolls(board1));  // 1
+        //    int[] board1 = { -1, -1, -1, -1, -1, -1 };
+        //    Console.WriteLine(sl.MinDiceRolls(board1));  // 1
 
-            int[] board2 = new int[0];
-            Console.WriteLine(sl.MinDiceRolls(board2));  // -1
+        //    int[] board2 = new int[0];
+        //    Console.WriteLine(sl.MinDiceRolls(board2));  // -1
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
 
         public int MinDiceRolls(int[] board)
         {
