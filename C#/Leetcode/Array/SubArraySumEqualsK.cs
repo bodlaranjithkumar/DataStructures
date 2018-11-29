@@ -9,8 +9,10 @@ namespace LeetcodeSolutions.Array
     {
         // Tx = O(n)
         // Sx = O(n)
-        // Algorithm: 1. If the current sum - k exists in the dictionary, add the number of frequencies (value) to previous count.
-        //            2. Count the frequency of the current sum and add it to the dictionary.
+        // Algorithm: 1. If the current sum - k exists in the dictionary, 
+        //              add the number of frequencies (value) to previous count.
+        //            2. Count the frequency of the current sum and add it to the
+        //              dictionary.
 
         // Example: [1,-1,7,2,-2,-7,9], 9        ->    5
         //          [1,1,1], 2                   ->    2

@@ -75,7 +75,8 @@ namespace LeetcodeSolutions.String
                 }
             }
 
-            if (i < m || j < n) // To cover the case when the last character in s or t is a delete or insert.
+            // To cover the case when the last character in s or t is a delete or insert.
+            if (i < m || j < n) 
                 count++;
 
             return count == 1;

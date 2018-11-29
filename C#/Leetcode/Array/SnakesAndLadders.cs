@@ -41,12 +41,13 @@ namespace LeetcodeSolutions.Array
         //    Console.ReadKey();
         //}
 
+        // TODO: Account for a snake in the board.
         public int MinDiceRolls(int[] board)
         {
             HashSet<int> visited = new HashSet<int>();
             Queue<int> cells = new Queue<int>();
 
-            // Initialize minDiceMoves to 1 because if the goal is > 6 and it is reached
+            // Initialize minDiceMoves to 1 because if the goal is < 6 and it is reached
             // inside the for loop, one dice roll is accounted.
             int goal = board.Length, minDiceRolls = 1, diceRolls = 0;
 

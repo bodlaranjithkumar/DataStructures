@@ -20,7 +20,7 @@ namespace LeetcodeSolutions.DSandAlgorithms
 
         // Tx = O(nlogn) Best and average case
         // Tx = O(n^2) Worst case
-        // Sx =O(1) because it is in-place.
+        // Sx = O(1) because it is in-place.
         public void Sort(int[] A)
         {
             Sort(A, 0, A.Length - 1);

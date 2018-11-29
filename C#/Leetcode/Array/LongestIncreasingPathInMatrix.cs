@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace LeetcodeSolutions.Array
 {
     // Leetcode 329 - https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/
     // Submission Detail - https://leetcode.com/submissions/detail/192309685/
+    // Depth-First Traversal 
 
     public class LongestIncreasingPathInMatrix
     {
