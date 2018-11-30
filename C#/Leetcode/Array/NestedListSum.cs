@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace LeetcodeSolutions.LinkedList
+namespace LeetcodeSolutions.Array
 {
     // Leetcode 339
     public class NestedListSum
