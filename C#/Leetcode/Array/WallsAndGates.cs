@@ -46,8 +46,8 @@ namespace LeetcodeSolutions.Array
         //}
 
         // Bread-First Traversal : https://leetcode.com/submissions/detail/187268598/
-        // Using BFS over DFS is time efficient since a previously visted empty room doesn't get visited again and it is promised that the
-        //  distance found in the first visit is the shortest.
+        // Using BFS over DFS is time efficient since a previously visted empty room
+        // won't be visited again and it is promised that the distance found in the first visit is the shortest.
 
         // Tx = O(m*n)
         // Sx = O(m*n)

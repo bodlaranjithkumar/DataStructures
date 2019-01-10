@@ -19,10 +19,10 @@ namespace LeetcodeSolutions.BinaryTree
         //  position is the current node position*2 and right child node 
         //  position is current node position*2+1. With this observation,
         //  the depth at current level is the rightmost node's 
-        //  position-left most node's position+1. Left value is set when 
-        //  the when the first node in a given level is visited.
-        //  hold the depth, position for a node, a custom 
-        //  datastructure is needed with props - node, depth, position.
+        //  position-left most node's position+1. Left value is set  
+        //  when the first node in a given level is visited.
+        //  Hold the depth, position for a node, a custom 
+        //  datastructure is needed with the properties - node, depth, position.
         public int WidthOfBinaryTree(BinaryTreeNode root)
         {
             Queue<TreeNodeDepthPosition> nodes = new Queue<TreeNodeDepthPosition>();

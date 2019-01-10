@@ -2,8 +2,8 @@
 
 namespace LeetcodeSolutions.Graphs
 {
-    // Leetcode 207
-    // Submission Detail: https://leetcode.com/submissions/detail/159417103/
+    // Leetcode 207 - https://leetcode.com/problems/course-schedule/
+    // Submission Detail - https://leetcode.com/submissions/detail/159417103/
 
     public class CourseSchedule
     {

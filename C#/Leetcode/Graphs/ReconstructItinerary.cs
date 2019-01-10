@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace LeetcodeSolutions.Graphs
 {
-    // Leetcode 332
+    // Leetcode 332 - https://leetcode.com/problems/reconstruct-itinerary/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/159240719/
+
     public class ReconstructItinerary
     {
-
-
-        // Failed for intinerary [["JFK","KUL"],["JFK","NRT"],["NRT","JFK"]]
+        // Failed for itinerary [["JFK","KUL"],["JFK","NRT"],["NRT","JFK"]]
         HashSet<int> visited = new HashSet<int>();
         IList<string> itinerary = new List<string>();
 

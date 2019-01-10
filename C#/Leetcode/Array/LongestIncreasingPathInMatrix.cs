@@ -38,7 +38,8 @@ namespace LeetcodeSolutions.Array
             if (i < 0 || j < 0 || i >= m || j >= n || matrix[i, j] >= callerValue)
                 return 0;
 
-            // computed the max for the first time. Cache holds both the maxLength at (i,j) and serves as visited if value is non-zero.
+            // computing the max for the first time. Cache holds potential maxLength
+            // at (i,j) and serves as visited if value is non-zero.
             if (cache[i, j] == 0)
             {
                 int curr = matrix[i, j];

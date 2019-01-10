@@ -3,7 +3,9 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.Graphs
 {
-    // Leetcode 133
+    // Leetcode 133 - https://leetcode.com/problems/clone-graph/description
+    // Submission Detail - https://leetcode.com/submissions/detail/140663824/
+
     // Example : {0,1,2#1,2#2,2}    // # is the delimiter for nodes and , is for neighbors
     //   1
     //  / \
@@ -12,7 +14,6 @@ namespace LeetcodeSolutions.Graphs
     //     / \
     //     \_/
 
-    // Submission: https://leetcode.com/submissions/detail/140663824/
     public class GraphClone
     {
         // Using BFS
