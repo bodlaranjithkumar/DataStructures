@@ -1,7 +1,7 @@
 ﻿namespace LeetcodeSolutions.Array
 {
     // Leetcode 322 - https://leetcode.com/problems/coin-change/
-    // Submission Detail - https://leetcode.com/submissions/detail/141580435/
+    // Submission Detail - https://leetcode.com/submissions/detail/202490940/
     // Dynamic Programming
     public class CoinChange
     {
@@ -11,13 +11,12 @@
         public int MinCoinChangeBottomUp(int[] coins, int amount)
         {
             int[] minCoinsAmount = new int[amount + 1];
-
             // Base case is minCoinsAmount[0] = 0;
-            for (int i = 1; i < minCoinsAmount.Length; i++)
-                minCoinsAmount[i] = amount + 1;
 
             for (int i = 1; i <= amount; i++)
             {
+                minCoinsAmount[i] = amount + 1;
+
                 foreach (var coin in coins)
                 {
                     if(coin <= i)
