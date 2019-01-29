@@ -17,7 +17,7 @@ namespace LeetcodeSolutions.String
         //}
 
         // Tx = O(m*n) {m: length of s}
-        // Sx = O(n) {n: length of t}
+        // Sx = O(1)
 
         // Algorithm: There could be multiple substrings. To identify these substrings, track the 
         // number of characters already included in the substring. For this, first count the 
