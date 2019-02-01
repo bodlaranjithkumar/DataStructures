@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetcodeSolutions.Interview
+namespace LeetcodeSolutions.Array
 {
     // If names exist - return the shortest path
     // If either of the names doesn't exist - return -1
@@ -13,7 +13,10 @@ namespace LeetcodeSolutions.Interview
     // A, A => 0
     // A, Z => -1
 
-    public class MinDistanceBetween2Words
+    // Leetcode 243 - https://leetcode.com/problems/shortest-word-distance
+    // Question - https://www.programcreek.com/2014/08/leetcode-shortest-word-distance-java/
+
+    public class ShortestWordDistance
     {
         // Tx = O(n) {n: Count of names list}
         // Sx = O(1)
