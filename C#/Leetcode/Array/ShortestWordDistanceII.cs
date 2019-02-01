@@ -1,15 +1,18 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetcodeSolutions.Interview
+namespace LeetcodeSolutions.Array
 {
     // Given a length list of names, find the minimum distance between given 2 names optimizing for find.
 
     // The given list has many names.
     // The names to search exist in the list.
 
-    public class MinDistanceBetween2NamesSearchOptimized
+    // Leetcode 244 - https://leetcode.com/problems/shortest-word-distance-ii
+    // Question - https://www.programcreek.com/2014/07/leetcode-shortest-word-distance-ii-java/
+
+    public class ShortestWordDistanceII
     {
-        public MinDistanceBetween2NamesSearchOptimized(IList<string> names)
+        public ShortestWordDistanceII(IList<string> names)
         {
             PreProcess(names);
         }
