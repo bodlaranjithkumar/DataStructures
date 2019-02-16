@@ -41,7 +41,6 @@ namespace LeetcodeSolutions.DynamicProgramming
 
                         if(dp[i,j] > maxLen)
                         {
-
                             maxLen = dp[i, j];   // Found new LIS.
 
                             maxLenRow = i;
@@ -51,17 +50,17 @@ namespace LeetcodeSolutions.DynamicProgramming
                 }
             }
 
-            string LIS = "";
+            string LCS = "";
 
             while(dp[maxLenRow, maxLenColumn] != 0)
             {
-                LIS = s2[maxLenColumn - 1] + LIS;
+                LCS = s2[maxLenColumn - 1] + LCS;
 
                 maxLenRow--;
                 maxLenColumn--;
             }
 
-            return LIS;
+            return LCS;
         }
     }
 }

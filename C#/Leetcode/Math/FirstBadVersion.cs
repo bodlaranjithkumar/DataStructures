@@ -1,7 +1,9 @@
 ﻿namespace LeetcodeSolutions.Math
 {
-    // Leetcode 278
+    // Leetcode 278 - https://leetcode.com/problems/first-bad-version/description/
+    // Submission Detail - https://leetcode.com/submissions/detail/140342535/
     // Modified binary search
+
     public class FirstBadVersion //: VersionControl
     {
         //Tx = O(lgn)

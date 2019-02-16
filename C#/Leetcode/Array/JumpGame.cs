@@ -1,7 +1,7 @@
 ﻿namespace LeetcodeSolutions.Array
 {
     // Leetcode 55 - https://leetcode.com/problems/jump-game/description/
-    // Submission Detail - https://leetcode.com/submissions/detail/170479761/
+    // Submission Detail - https://leetcode.com/submissions/detail/205838562/
     // Reference -  https://leetcode.com/problems/jump-game/solution/
 
     // Input: A = [2,3,1,1,4] -> true.
@@ -14,7 +14,7 @@
         public bool CanJumpGreedy(int[] nums)
         {
             int lastPos = nums.Length - 1;
-            for (int i = nums.Length - 1; i >= 0; i--)
+            for (int i = nums.Length - 2; i >= 0; i--)
             {
                 if (i + nums[i] >= lastPos)
                     lastPos = i;

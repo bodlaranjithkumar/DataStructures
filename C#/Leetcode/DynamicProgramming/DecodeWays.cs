@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace LeetcodeSolutions.String
 {
@@ -13,7 +11,7 @@ namespace LeetcodeSolutions.String
         //public static void Main(string[] args)
         //{
         //    DecodeWays dw = new DecodeWays();
-        //    Console.WriteLine(dw.NumDecodings("123")); //3
+        //    Console.WriteLine(dw.NumDecodings("123")); //3 - [1,2,3],[12,3],[1,23]
         //    Console.WriteLine(dw.NumDecodings("0"));   //0
         //    Console.WriteLine(dw.NumDecodings("1"));   //1
 

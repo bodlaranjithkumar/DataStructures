@@ -3,13 +3,34 @@
 namespace LeetcodeSolutions.Array
 {
     // LeetCode 283 - https://leetcode.com/problems/move-zeroes/description/
-    // Submission Detail - https://leetcode.com/submissions/detail/140502304/
+    // Submission Detail - https://leetcode.com/submissions/detail/206232536/
 
     // Input: [0, 1, 0, 3, 12]
     // Output: [1, 3, 12, 0, 0]     
     public class MoveZeros
     {
-        // worst case Tx = O(2n) although it is clean code
+        // Solution 1 - Clean code
+        // Two pointers
+        public void MoveZeroes(int[] nums)
+        {
+            for (int lastZeroFoundAt = 0, current = 0; current < nums.Length; current++)
+            {
+                if (nums[current] != 0)
+                {
+                    Swap(nums, lastZeroFoundAt++, current);
+                }
+            }
+        }
+
+        private static void Swap(int[] nums, int index1, int index2)
+        {
+            int temp = nums[index1];
+            nums[index1] = nums[index2];
+            nums[index2] = temp;
+        }
+
+        // Solution 2 - worst case Tx = O(2n) although it is clean code
+        // Submission Detail - https://leetcode.com/submissions/detail/140502304/
         public void MoveZeroesCleanCode(int[] nums)
         {
             if (nums == null)
@@ -53,26 +74,7 @@ namespace LeetcodeSolutions.Array
             }
         }
 
-        // Solution 1 : Clean code
-        // Two pointers
-        public void MoveZeroes(int[] nums)
-        {
-            for (int lastZeroFoundAt = 0, current = 0; current < nums.Length; current++)
-            {
-                if (nums[current] != 0)
-                {
-                    Swap(nums, lastZeroFoundAt++, current);
-                }
-            }
-        }
-
-        private static void Swap(int[] nums, int index1, int index2)
-        {
-            int temp = nums[index1];
-            nums[index1] = nums[index2];
-            nums[index2] = temp;
-        }
-
+        
         // Solution2 : Runtime = 678 ms
         // Tx = O(n)
         // Sx = O(1)

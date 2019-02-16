@@ -26,7 +26,7 @@ namespace LeetcodeSolutions.DynamicProgramming
                 {
                     if (s1[i-1] == s2[j-1])
                     {
-                        dp[i, j] = dp[i - 1, j - 1] + 1;
+                        dp[i, j] = 1 + dp[i - 1, j - 1];
                         maxLength = System.Math.Max(maxLength, dp[i, j]);
                     }
                 }

@@ -23,7 +23,7 @@ namespace LeetcodeSolutions.Array
 
         // Algorithm: For every alternate positions starting with index 1 do:
         //      1. if the current number is less than previous, then swap
-        //      2. if the current numebr if less than next, then swap
+        //      2. if the current number if less than next, then swap
         // Tx = O(n)
         // Sx = O(1)
         public void WiggleSortt(int[] nums)
