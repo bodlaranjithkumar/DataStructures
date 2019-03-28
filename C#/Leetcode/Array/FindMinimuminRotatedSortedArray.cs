@@ -27,7 +27,7 @@ namespace LeetcodeSolutions.Array
 
             while (start < end)
             {
-                // Breaking condition. Also, covers the case when the array is not sorted or is the same after sorting.
+                // Breaking condition. Also, covers the case when the array is not rotated.
                 if (nums[start] < nums[end])
                     break;
 

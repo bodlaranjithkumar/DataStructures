@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace LeetcodeSolutions.Array
 {
-    // Leetcode 286
-    // Submission Detail: https://leetcode.com/submissions/detail/187268598/
-    
+    // Leetcode 286 - https://leetcode.com/problems/walls-and-gates
+    // Submission Detail - https://leetcode.com/submissions/detail/187268598/
+
     // You are given a m x n 2D grid initialized with these three possible values.
 
     //-1 - A wall or an obstacle.
@@ -50,7 +50,7 @@ namespace LeetcodeSolutions.Array
         // won't be visited again and it is promised that the distance found in the first visit is the shortest.
 
         // Tx = O(m*n)
-        // Sx = O(m*n)
+        // Sx = O(n)
         public void WallsAndGatesBFS(int[,] rooms)
         {
             if (rooms == null || rooms.GetLength(0) == 0 || rooms.GetLength(1) == 0)

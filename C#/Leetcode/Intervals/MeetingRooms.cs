@@ -6,6 +6,8 @@ namespace LeetcodeSolutions.Intervals
     // Submission Detail - https://leetcode.com/submissions/detail/185728670/
     // Problem Explanation : http://www.cnblogs.com/grandyang/p/5240774.html
 
+    // Alternative way to ask the question is find if the meetings overlap.
+
     public class MeetingRooms
     {
         //public static void Main(string[] args)

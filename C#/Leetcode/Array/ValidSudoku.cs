@@ -8,6 +8,7 @@ namespace LeetcodeSolutions.Array
     public class ValidSudoku
     {
         // Tx = O(9*9)
+        // Sx = O(1)
         public bool IsValidSudoku(char[,] board)
         {
             HashSet<string> visited = new HashSet<string>();
