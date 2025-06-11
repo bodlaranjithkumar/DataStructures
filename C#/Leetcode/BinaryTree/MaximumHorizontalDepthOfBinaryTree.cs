@@ -12,8 +12,50 @@ namespace LeetcodeSolutions.BinaryTree
     {
         // Tx = O(n)
         // Sx = O(n)
+ 
+        // Solution 1: BFS. Follow's level order traversal. Cleaner Code.
+        // Left node's position is current node's positions*2 and right is *2+1
+        public int WidthOfBinaryTree(TreeNode root)
+        {
+            int result = 1;
+            
+            Queue<QueueNode> queue = new Queue<QueueNode>();
+            queue.Enqueue(new QueueNode(root, 0));
 
-        // BFS
+            while(queue.Count > 0)
+            {
+                int count = queue.Count, first = queue.Peek().position, last = first;
+
+                for (int i = 0; i < count; i++)
+                {
+                    var top = queue.Dequeue();
+                    last = top.position; // this will be set to the last node in the current level at final ith index.
+
+                    if(top.node.left != null)
+                        queue.Enqueue(new QueueNode(top.node.left, 2 * top.position));
+
+                    if(top.node.right != null)
+                        queue.Enqueue(new QueueNode(top.node.right, 2 * top.position + 1));    
+                }
+                result = Math.Max(result, last - first +  1);
+            }
+
+
+            return result;
+        }
+
+        private class QueueNode
+        {
+            public TreeNode node;
+            public int position;
+            public QueueNode(TreeNode node, int position)
+            {
+                this.node = node;
+                this.position = position;
+            }
+        }
+
+        // Solution 2: BFS
         // Algorithm: Since the given tree is a binary tree, for the 
         //  current level and for the current node, it's left child node 
         //  position is the current node position*2 and right child node 
