@@ -14,6 +14,11 @@ public static void main(String[] args) {
     System.out.println("rows:" + matrix.length);
     System.out.println("cols:" + matrix[0].length);
 
+    // String
+    String s = "string";
+    System.out.println("character at index:" + s.charAt(2)); //r
+    System.out.println("Substring with end & start indexes:" + s.substring(2,4)); //ri
+
     // list
     List<Integer> list = new ArrayList<>();
     list.add(0);
@@ -66,7 +71,7 @@ public static void main(String[] args) {
         System.out.println(keyValue.getKey() + " " + keyValue.getValue());
     }
     // inserting values at the time of declaration
-    static Map<Character, Character> paranthesesMap = Map.of(
+    Map<Character, Character> paranthesesMap = Map.of(
             '(', ')',
             '{', '}',
             '[', ']'
