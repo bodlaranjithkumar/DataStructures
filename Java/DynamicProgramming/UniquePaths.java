@@ -14,6 +14,8 @@ public class UniquePaths {
     //          2. Down -> Down -> Right
     //          3. Down -> Right -> Down
 
+    // Tx = O(m*n)
+    // Sx = O(m*n)
     public int uniquePaths(int m, int n) {
         int[][] dp = new int[m][n];
 
