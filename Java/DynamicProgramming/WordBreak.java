@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class WordBreak {
     // Leetcode 139: https://leetcode.com/problems/word-break/description/
-    // Submission Detail:
+    // Submission Detail: https://leetcode.com/problems/word-break/submissions/1662401777
 
     //Input: s = "leetcode", wordDict = ["leet","code"]
     //Output: true

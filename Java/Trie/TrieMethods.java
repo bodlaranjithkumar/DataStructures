@@ -59,7 +59,7 @@ public class TrieMethods {
   }
 
   void delete(String word) {
-    if(delete(root, word, 0) {
+    if(delete(root, word, 0)) {
       if(word.length() > 0 && root.children[word.charAt(0)] != null) {
         root.children[word.charAt(0)].isEndOfWord = false;
         root.children[word.charAt(0)] = null;
