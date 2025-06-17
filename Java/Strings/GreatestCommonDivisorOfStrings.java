@@ -1,4 +1,4 @@
-package TwoPointers;
+package Strings;
 
 public class GreatestCommonDivisorOfStrings {
     // Leetcode 1071: https://leetcode.com/problems/greatest-common-divisor-of-strings/description/
