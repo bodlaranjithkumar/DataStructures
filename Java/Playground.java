@@ -58,6 +58,7 @@ public static void main(String[] args) {
     System.out.println(map.get("A"));
     System.out.println(map.containsKey("A")); // contains key
     System.out.println(map.containsValue(1)); // contains value
+    System.out.println(map.getOrDefault("A", 0));
     System.out.println(map.size()); // size
     System.out.println(map.keySet().size()); // size
     System.out.println(map.values().size()); // values
