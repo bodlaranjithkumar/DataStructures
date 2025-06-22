@@ -2,7 +2,7 @@ package Stack;
 
 import java.util.Stack;
 
-public class RemovingStarsFromaStrig {
+public class RemovingStarsFromaString {
     // Leetcode 2390: https://leetcode.com/problems/removing-stars-from-a-string/description/?envType=study-plan-v2&envId=leetcode-75
 
     //Input: s = "leet**cod*e"
