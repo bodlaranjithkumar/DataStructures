@@ -37,19 +37,19 @@ public class MaximumSubsequenceScore {
         }
 
         Arrays.sort(numsPair, (a,b) -> b[0]-a[0]); // descending order of nums2
-        PriorityQueue<Integer> pq = new PriorityQueue<>(k, (a, b) -> a-b);
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>(k, (a, b) -> a-b);
 
         long sumSoFar = 0, maxScore = 0;
         for(int index=0; index<length; index++) {
             sumSoFar += numsPair[index][1];
-            pq.offer(numsPair[index][1]);
+            minHeap.offer(numsPair[index][1]);
 
             // size is greater than the desired capacity k. Remove the smallest of nums2 so that the score can be maximum.
-            if(pq.size() > k)
-                sumSoFar -= pq.poll();
+            if(minHeap.size() > k)
+                sumSoFar -= minHeap.poll();
 
             // When the size is k and given numsPair is sorted in descending order, the value at index in numsPair is the min.
-            if(pq.size() == k)
+            if(minHeap.size() == k)
                 maxScore = Math.max(maxScore, numsPair[index][0] * sumSoFar);
         }
 
