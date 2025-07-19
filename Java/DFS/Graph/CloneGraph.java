@@ -25,6 +25,8 @@ public class CloneGraph {
     //Output: []
     //Explanation: This an empty graph, it does not have any nodes.
 
+    // Tx = O(N+M) {N: Number of nodes, M: number of edges}
+    // Sx = O(N+M) {N: Number of nodes, M: number of edges}
     public Node cloneGraph(Node node) {
         if(node == null)
             return node;
