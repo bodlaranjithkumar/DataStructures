@@ -8,6 +8,14 @@ public class FindKClosestElements {
   // Leetcode 658: https://leetcode.com/problems/find-k-closest-elements/description/
   // Submission Detail: https://leetcode.com/problems/find-k-closest-elements/submissions/1647725219
 
+  //Example 1:
+  //Input: arr = [1,2,3,4,5], k = 4, x = 3
+  //Output: [1,2,3,4]
+
+  //Example 2:
+  //Input: arr = [1,1,2,3,4,5], k = 4, x = -1
+  //Output: [1,1,2,3]
+
   public List<Integer> findClosestElements(int[] arr, int k, int x) {
     PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> getDistance(b,x) - getDistance(a,x));
 
@@ -25,7 +33,7 @@ public class FindKClosestElements {
       result.add(maxHeap.poll());
     }
 
-    result.sort();
+    result.sort((a,b) -> a-b);
 
     return result;
   }
